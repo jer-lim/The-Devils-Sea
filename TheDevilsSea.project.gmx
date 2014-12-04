@@ -73,6 +73,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\ship_font</font>
+    <font>fonts\ship_font2</font>
   </fonts>
   <objects name="objects">
     <object>objects\ship_obj</object>
