@@ -10,5 +10,6 @@ if (hp < 0)
 {
     hp = 0;
     instance_destroy();
-    show_debug_message("Ship destroyed");
 }
+
+show_debug_message("HP: " + string(hp));
