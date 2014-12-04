@@ -13,8 +13,9 @@
     <sprite>sprites\wall_sprite</sprite>
     <sprite>sprites\trap_sprite</sprite>
     <sprite>sprites\btn1_sprite</sprite>
-    <sprite>sprites\chest_sprite</sprite>
     <sprite>sprites\fort_sprite</sprite>
+    <sprite>sprites\chest_sprite</sprite>
+    <sprite>sprites\menu_sprite</sprite>
     <sprite>sprites\menubg_sprite</sprite>
     <sprite>sprites\titlelogo_sprite</sprite>
     <sprite>sprites\titleship_sprite</sprite>
@@ -47,19 +48,20 @@
     <scripts name="Misc">
       <script>scripts\normalize_vector.gml</script>
       <script>scripts\explosion_knockback.gml</script>
+      <script>scripts\draw_menu_text.gml</script>
     </scripts>
     <scripts name="Game">
       <script>scripts\load_stats.gml</script>
       <script>scripts\game_start.gml</script>
       <scripts name="Chests">
         <script>scripts\chest_spawn.gml</script>
-        <script>scripts\chest_pickup.gml</script>
         <script>scripts\chest_spawn_effect_at.gml</script>
+        <script>scripts\chest_pickup.gml</script>
       </scripts>
       <scripts name="Traps">
-        <script>scripts\trap_pickup.gml</script>
         <script>scripts\trap_create.gml</script>
         <script>scripts\trap_arm.gml</script>
+        <script>scripts\trap_pickup.gml</script>
       </scripts>
       <scripts name="Forts">
         <script>scripts\fort_create.gml</script>
@@ -74,6 +76,7 @@
   <fonts name="fonts">
     <font>fonts\ship_font</font>
     <font>fonts\ship_font2</font>
+    <font>fonts\menu_font</font>
   </fonts>
   <objects name="objects">
     <object>objects\ship_obj</object>
@@ -84,7 +87,6 @@
     <object>objects\chest_obj</object>
     <object>objects\fort_obj</object>
     <object>objects\fort_scan_arc_obj</object>
-    <object>objects\btn_play_obj</object>
     <object>objects\menubg_obj</object>
     <object>objects\titlelogo_obj</object>
     <object>objects\titleship_obj</object>
@@ -92,32 +94,38 @@
     <object>objects\alarmer_obj</object>
     <object>objects\chest_controller_obj</object>
     <object>objects\explosion_radius_obj</object>
+    <object>objects\btn_play_obj</object>
+    <object>objects\btn_credits_obj</object>
+    <object>objects\btn_guide_obj</object>
+    <object>objects\menu_obj</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\game</room>
     <room>rooms\splash</room>
     <room>rooms\menu</room>
+    <room>rooms\game</room>
   </rooms>
-  <constants number="19">
-    <constant name="SHIP_ACCEL_MULTIPLIER">0.2</constant>
-    <constant name="TRAP_MIN_DAMAGE">75</constant>
-    <constant name="TRAP_MAX_DAMAGE">150</constant>
-    <constant name="TRAP_START_NUM">3</constant>
-    <constant name="TRAP_MAX_NUM">5</constant>
-    <constant name="TRAP_RELOAD_TIME">10</constant>
-    <constant name="RAM_FORCE_MULTIPLIER">1</constant>
-    <constant name="SHIP_FRICTION">0.03</constant>
-    <constant name="SHIP_SPEED_MULTIPLIER">0.03</constant>
-    <constant name="SHIP_MAX_SPEED">200</constant>
-    <constant name="SHIP_BASE_TURN_SPEED">30</constant>
-    <constant name="SHIP_GALLEASS">3</constant>
-    <constant name="SHIP_CORVETTE">2</constant>
-    <constant name="SHIP_CARRACK">1</constant>
-    <constant name="SHIP_XEBEC">0</constant>
-    <constant name="PLAYER_TWO">2</constant>
-    <constant name="PLAYER_ONE">1</constant>
-    <constant name="CHEST_SPAWN_MIN">5</constant>
+  <constants number="21">
     <constant name="CHEST_SPAWN_MAX">10</constant>
+    <constant name="CHEST_SPAWN_MIN">5</constant>
+    <constant name="PLAYER_ONE">1</constant>
+    <constant name="PLAYER_TWO">2</constant>
+    <constant name="RAM_FORCE_MULTIPLIER">1</constant>
+    <constant name="SHIP_ACCEL_MULTIPLIER">0.2</constant>
+    <constant name="SHIP_BASE_TURN_SPEED">30</constant>
+    <constant name="SHIP_CARRACK">1</constant>
+    <constant name="SHIP_CORVETTE">2</constant>
+    <constant name="SHIP_FRICTION">0.03</constant>
+    <constant name="SHIP_GALLEASS">3</constant>
+    <constant name="SHIP_MAX_SPEED">200</constant>
+    <constant name="SHIP_SPEED_MULTIPLIER">0.03</constant>
+    <constant name="SHIP_XEBEC">0</constant>
+    <constant name="TRAP_EXPLOSION_FORCE">700</constant>
+    <constant name="TRAP_MAX_DAMAGE">150</constant>
+    <constant name="TRAP_MAX_NUM">5</constant>
+    <constant name="TRAP_MIN_DAMAGE">75</constant>
+    <constant name="TRAP_RELOAD_TIME">10</constant>
+    <constant name="TRAP_SCALE_SIZE">1.8</constant>
+    <constant name="TRAP_START_NUM">3</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
