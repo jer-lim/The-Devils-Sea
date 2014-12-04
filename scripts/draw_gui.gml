@@ -33,6 +33,7 @@ for(var i = 0; i < instance_count; ++i){
             draw_set_font(ship_font);
             draw_set_halign(fa_left);
             if(ins.object_index == ship1_obj){
+                draw_set_color(c_white);
                 draw_text(110, 715, ins.hp);
                 draw_text(110, 750, ins.traps);
                 
@@ -41,7 +42,7 @@ for(var i = 0; i < instance_count; ++i){
                 }
                 draw_text(210, 750, ulti_display);
             }else{
-                draw_set_color(c_red);
+                draw_set_color(c_white);
                 draw_text(room_width - 65, 715, ins.hp);
                 draw_text(room_width - 65, 750, ins.traps);
                 if(!ins.ulti_enabled){

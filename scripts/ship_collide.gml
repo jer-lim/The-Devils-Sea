@@ -30,8 +30,8 @@ if(collidable){
         * Get front of ship
         * -45 and +45 to define it as a 90 degree arc
         */
-        shipFrontDirMin = image_angle - 45;
-        shipFrontDirMax = image_angle + 45;
+        shipFrontDirMin = direction - 45;
+        shipFrontDirMax = direction + 45;
         if(shipFrontDirMin < 0) shipFrontDirMin += 360;
         if(shipFrontDirMax > 360) shipFrontDirMax -= 360;
         
