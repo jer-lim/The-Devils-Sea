@@ -8,5 +8,5 @@ var randY = random_range(0, room_height);
 chest_spawn_effect_at(randX, randY);
 
 // create chest object
-instance_create(randX, randY, chest_obj);
+var chest = instance_create(randX, randY, chest_obj);
 alarm[0] = round(random_range(CHEST_SPAWN_MIN, CHEST_SPAWN_MAX)) * room_speed;
