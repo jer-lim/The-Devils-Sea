@@ -19,3 +19,4 @@ owner = 0;
 ulti_enabled = true;
 image_angle = 0;
 friction = SHIP_FRICTION;
+

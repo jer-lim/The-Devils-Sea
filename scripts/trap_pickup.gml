@@ -10,3 +10,4 @@ expRadius.image_alpha = 0.5;
 
 // delete self
 instance_destroy();
+
