@@ -41,8 +41,6 @@
       <script>scripts\ship_collide.gml</script>
       <script>scripts\ship_execute_ulti.gml</script>
       <script>scripts\ship_damage.gml</script>
-      <script>scripts\ship_spawn_trap.gml</script>
-      <script>scripts\ship_reload_trap.gml</script>
     </scripts>
     <scripts name="Misc">
       <script>scripts\normalize_vector.gml</script>
@@ -97,13 +95,10 @@
     <room>rooms\splash</room>
     <room>rooms\menu</room>
   </rooms>
-  <constants number="19">
+  <constants number="16">
     <constant name="SHIP_ACCEL_MULTIPLIER">0.2</constant>
     <constant name="TRAP_MIN_DAMAGE">75</constant>
     <constant name="TRAP_MAX_DAMAGE">150</constant>
-    <constant name="TRAP_START_NUM">3</constant>
-    <constant name="TRAP_MAX_NUM">5</constant>
-    <constant name="TRAP_RELOAD_TIME">10</constant>
     <constant name="RAM_FORCE_MULTIPLIER">1</constant>
     <constant name="SHIP_FRICTION">0.03</constant>
     <constant name="SHIP_SPEED_MULTIPLIER">0.03</constant>
