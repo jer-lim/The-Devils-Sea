@@ -20,3 +20,7 @@ ulti_enabled = true;
 traps = TRAP_START_NUM;
 image_angle = 0;
 friction = SHIP_FRICTION;
+
+// boost timers
+rum_boost_time = -1;
+divine_boost_time = -1;

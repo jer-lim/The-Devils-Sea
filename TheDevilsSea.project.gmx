@@ -44,6 +44,7 @@
       <script>scripts\ship_damage.gml</script>
       <script>scripts\ship_spawn_trap.gml</script>
       <script>scripts\ship_reload_trap.gml</script>
+      <script>scripts\ship_reset_boost.gml</script>
     </scripts>
     <scripts name="Misc">
       <script>scripts\normalize_vector.gml</script>

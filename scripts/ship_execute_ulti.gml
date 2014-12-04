@@ -12,4 +12,3 @@ if(ulti_enabled){
         alarm[2] = 15 * room_speed;
     }
 }
-
