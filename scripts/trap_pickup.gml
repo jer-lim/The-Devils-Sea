@@ -9,3 +9,4 @@ explosion_radius.image_yscale *= 1.5;
 
 // delete self
 instance_destroy();
+
