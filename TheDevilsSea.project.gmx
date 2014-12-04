@@ -66,8 +66,12 @@
         <script>scripts\fort_arc_unacquire_target.gml</script>
         <script>scripts\fort_set_owner.gml</script>
       </scripts>
+      <script>scripts\draw_gui.gml</script>
     </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\ship_font</font>
+  </fonts>
   <objects name="objects">
     <object>objects\ship_obj</object>
     <object>objects\ship1_obj</object>

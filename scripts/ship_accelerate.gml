@@ -5,11 +5,7 @@ vspeed -= (acceleration + friction) * sin(degtorad(image_angle));
 
 // limit maximum speed
 // (vspeed and hspeed affects overall speed)
-if (speed > max_speed)
+if (speed > max_speed){
     speed -= 30 / room_speed;
+}
 
-/*
-speed += acceleration;
-if (speed > max_speed)
-    speed = max_speed;
-    */

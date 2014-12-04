@@ -4,3 +4,4 @@
 */
 ship_type = SHIP_XEBEC;
 ship_load(ship_type);
+
