@@ -2,7 +2,6 @@
 instance_destroy();
 
 var boost_random = random_range(0, 100);
-boost_random = 95;
 var ship = argument0;
 
 // 29% flotsam: repairs 40-80 hp
