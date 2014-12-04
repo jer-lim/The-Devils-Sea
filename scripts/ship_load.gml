@@ -17,6 +17,7 @@ mask_index = ship_mask[ship_type];
 collidable = true;
 owner = 0;
 ulti_enabled = true;
+traps = TRAP_START_NUM;
 image_angle = 0;
 friction = SHIP_FRICTION;
 
