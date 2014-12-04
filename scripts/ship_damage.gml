@@ -6,10 +6,10 @@ var max_dmg = argument1;
 var damage = round(random_range(min_dmg, max_dmg));
 
 hp -= damage;
-if (hp < 0)
+if (hp <= 0)
 {
     hp = 0;
-    instance_destroy();
+    alarm[4] = 2 * room_speed;
 }
 
 show_debug_message("HP: " + string(hp));

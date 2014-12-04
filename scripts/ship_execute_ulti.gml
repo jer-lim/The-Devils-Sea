@@ -7,9 +7,10 @@ if(ulti_enabled){
         max_speed += 40;
         //end ulti
         alarm[1] = 3 * room_speed;
-        //ulti cooldown
-        ulti_enabled = false;
-        alarm[2] = 15 * room_speed;
     }
+    
+    //ulti cooldown
+    ulti_enabled = false;
+    alarm[2] = ulti_cooldown * room_speed;
+    ulti_countdown = ulti_cooldown * room_speed;
 }
-
