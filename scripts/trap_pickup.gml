@@ -15,3 +15,4 @@ explosion_radius.image_yscale *= TRAP_SCALE_SIZE;
 
 // delete self
 instance_destroy();
+

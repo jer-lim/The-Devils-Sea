@@ -76,6 +76,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\ship_font</font>
+    <font>fonts\ship_font2</font>
     <font>fonts\menu_font</font>
   </fonts>
   <objects name="objects">

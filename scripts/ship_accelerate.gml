@@ -9,4 +9,7 @@ vspeed -= (acceleration + friction) * sin(degtorad(image_angle));
 if (speed > max_speed){
     speed -= 30 / room_speed;
 }
+<<<<<<< HEAD
 */
+=======
+>>>>>>> 102449710e70305f8a9f29da4999fea641673a55
