@@ -12,8 +12,5 @@ if (divine_boost_time <= 0) {
     if (hp < 0)
     {
         hp = 0;
-        instance_destroy();
     }
-    
-    show_debug_message("HP: " + string(hp));
 }
