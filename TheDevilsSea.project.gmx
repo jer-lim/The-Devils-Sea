@@ -140,7 +140,7 @@
     <constant name="SHIP_BASE_TURN_SPEED">30</constant>
     <constant name="SHIP_CARRACK">1</constant>
     <constant name="SHIP_CORVETTE">2</constant>
-    <constant name="SHIP_FRICTION">0.03</constant>
+    <constant name="SHIP_FRICTION">0.045</constant>
     <constant name="SHIP_GALLEASS">3</constant>
     <constant name="SHIP_MAX_SPEED">200</constant>
     <constant name="SHIP_SPEED_MULTIPLIER">0.03</constant>
