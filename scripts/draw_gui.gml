@@ -1,3 +1,4 @@
+/* Bottom HUD Jeremy doesn't like
 draw_set_font(ship_font);
 draw_set_halign(fa_right);
 draw_set_valign(fa_middle);
@@ -10,6 +11,7 @@ draw_text(200, room_height - 15, "Ulti:");
 draw_text(room_width - 75, room_height - 50, "HP:");
 draw_text(room_width - 75, room_height - 15, "Traps:");
 draw_text(room_width - 250, room_height - 15, "Ulti:");
+*/
 
 for(var i = 0; i < instance_count; ++i){
     var ins = instance_id[i];
@@ -21,6 +23,10 @@ for(var i = 0; i < instance_count; ++i){
                 var ulti_display = "Ready!";
             }
             
+            
+            /*
+            * Draw players' HUD
+            */
             if(ins.object_index == ship1_obj){
                 draw_set_color(c_blue);
             }else{
@@ -32,6 +38,8 @@ for(var i = 0; i < instance_count; ++i){
             
             draw_set_font(ship_font);
             draw_set_halign(fa_left);
+            
+            /* Bottom HUD Jeremy doesn't like
             if(ins.object_index == ship1_obj) {
                 draw_set_color(c_white);
                 draw_text(110, room_height - 50, ins.hp);
@@ -50,6 +58,7 @@ for(var i = 0; i < instance_count; ++i){
                 }
                 draw_text(room_width - 240, room_height - 15, ulti_display);
             }
+            */
         }
     }
 }

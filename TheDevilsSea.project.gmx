@@ -12,6 +12,7 @@
     <sprite>sprites\ship_galleass_sprite</sprite>
     <sprite>sprites\wall_sprite</sprite>
     <sprite>sprites\red_bar_sprite</sprite>
+    <sprite>sprites\green_bar_sprite</sprite>
     <sprite>sprites\blue_bar_sprite</sprite>
     <sprite>sprites\btn1_sprite</sprite>
     <sprite>sprites\fort_sprite</sprite>
@@ -96,6 +97,7 @@
     <object>objects\wall_obj</object>
     <object>objects\alarmer_obj</object>
     <object>objects\red_bar_obj</object>
+    <object>objects\green_bar_obj</object>
     <object>objects\blue_bar_obj</object>
     <objects name="Menu">
       <object>objects\menu_obj</object>
