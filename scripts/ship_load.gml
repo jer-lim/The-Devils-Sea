@@ -15,6 +15,7 @@ mass = ship_mass[ship_type];
 
 collidable = true;
 owner = 0;
+other_ship = 0;
 
 traps = TRAP_START_NUM;
 image_angle = 0;
@@ -31,4 +32,7 @@ ulti_countdown = 0;
 // boost timers
 rum_boost_time = -1;
 divine_boost_time = -1;
+
+//xebec passive ability
+xebec_passive = false;
 

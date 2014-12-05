@@ -12,8 +12,11 @@ ship2_obj.ship_type = player2ShipType;
 var ship1 = instance_create(50, room_height*0.5, ship1_obj);
 ship1.owner = PLAYER_ONE;
 var ship2 = instance_create(room_width - 50, room_height*0.5, ship2_obj);
-ship2.image_angle += 180;
+ship2.image_angle = 180;
 ship2.owner = PLAYER_TWO;
+
+ship1.other_ship = ship2.id;
+ship2.other_ship = ship1.id;
 
 /*
 * Spawn forts symmetrically somewhere in the middle of the map.

@@ -56,7 +56,6 @@ if(collidable) {
         if(isRammer){
             cUVX = -cos(degtorad(direction));
             cUVY = sin(degtorad(direction));
-            show_debug_message("Ship 1 is a rammer!");
         }
     }
     
@@ -104,8 +103,6 @@ if(collidable) {
         if(isRammer2){
             cUVX2 = -cos(degtorad(other.direction));
             cUVY2 = sin(degtorad(other.direction));
-            show_debug_message("Ship 2 is a rammer!");
-            show_debug_message("Ship 2 front: " + string(shipFrontDirMin2) + " to " + string(shipFrontDirMax2) + ", direction " + string(other.direction));
         }
     }
     

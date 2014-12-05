@@ -1,6 +1,42 @@
 // keep object below global max speed
 if(speed > SHIP_MAX_SPEED * SHIP_SPEED_MULTIPLIER)
     speed = SHIP_MAX_SPEED * SHIP_SPEED_MULTIPLIER;
+    
+// limit maximum speed
+if (speed > max_speed){
+    speed -= 100 * SHIP_SPEED_MULTIPLIER / room_speed;
+}
+    
+// Xebec passive ability: more speed when heading towards other ship
+if(ship_type == SHIP_XEBEC){
+    var shipFrontDirMin = image_angle - 45;
+    var shipFrontDirMax = image_angle + 45;
+    if(shipFrontDirMin < 0) shipFrontDirMin += 360;
+    if(shipFrontDirMax > 360) shipFrontDirMax -= 360;
+    
+    var relativeDir = point_direction(x, y, other_ship.x, other_ship.y); 
+    var isFacingOther = false;
+    if(shipFrontDirMin < shipFrontDirMax){
+        if(relativeDir > shipFrontDirMin && relativeDir < shipFrontDirMax){
+            isFacingOther = true;
+        }
+    }else{
+        if((relativeDir > shipFrontDirMin && relativeDir <= 0)
+            || (relativeDir >= 0 && relativeDir < shipFrontDirMax)){
+            isFacingOther = true;
+        }
+    }
+    
+    if(isFacingOther && !xebec_passive){
+        max_speed += 10 * SHIP_SPEED_MULTIPLIER;
+        xebec_passive = true;
+    }else if(!isFacingOther && xebec_passive){
+        max_speed -= 10 * SHIP_SPEED_MULTIPLIER;
+        xebec_passive = false;
+    }
+    
+    show_debug_message(string(owner) + string(max_speed));
+}
 
 // boost time updates
 if (rum_boost_time > 0) {
