@@ -12,5 +12,7 @@ if (divine_boost_time <= 0) {
     if (hp < 0)
     {
         hp = 0;
+        //ship death alarm to remove ship from game
+        alarm[4] = 2 * room_speed;
     }
 }
