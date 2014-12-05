@@ -12,5 +12,3 @@ if (fort_instance.owner == PLAYER_ONE) {
 else {
     fort_instance.arc.sprite_index = fort_scan_arc_sprite2;
 }
-
-fort_instance.radius.owner = player_number;

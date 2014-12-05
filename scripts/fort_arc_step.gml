@@ -1,3 +1,15 @@
+// successfully captured
+if (fort.capture_timer <= 0) {
+    // change fort owner
+    if (fort.owner == PLAYER_ONE)
+        fort_set_owner(self.fort, PLAYER_TWO);
+    else
+        fort_set_owner(self.fort, PLAYER_ONE);
+
+    // reset timer flag
+    fort.capture_timer = room_speed * 5;
+}
+
 /*
 * Rotate arc by 90 degrees per second if no target,
 * otherwise fix aim on target
