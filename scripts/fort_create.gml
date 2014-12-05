@@ -20,3 +20,7 @@ radius.fort = id;
 
 // initialize timer flag to 5 seconds
 capture_timer = room_speed * 5;
+blue_bar = instance_create(x, y, blue_bar_obj);
+blue_bar.visible = false;
+red_bar = instance_create(x, y, red_bar_obj);
+red_bar.visible = false;

@@ -11,7 +11,8 @@
     <sprite>sprites\ship_corvette_sprite</sprite>
     <sprite>sprites\ship_galleass_sprite</sprite>
     <sprite>sprites\wall_sprite</sprite>
-    <sprite>sprites\trap_sprite</sprite>
+    <sprite>sprites\red_bar_sprite</sprite>
+    <sprite>sprites\blue_bar_sprite</sprite>
     <sprite>sprites\btn1_sprite</sprite>
     <sprite>sprites\fort_sprite</sprite>
     <sprite>sprites\chest_sprite</sprite>
@@ -71,6 +72,7 @@
         <script>scripts\fort_arc_acquire_target.gml</script>
         <script>scripts\fort_arc_unacquire_target.gml</script>
         <script>scripts\fort_start_capturing.gml</script>
+        <script>scripts\draw_fort_bar.gml</script>
       </scripts>
       <script>scripts\draw_gui.gml</script>
     </scripts>
@@ -86,6 +88,8 @@
     <object>objects\ship2_obj</object>
     <object>objects\wall_obj</object>
     <object>objects\alarmer_obj</object>
+    <object>objects\red_bar_obj</object>
+    <object>objects\blue_bar_obj</object>
     <objects name="Menu">
       <object>objects\menu_obj</object>
       <object>objects\menubg_obj</object>
@@ -95,6 +99,8 @@
       <object>objects\btn_play_obj</object>
       <object>objects\btn_guide_obj</object>
       <object>objects\btn_credits_obj</object>
+      <object>objects\btn_start_obj</object>
+      <object>objects\btn_back_obj</object>
     </objects>
     <objects name="Fort">
       <object>objects\fort_obj</object>
@@ -111,6 +117,7 @@
   <rooms name="rooms">
     <room>rooms\splash</room>
     <room>rooms\menu</room>
+    <room>rooms\pre_game</room>
     <room>rooms\game</room>
   </rooms>
   <constants number="21">

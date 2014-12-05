@@ -7,7 +7,7 @@ if (other.owner != self.fort.owner) {
         
     // update capture timer
     if (self.fort.capture_timer > 0) {
-        self.fort.capture_timer--;
+        self.fort.capture_timer -= 2;
         
         // if ship type is galleass, capturing speed is 2.5x faster
         if (other.ship_type == SHIP_GALLEASS) {
@@ -15,10 +15,8 @@ if (other.owner != self.fort.owner) {
         }
     }
 }
-// if fort owner is in range
+// if fort owner is in range, increase fort "healing"
 else {
     if (self.fort.capture_timer < room_speed * 5)
         self.fort.capture_timer++;
 }
-
-show_debug_message("Capture timer: " + string(self.fort.capture_timer));

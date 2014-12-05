@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>11</kind>
-            <room>pre_game</room>
+            <room>game</room>
           </argument>
         </arguments>
       </action>
@@ -51,7 +51,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>"Play"</string>
+            <string>"Begin"</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -85,7 +85,7 @@
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>0,0</point>
-    <point>200,200</point>
+    <point>229,49</point>
+    <point>229,229</point>
   </PhysicsShapePoints>
 </object>

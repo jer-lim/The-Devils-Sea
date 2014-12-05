@@ -8,6 +8,14 @@ if (fort.capture_timer <= 0) {
 
     // reset timer flag
     fort.capture_timer = room_speed * 5;
+    
+    // disengage fort target
+    fort_arc_unacquire_target();
+}
+// passive fort "healing"
+else {
+    if (fort.capture_timer < room_speed * 5)
+        fort.capture_timer++;
 }
 
 /*
