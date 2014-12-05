@@ -6,3 +6,5 @@
 chest_spawn_effect_at(spawnX, spawnY);
 x = spawnX;
 y = spawnY;
+
+armed = true;

@@ -13,11 +13,11 @@ draw_text(room_width - 250, room_height - 15, "Ulti:");
 
 for(var i = 0; i < instance_count; ++i){
     var ins = instance_id[i];
-    if(instance_exists(ins)){
+    if(instance_exists(ins)) {
         if(ins.object_index == ship1_obj || ins.object_index == ship2_obj){
-            if(!ins.ulti_enabled){
+            if(!ins.ulti_countdown == 0){
                 var ulti_display = string(floor(ins.ulti_countdown / room_speed)) + "s";
-            }else{
+            } else{
                 var ulti_display = "Ready!";
             }
             
@@ -32,12 +32,12 @@ for(var i = 0; i < instance_count; ++i){
             
             draw_set_font(ship_font);
             draw_set_halign(fa_left);
-            if(ins.object_index == ship1_obj){
+            if(ins.object_index == ship1_obj) {
                 draw_set_color(c_white);
                 draw_text(110, room_height - 50, ins.hp);
                 draw_text(110, room_height - 15, ins.traps);
                 
-                if(!ins.ulti_enabled){
+                if(!ins.ulti_countdown == 0) {
                     draw_set_color(c_red);
                 }
                 draw_text(210, room_height - 50, ulti_display);
@@ -45,7 +45,7 @@ for(var i = 0; i < instance_count; ++i){
                 draw_set_color(c_white);
                 draw_text(room_width - 65, room_height - 50, ins.hp);
                 draw_text(room_width - 65, room_height - 15, ins.traps);
-                if(!ins.ulti_enabled){
+                if(!ins.ulti_countdown == 0) {
                     draw_set_color(c_red);
                 }
                 draw_text(room_width - 240, room_height - 15, ulti_display);

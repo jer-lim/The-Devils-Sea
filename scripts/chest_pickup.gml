@@ -2,6 +2,7 @@
 instance_destroy();
 
 var boost_random = random_range(0, 100);
+// boost_random = 55;
 var ship = argument0;
 
 // 29% flotsam: repairs 40-80 hp
@@ -10,7 +11,7 @@ if (boost_random < 29) {
     ship.hp += round(random_range(40, 80));
     if (ship.hp > ship.ship_hp[ship.ship_type])
         ship.hp = ship.ship_hp[ship.ship_type];
-    show_debug_message("Flotsam");
+    // show_debug_message("Flotsam");
 }
 
 // 29% rum: speed +20 for 3s
@@ -22,6 +23,12 @@ else if (boost_random < 58) {
         ship.acceleration *= 1.5;
         ship.turn_speed *= 1.5;
         
+        // current speed boost
+        var cUVX = cos(degtorad(image_angle));
+        var cUVY = -sin(degtorad(image_angle));
+        hspeed += 20 * cUVX;
+        vspeed += 20 * cUVY;
+        
         // set rum boost time
         ship.rum_boost_time = room_speed * 3;
     }
@@ -30,7 +37,7 @@ else if (boost_random < 58) {
         ship.rum_boost_time += room_speed * 3;
     }
     
-    show_debug_message("Rum");
+    // show_debug_message("Rum");
 }
 
 // 29% gunpowder: trap +1
@@ -53,10 +60,10 @@ else if (boost_random < 97) {
         ship.divine_boost_time += room_speed * 5;
     }
     
-    show_debug_message("Divine Intervention");
+    // show_debug_message("Divine Intervention");
 }
 
 // 3% god's wrath: MONSTER KRAKEN
 else {
-    show_debug_message("Kraken");
+    // show_debug_message("Kraken");
 }

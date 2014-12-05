@@ -19,7 +19,7 @@ else {
     cuY = random_range(-0.05, 0.05);
 }
 
-show_debug_message("cuX:" + string(cuX) + ", cuY:" + string(cuY));
+// show_debug_message("cuX:" + string(cuX) + ", cuY:" + string(cuY));
 
 // set object speed
 obj.hspeed = cuX * TRAP_EXPLOSION_FORCE;

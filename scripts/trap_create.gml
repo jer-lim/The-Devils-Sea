@@ -9,6 +9,8 @@ spawnY = y;
 x = -100;
 y = -100;
 
+armed = false;
+
 /*
 * Arm the trap after a few seconds  
 */

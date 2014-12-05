@@ -1,16 +1,20 @@
-if(ulti_enabled){
-    if(ship_type = SHIP_XEBEC){
-        var cUVX = cos(degtorad(image_angle));
-        var cUVY = -sin(degtorad(image_angle));
-        hspeed += 40 * cUVX;
-        vspeed += 40 * cUVY;
-        max_speed += 40;
-        //end ulti
-        alarm[1] = 3 * room_speed;
+// if ulti is not on cooldown
+if (ulti_countdown <= 0) {    
+    // Xebec's ulti activation
+    if (ship_type == SHIP_XEBEC) {
+        ulti_timer = room_speed * 3;
+        xebec_ulti_activate();
     }
-    
-    //ulti cooldown
-    ulti_enabled = false;
-    alarm[2] = ulti_cooldown * room_speed;
-    ulti_countdown = ulti_cooldown * room_speed;
+    // Galleass's ulti activation
+    else if (ship_type == SHIP_GALLEASS) {
+        ulti_timer = room_speed * 5;
+        galleass_ulti_activate();
+    }
+    // Corvette's ulti activation
+    else if (ship_type == SHIP_CORVETTE) {
+        corvette_ulti_activate();
+    }
+
+    // set ulti on cooldown
+    ulti_countdown = ship_ulti_cooldown[ship_type] * room_speed;
 }
