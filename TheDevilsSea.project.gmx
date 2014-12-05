@@ -44,6 +44,7 @@
       <script>scripts\ship_collide.gml</script>
       <script>scripts\ship_execute_ulti.gml</script>
       <script>scripts\ship_damage.gml</script>
+      <script>scripts\ship_death.gml</script>
       <script>scripts\ship_spawn_trap.gml</script>
       <script>scripts\ship_reload_trap.gml</script>
       <script>scripts\ship_reset_boost.gml</script>
