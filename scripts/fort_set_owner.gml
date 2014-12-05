@@ -6,8 +6,11 @@ var fort_instance = argument0;
 var player_number = argument1;
 
 fort_instance.owner = player_number;
-if(fort_instance.owner == PLAYER_ONE){
+if (fort_instance.owner == PLAYER_ONE) {
     fort_instance.arc.sprite_index = fort_scan_arc_sprite;
-}else{
+}
+else {
     fort_instance.arc.sprite_index = fort_scan_arc_sprite2;
 }
+
+fort_instance.radius.owner = player_number;

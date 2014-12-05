@@ -66,10 +66,11 @@
       </scripts>
       <scripts name="Forts">
         <script>scripts\fort_create.gml</script>
+        <script>scripts\fort_set_owner.gml</script>
         <script>scripts\fort_arc_step.gml</script>
         <script>scripts\fort_arc_acquire_target.gml</script>
         <script>scripts\fort_arc_unacquire_target.gml</script>
-        <script>scripts\fort_set_owner.gml</script>
+        <script>scripts\fort_start_capturing.gml</script>
       </scripts>
       <script>scripts\draw_gui.gml</script>
     </scripts>
@@ -84,21 +85,28 @@
     <object>objects\ship1_obj</object>
     <object>objects\ship2_obj</object>
     <object>objects\wall_obj</object>
-    <object>objects\trap_obj</object>
-    <object>objects\chest_obj</object>
-    <object>objects\fort_obj</object>
-    <object>objects\fort_scan_arc_obj</object>
-    <object>objects\menubg_obj</object>
-    <object>objects\titlelogo_obj</object>
-    <object>objects\titleship_obj</object>
-    <object>objects\titleship2_obj</object>
     <object>objects\alarmer_obj</object>
-    <object>objects\chest_controller_obj</object>
-    <object>objects\explosion_radius_obj</object>
-    <object>objects\btn_play_obj</object>
-    <object>objects\btn_credits_obj</object>
-    <object>objects\btn_guide_obj</object>
-    <object>objects\menu_obj</object>
+    <objects name="Menu">
+      <object>objects\menu_obj</object>
+      <object>objects\menubg_obj</object>
+      <object>objects\titlelogo_obj</object>
+      <object>objects\titleship_obj</object>
+      <object>objects\titleship2_obj</object>
+      <object>objects\btn_play_obj</object>
+      <object>objects\btn_guide_obj</object>
+      <object>objects\btn_credits_obj</object>
+    </objects>
+    <objects name="Fort">
+      <object>objects\fort_obj</object>
+      <object>objects\fort_scan_arc_obj</object>
+      <object>objects\fort_radius_obj</object>
+    </objects>
+    <objects name="Chest">
+      <object>objects\chest_controller_obj</object>
+      <object>objects\chest_obj</object>
+      <object>objects\trap_obj</object>
+      <object>objects\explosion_radius_obj</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\splash</room>

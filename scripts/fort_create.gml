@@ -10,3 +10,9 @@ arc.fort = id;
 targetAcquired = false;
 targetAngle = 0;
 owner = 0;
+
+// create fort radius object for collision detection with ships
+// ships that collide are "in-range" for capturing a fort
+radius = instance_create(x, y, fort_radius_obj);
+radius.image_xscale = fort_scan_arc_obj.sprite_width * 2 / radius.sprite_width;
+radius.image_yscale = fort_scan_arc_obj.sprite_width * 2 / radius.sprite_height;
