@@ -34,7 +34,10 @@ for(var i = 0; i < instance_count; ++i){
             }
             draw_set_halign(fa_middle);
             draw_set_font(ship_font2);
-            draw_text(ins.x, ins.y + 35, string(ins.hp) + " HP | " + string(ins.traps) + " Traps#Ulti " + ulti_display);
+            
+            var offset = 35;
+            if(ins.y > room_height - 100) offset = -55;
+            draw_text(ins.x, ins.y + offset, string(ins.hp) + " HP | " + string(ins.traps) + " Traps#Ulti " + ulti_display);
             
             draw_set_font(ship_font);
             draw_set_halign(fa_left);
