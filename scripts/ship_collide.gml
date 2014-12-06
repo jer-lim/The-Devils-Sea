@@ -62,11 +62,25 @@ if(collidable) {
     var massRatio = 2 * other.mass / (mass + other.mass);
     var vDiffX = other.hspeed - hspeed;
     var vDiffY = other.vspeed - vspeed;
+    var cUVdotvDiff = dot_product(cUVX, cUVY, vDiffX, vDiffY);
     
     /*
-    * IDK what this is supposed to represent
+    * Apply damage
+    * Check if being rammed from the side and apply a multiplier if so.
     */
-    var cUVdotvDiff = dot_product(cUVX, cUVY, vDiffX, vDiffY);
+    var rammedDirection = point_direction(x, y, other.x, other.y);
+    if((angle_difference(rammedDirection, image_angle) >= 45 && angle_difference(rammedDirection, image_angle) < 135)
+    || (angle_difference(rammedDirection, image_angle) >= -135 && angle_difference(rammedDirection, image_angle) < -45)){
+        var damage_multiplier = 1.5;
+    }else{
+        var damage_multiplier = 1;
+    }
+    /*
+    * damage_multiplier: whether it is hit from the side
+    * ship_rammed_damage_multiplier: ship ram "resistance" - for xebec's ulti
+    * RAM_DAMAGE_MULTIPLIER: multiply the ratio to get the actual damage
+    */
+    hp -= massRatio * abs(cUVdotvDiff) * damage_multiplier * ship_rammed_damage_multiplier * RAM_DAMAGE_MULTIPLIER;
     
     /*
     * Find reaction vector for other ship
@@ -110,6 +124,15 @@ if(collidable) {
     var vDiffX2 = hspeed - other.hspeed;
     var vDiffY2 = vspeed - other.vspeed;
     var cUVdotvDiff2 = dot_product(cUVX2, cUVY2, vDiffX2, vDiffY2);
+    
+    var rammedDirection2 = point_direction(other.x, other.y, x, y);
+    if((angle_difference(rammedDirection2, image_angle) >= 45 && angle_difference(rammedDirection2, image_angle) < 135)
+    || (angle_difference(rammedDirection2, image_angle) >= -135 && angle_difference(rammedDirection2, image_angle) < -45)){
+        var damage_multiplier2 = 1.5;
+    }else{
+        var damage_multiplier2 = 1;
+    }
+    other.hp -= massRatio2 * cUVdotvDiff2 * other.ship_rammed_damage_multiplier * damage_multiplier2 * RAM_DAMAGE_MULTIPLIER;
     
     /*
     * Apply vectors

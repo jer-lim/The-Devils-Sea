@@ -16,6 +16,7 @@ mass = ship_mass[ship_type];
 collidable = true;
 owner = 0;
 other_ship = 0;
+ship_rammed_damage_multiplier = 1;
 
 traps = TRAP_START_NUM;
 image_angle = 0;

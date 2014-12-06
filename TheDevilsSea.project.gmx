@@ -161,7 +161,7 @@
     <constant name="CHEST_SPAWN_MIN">5</constant>
     <constant name="PLAYER_ONE">1</constant>
     <constant name="PLAYER_TWO">2</constant>
-    <constant name="RAM_FORCE_MULTIPLIER">1</constant>
+    <constant name="RAM_DAMAGE_MULTIPLIER">20</constant>
     <constant name="SHIP_ACCEL_MULTIPLIER">0.2</constant>
     <constant name="SHIP_BASE_TURN_SPEED">30</constant>
     <constant name="SHIP_CARRACK">1</constant>

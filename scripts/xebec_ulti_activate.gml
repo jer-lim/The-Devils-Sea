@@ -3,3 +3,4 @@ var cUVY = -sin(degtorad(image_angle));
 hspeed += 40 * cUVX * SHIP_SPEED_MULTIPLIER;
 vspeed += 40 * cUVY * SHIP_SPEED_MULTIPLIER;
 max_speed += 40 * SHIP_SPEED_MULTIPLIER;
+ship_rammed_damage_multiplier = 0.5;
