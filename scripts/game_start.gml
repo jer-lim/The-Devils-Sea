@@ -2,21 +2,33 @@
 * Determine which ship to use based on ship type.
 * Spawn ships on extreme left and right side of map.
 */
-/*
-var player1ShipType = SHIP_XEBEC;
-var player2ShipType = SHIP_GALLEASS;
-ship1_obj.ship_type = player1ShipType;
-ship2_obj.ship_type = player2ShipType;
-*/
 
+globalvar ships;
+globalvar player_ships_index;
+
+global.player_ships_index[PLAYER_ONE] = 1;
+global.player_ships_index[PLAYER_TWO] = 1;
+
+// create player 1's ship
 var ship1 = instance_create(50, room_height*0.5, ship1_obj);
+with(ship1) {
+    ship_create(global.player_ships[PLAYER_ONE, player_ships_index[PLAYER_ONE]++]);
+}
 ship1.owner = PLAYER_ONE;
+
+// create player 2's ship
 var ship2 = instance_create(room_width - 50, room_height*0.5, ship2_obj);
+with(ship2) {
+    ship_create(global.player_ships[PLAYER_TWO, player_ships_index[PLAYER_TWO]++]);
+}
 ship2.image_angle = 180;
 ship2.owner = PLAYER_TWO;
 
 ship1.other_ship = ship2.id;
 ship2.other_ship = ship1.id;
+
+global.ships[PLAYER_ONE] = ship1;
+global.ships[PLAYER_TWO] = ship2;
 
 /*
 * Spawn forts symmetrically somewhere in the middle of the map.

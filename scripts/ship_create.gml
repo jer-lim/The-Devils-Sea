@@ -1,12 +1,13 @@
 /*
 * Load ship stats for selected ship.
-* @todo supply ship_type from another source
 */
 
-ship_type = floor(random_range(0, 4));
-ship_type = SHIP_XEBEC;
-
+// ship_type = SHIP_XEBEC;
+ship_type = argument0;
+if (ship_type < 0 || ship_type > 3)
+    ship_type = floor(random_range(0, 4));
 ship_load(ship_type);
+
 // Get trap reloading up and running
 if(ship_type == SHIP_CORVETTE){
     alarm[3] = TRAP_RELOAD_TIME / 2 * room_speed;
@@ -18,5 +19,3 @@ if(ship_type == SHIP_CORVETTE){
 greenbar = instance_create(x, y + 60, green_bar_obj);
 greenbar.image_xscale = 1.2;
 greenbar.image_yscale = 0.6;
-
-

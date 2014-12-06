@@ -8,9 +8,9 @@ if (fort_health < 100) {
 
     // draw blue and red bars
     draw_sprite_stretched(self.blue_bar.sprite_index, -1,
-        self.x - 50, self.y - 50,
+        self.x - 50, self.y - 60,
         fort_health, 20);
     draw_sprite_stretched(self.red_bar.sprite_index, -1,
-        self.x - 50 + fort_health, self.y - 50,
+        self.x - 50 + fort_health, self.y - 60,
         100 - fort_health, 20);
 }

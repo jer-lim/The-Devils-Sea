@@ -15,6 +15,7 @@
     <sprite>sprites\green_bar_sprite</sprite>
     <sprite>sprites\blue_bar_sprite</sprite>
     <sprite>sprites\btn1_sprite</sprite>
+    <sprite>sprites\btn2_sprite</sprite>
     <sprite>sprites\fort_sprite</sprite>
     <sprite>sprites\chest_sprite</sprite>
     <sprite>sprites\menu_sprite</sprite>
@@ -28,11 +29,15 @@
     <sprite>sprites\ship_galleass_hitbox_sprite</sprite>
     <sprite>sprites\fort_scan_arc_sprite</sprite>
     <sprite>sprites\fort_scan_arc_sprite2</sprite>
+    <sprite>sprites\text_sprite</sprite>
+    <sprites name="Pregame">
+      <sprite>sprites\btn_blue</sprite>
+      <sprite>sprites\btn_red</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\launch_splash_screen.gml</script>
     <scripts name="Ships">
       <script>scripts\ship_create.gml</script>
       <script>scripts\ship_load.gml</script>
@@ -58,7 +63,12 @@
     </scripts>
     <scripts name="Misc">
       <script>scripts\normalize_vector.gml</script>
+      <script>scripts\launch_splash_screen.gml</script>
       <script>scripts\draw_menu_text.gml</script>
+      <script>scripts\pregame_step.gml</script>
+      <script>scripts\pregame_create.gml</script>
+      <script>scripts\pregame_handle_select.gml</script>
+      <script>scripts\pregame_done.gml</script>
     </scripts>
     <scripts name="Game">
       <script>scripts\load_stats.gml</script>
@@ -109,8 +119,21 @@
       <object>objects\btn_play_obj</object>
       <object>objects\btn_guide_obj</object>
       <object>objects\btn_credits_obj</object>
-      <object>objects\btn_start_obj</object>
-      <object>objects\btn_back_obj</object>
+      <objects name="Pregame">
+        <object>objects\xebec_obj</object>
+        <object>objects\carrack_obj</object>
+        <object>objects\galleass_obj</object>
+        <object>objects\corvette_obj</object>
+        <object>objects\btn_start_obj</object>
+        <object>objects\btn_back_obj</object>
+        <object>objects\pregame_text_obj</object>
+        <object>objects\btn_blue_obj</object>
+        <object>objects\btn_1_xebec_obj</object>
+        <object>objects\btn_1_carrack_obj</object>
+        <object>objects\btn_1_galleass_obj</object>
+        <object>objects\btn_1_corvette_obj</object>
+        <object>objects\btn_red_obj</object>
+      </objects>
     </objects>
     <objects name="Fort">
       <object>objects\fort_obj</object>
@@ -125,12 +148,12 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\game</room>
     <room>rooms\splash</room>
+    <room>rooms\game</room>
     <room>rooms\menu</room>
     <room>rooms\pre_game</room>
   </rooms>
-  <constants number="21">
+  <constants number="22">
     <constant name="CHEST_SPAWN_MAX">10</constant>
     <constant name="CHEST_SPAWN_MIN">5</constant>
     <constant name="PLAYER_ONE">1</constant>
@@ -152,6 +175,7 @@
     <constant name="TRAP_RELOAD_TIME">10</constant>
     <constant name="TRAP_SCALE_SIZE">1.8</constant>
     <constant name="TRAP_START_NUM">3</constant>
+    <constant name="MAX_SHIPS">2</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

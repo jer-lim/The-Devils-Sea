@@ -8,34 +8,36 @@ if (speed > max_speed){
 }
     
 // Xebec passive ability: more speed when heading towards other ship
-if(ship_type == SHIP_XEBEC){
-    var shipFrontDirMin = image_angle - 45;
-    var shipFrontDirMax = image_angle + 45;
-    if(shipFrontDirMin < 0) shipFrontDirMin += 360;
-    if(shipFrontDirMax > 360) shipFrontDirMax -= 360;
-    
-    var relativeDir = point_direction(x, y, other_ship.x, other_ship.y); 
-    var isFacingOther = false;
-    if(shipFrontDirMin < shipFrontDirMax){
-        if(relativeDir > shipFrontDirMin && relativeDir < shipFrontDirMax){
-            isFacingOther = true;
+if(ship_type == SHIP_XEBEC) {
+    if (instance_exists(other_ship)) {
+        var shipFrontDirMin = image_angle - 45;
+        var shipFrontDirMax = image_angle + 45;
+        if(shipFrontDirMin < 0) shipFrontDirMin += 360;
+        if(shipFrontDirMax > 360) shipFrontDirMax -= 360;
+        
+        var relativeDir = point_direction(x, y, other_ship.x, other_ship.y); 
+        var isFacingOther = false;
+        if(shipFrontDirMin < shipFrontDirMax){
+            if(relativeDir > shipFrontDirMin && relativeDir < shipFrontDirMax){
+                isFacingOther = true;
+            }
+        }else{
+            if((relativeDir > shipFrontDirMin && relativeDir <= 0)
+                || (relativeDir >= 0 && relativeDir < shipFrontDirMax)){
+                isFacingOther = true;
+            }
         }
-    }else{
-        if((relativeDir > shipFrontDirMin && relativeDir <= 0)
-            || (relativeDir >= 0 && relativeDir < shipFrontDirMax)){
-            isFacingOther = true;
+        
+        if(isFacingOther && !xebec_passive){
+            max_speed += 10 * SHIP_SPEED_MULTIPLIER;
+            xebec_passive = true;
+        }else if(!isFacingOther && xebec_passive){
+            max_speed -= 10 * SHIP_SPEED_MULTIPLIER;
+            xebec_passive = false;
         }
+        
+        show_debug_message(string(owner) + string(max_speed));
     }
-    
-    if(isFacingOther && !xebec_passive){
-        max_speed += 10 * SHIP_SPEED_MULTIPLIER;
-        xebec_passive = true;
-    }else if(!isFacingOther && xebec_passive){
-        max_speed -= 10 * SHIP_SPEED_MULTIPLIER;
-        xebec_passive = false;
-    }
-    
-    show_debug_message(string(owner) + string(max_speed));
 }
 
 // boost time updates
@@ -88,4 +90,3 @@ if(hp <= 0) {
 greenbar.x = x;
 greenbar.y = y + 60;
 greenbar.image_xscale = (1 - ulti_countdown / (ship_ulti_cooldown[ship_type] * room_speed)) * 1.2;
-
