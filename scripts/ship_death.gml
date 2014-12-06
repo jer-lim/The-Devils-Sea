@@ -6,7 +6,7 @@ with(greenbar){
 instance_destroy();
 
 // recreate next ship
-if (global.player_ships_index[ship_owner] <= MAX_SHIPS) {
+if (global.player_ships_selection[ship_owner] <= MAX_SHIPS) {
     var ship;
     
     // spawn ship in appropriate location
@@ -17,7 +17,8 @@ if (global.player_ships_index[ship_owner] <= MAX_SHIPS) {
     
     // run ship creation code
     with(ship) {
-        ship_create(global.player_ships[ship_owner, player_ships_index[ship_owner]++]);
+        ship_create(global.player_ships_selection[ship_owner,
+            player_ships_index[ship_owner]++]);
     }
     
     // rotate player 2's ship correctly

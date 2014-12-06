@@ -1,9 +1,9 @@
 // array to store selected ship values
-globalvar player_ships;
-global.player_ships[PLAYER_ONE, 1] = -1;
-global.player_ships[PLAYER_ONE, 2] = -1;
-global.player_ships[PLAYER_TWO, 1] = -1;
-global.player_ships[PLAYER_TWO, 2] = -1;
+globalvar player_ships_selection;
+global.player_ships_selection[PLAYER_ONE, 1] = -1;
+global.player_ships_selection[PLAYER_ONE, 2] = -1;
+global.player_ships_selection[PLAYER_TWO, 1] = -1;
+global.player_ships_selection[PLAYER_TWO, 2] = -1;
 
 // array to store all ship button objects
 globalvar pregame_btns;

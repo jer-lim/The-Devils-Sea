@@ -9,8 +9,8 @@ if (selected) {
     // find correct button to deselect
     var index = 0;
     for (index = 0; index <= MAX_SHIPS; index++) {
-        if (global.player_ships[selected_player, index] == selected_ship) {
-            global.player_ships[selected_player, index] = -1;
+        if (global.player_ships_selection[selected_player, index] == selected_ship) {
+            global.player_ships_selection[selected_player, index] = -1;
             break;
         }
     }
@@ -20,12 +20,12 @@ if (selected) {
     for (var i = index; i <= MAX_SHIPS; i++) {
         // if not last element, move up following ships in array
         if (i < MAX_SHIPS) {
-            global.player_ships[selected_player, i] =
-                global.player_ships[selected_player, i+1];
+            global.player_ships_selection[selected_player, i] =
+                global.player_ships_selection[selected_player, i+1];
         }
         // if last element, set it to -1
         else {
-            global.player_ships[selected_player, i] = -1;
+            global.player_ships_selection[selected_player, i] = -1;
         }
     }
 }
@@ -37,8 +37,8 @@ else {
     // check if any unselected slots (-1 flag) and slot in ship choice
     var slot_available = false;
     for (var i = 1; i <= MAX_SHIPS; i++) {
-        if (global.player_ships[selected_player, i] == -1) {
-            global.player_ships[selected_player, i] = selected_ship;
+        if (global.player_ships_selection[selected_player, i] == -1) {
+            global.player_ships_selection[selected_player, i] = selected_ship;
             slot_available = true;
             break;
         }
@@ -49,19 +49,19 @@ else {
     if (!slot_available) {
         // deselect first element of array, as it will be removed from array
         global.pregame_btns[selected_player,
-            global.player_ships[selected_player, 1]].selected = false;
+            global.player_ships_selection[selected_player, 1]].selected = false;
         global.pregame_btns[selected_player,
-            global.player_ships[selected_player, 1]].image_alpha = 0;
+            global.player_ships_selection[selected_player, 1]].image_alpha = 0;
     
         for (var i = 1; i <= MAX_SHIPS; i++) {
             // if not last element in array, replace it with next ship in line
             if (i < MAX_SHIPS) {
-                global.player_ships[selected_player, i] =
-                    global.player_ships[selected_player, i+1];
+                global.player_ships_selection[selected_player, i] =
+                    global.player_ships_selection[selected_player, i+1];
             }
             // if last element, slot in newly selected ship
             else {
-                global.player_ships[selected_player, i] = selected_ship;
+                global.player_ships_selection[selected_player, i] = selected_ship;
             }
         }
     }

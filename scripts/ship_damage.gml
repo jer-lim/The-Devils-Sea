@@ -7,12 +7,15 @@ if (divine_boost_time <= 0) {
     var max_dmg = argument1;
     
     var damage = round(random_range(min_dmg, max_dmg));
-    
     hp -= damage;
+    
+    // TODO: print damage numbers
+    
+    // if ship is dead
     if (hp < 0)
     {
         hp = 0;
-        //ship death alarm to remove ship from game
+        // ship death alarm to remove ship from game
         alarm[4] = 2 * room_speed;
     }
 }

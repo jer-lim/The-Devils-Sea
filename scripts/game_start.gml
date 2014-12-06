@@ -3,8 +3,8 @@
 * Spawn ships on extreme left and right side of map.
 */
 
-globalvar ships;
-globalvar player_ships_index;
+globalvar ships;                    // stores ships currently in game for accessibility
+globalvar player_ships_index;       // curent ship counter for each player
 
 global.player_ships_index[PLAYER_ONE] = 1;
 global.player_ships_index[PLAYER_TWO] = 1;
@@ -12,14 +12,16 @@ global.player_ships_index[PLAYER_TWO] = 1;
 // create player 1's ship
 var ship1 = instance_create(50, room_height*0.5, ship1_obj);
 with(ship1) {
-    ship_create(global.player_ships[PLAYER_ONE, player_ships_index[PLAYER_ONE]++]);
+    ship_create(global.player_ships_selection[PLAYER_ONE,
+        player_ships_index[PLAYER_ONE]++]);
 }
 ship1.owner = PLAYER_ONE;
 
 // create player 2's ship
 var ship2 = instance_create(room_width - 50, room_height*0.5, ship2_obj);
 with(ship2) {
-    ship_create(global.player_ships[PLAYER_TWO, player_ships_index[PLAYER_TWO]++]);
+    ship_create(global.player_ships_selection[PLAYER_TWO,
+        player_ships_index[PLAYER_TWO]++]);
 }
 ship2.image_angle = 180;
 ship2.owner = PLAYER_TWO;
