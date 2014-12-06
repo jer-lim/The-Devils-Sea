@@ -88,6 +88,5 @@ if(hp <= 0) {
 
 //ulti cooldown bar
 greenbar.x = x;
-if(y > room_height - 100) greenbar.y = y - 28;
-else greenbar.y = y + 60;
+greenbar.y = y + 60;
 greenbar.image_xscale = (1 - ulti_countdown / (ship_ulti_cooldown[ship_type] * room_speed)) * 1.2;

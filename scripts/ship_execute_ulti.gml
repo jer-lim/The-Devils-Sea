@@ -14,6 +14,10 @@ if (ulti_countdown <= 0) {
     else if (ship_type == SHIP_CORVETTE) {
         corvette_ulti_activate();
     }
+    // Carrack's ulti activation
+    else if (ship_type == SHIP_CARRACK) {
+        carrack_ulti_activate();
+    }
 
     // set ulti on cooldown
     ulti_countdown = ship_ulti_cooldown[ship_type] * room_speed;

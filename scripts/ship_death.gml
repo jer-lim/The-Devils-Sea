@@ -22,8 +22,12 @@ if (global.player_ships_selection[ship_owner] <= MAX_SHIPS) {
     }
     
     // rotate player 2's ship correctly
-    if (ship_owner == PLAYER_TWO)
+    if (ship_owner == PLAYER_TWO) {
         ship.image_angle = 180;
+        ship.other_ship = global.ships[PLAYER_ONE].id;
+    }
+    else
+        ship.other_ship = global.ships[PLAYER_TWO].id;
         
     // assign ship owner
     ship.owner = ship_owner;
