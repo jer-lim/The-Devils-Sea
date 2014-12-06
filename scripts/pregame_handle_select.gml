@@ -1,14 +1,32 @@
 var selected_ship = argument0;
 var selected_player = argument1;
 
-// if button was already selected, deselect it
+// if button was already selected, deselect it 
 if (selected) {
     selected = false;
     image_alpha = 0;
     
-    for (var i = 1; i <= MAX_SHIPS; i++) {
-        if (global.player_ships[selected_player, i] == selected_ship)
+    // find correct button to deselect
+    var index = 0;
+    for (index = 0; index <= MAX_SHIPS; index++) {
+        if (global.player_ships[selected_player, index] == selected_ship) {
+            global.player_ships[selected_player, index] = -1;
+            break;
+        }
+    }
+    
+    // push up array elements (to cover up the -1 slot) from deselected slot
+    // this ensures that the first element is always the oldest selected choice
+    for (var i = index; i <= MAX_SHIPS; i++) {
+        // if not last element, move up following ships in array
+        if (i < MAX_SHIPS) {
+            global.player_ships[selected_player, i] =
+                global.player_ships[selected_player, i+1];
+        }
+        // if last element, set it to -1
+        else {
             global.player_ships[selected_player, i] = -1;
+        }
     }
 }
 // if not already selected, select it
@@ -29,6 +47,12 @@ else {
     // if there was no slot, replace first ship selected,
     // by moving up selected ships in array (similar to a stack)
     if (!slot_available) {
+        // deselect first element of array, as it will be removed from array
+        global.pregame_btns[selected_player,
+            global.player_ships[selected_player, 1]].selected = false;
+        global.pregame_btns[selected_player,
+            global.player_ships[selected_player, 1]].image_alpha = 0;
+    
         for (var i = 1; i <= MAX_SHIPS; i++) {
             // if not last element in array, replace it with next ship in line
             if (i < MAX_SHIPS) {
@@ -41,9 +65,4 @@ else {
             }
         }
     }
-}
-
-show_debug_message("Printing array for player " + string(selected_player));
-for (var i = 1; i <= MAX_SHIPS; i++) {
-    show_debug_message(global.player_ships[selected_player, i]);
 }

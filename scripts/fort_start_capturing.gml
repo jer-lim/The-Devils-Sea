@@ -16,7 +16,8 @@ if (other.owner != self.fort.owner) {
     }
 }
 // if fort owner is in range, increase fort "healing"
+// (i.e. fort will be capture much slower)
 else {
     if (self.fort.capture_timer < room_speed * 5)
-        self.fort.capture_timer++;
+        self.fort.capture_timer += 0.5;
 }

@@ -33,7 +33,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>1</string>
+            <string>PLAYER_ONE</string>
           </argument>
           <argument>
             <kind>0</kind>

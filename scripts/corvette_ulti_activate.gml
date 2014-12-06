@@ -12,7 +12,7 @@ for(var count = 0; count < trap_count; count++) {
     if (trap_inst.owner == self.owner) {
         with(trap_inst) {
             if (trap_inst.armed == true)
-                trap_pickup(1.8);
+                trap_pickup(2);
         }
     }
     // increment index if chest is not destroyed

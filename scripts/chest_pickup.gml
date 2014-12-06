@@ -45,7 +45,7 @@ else if (boost_random < 87) {
     if(ship.traps < TRAP_MAX_NUM){
         ship.traps++;
     }
-    show_debug_message("Gunpowder");
+    // show_debug_message("Gunpowder");
 }
 
 // 10% divine intervention: damage immunity for 10s
