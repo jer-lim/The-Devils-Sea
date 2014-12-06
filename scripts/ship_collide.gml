@@ -69,8 +69,8 @@ if(collidable) {
     * Check if being rammed from the side and apply a multiplier if so.
     */
     var rammedDirection = point_direction(x, y, other.x, other.y);
-    if((angle_difference(rammedDirection, image_angle) >= 45 && angle_difference(rammedDirection, image_angle) < 135)
-    || (angle_difference(rammedDirection, image_angle) >= -135 && angle_difference(rammedDirection, image_angle) < -45)){
+    if((angle_difference(image_angle, rammedDirection) >= 45 && angle_difference(image_angle, rammedDirection) < 135)
+    || (angle_difference(image_angle, rammedDirection) >= -135 && angle_difference(image_angle, rammedDirection) < -45)){
         var damage_multiplier = 1.5;
     }else{
         var damage_multiplier = 1;
@@ -80,7 +80,8 @@ if(collidable) {
     * ship_rammed_damage_multiplier: ship ram "resistance" - for xebec's ulti
     * RAM_DAMAGE_MULTIPLIER: multiply the ratio to get the actual damage
     */
-    hp -= massRatio * abs(cUVdotvDiff) * damage_multiplier * ship_rammed_damage_multiplier * RAM_DAMAGE_MULTIPLIER;
+    var damage = massRatio * abs(cUVdotvDiff) * damage_multiplier * ship_rammed_damage_multiplier * RAM_DAMAGE_MULTIPLIER;
+    ship_damage(damage, damage);
     
     /*
     * Find reaction vector for other ship
@@ -126,13 +127,16 @@ if(collidable) {
     var cUVdotvDiff2 = dot_product(cUVX2, cUVY2, vDiffX2, vDiffY2);
     
     var rammedDirection2 = point_direction(other.x, other.y, x, y);
-    if((angle_difference(rammedDirection2, image_angle) >= 45 && angle_difference(rammedDirection2, image_angle) < 135)
-    || (angle_difference(rammedDirection2, image_angle) >= -135 && angle_difference(rammedDirection2, image_angle) < -45)){
+    if((angle_difference(other.image_angle, rammedDirection2) >= 45 && angle_difference(other.image_angle, rammedDirection2) < 135)
+    || (angle_difference(other.image_angle, rammedDirection2) >= -135 && angle_difference(other.image_angle, rammedDirection2) < -45)){
         var damage_multiplier2 = 1.5;
     }else{
         var damage_multiplier2 = 1;
     }
-    other.hp -= massRatio2 * cUVdotvDiff2 * other.ship_rammed_damage_multiplier * damage_multiplier2 * RAM_DAMAGE_MULTIPLIER;
+    var damage2 = massRatio2 * cUVdotvDiff2 * other.ship_rammed_damage_multiplier * damage_multiplier2 * RAM_DAMAGE_MULTIPLIER;
+    with(other){
+        ship_damage(damage2, damage2);
+    }
     
     /*
     * Apply vectors
