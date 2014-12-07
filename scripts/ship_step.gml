@@ -85,4 +85,3 @@ if(hp <= 0) {
     image_xscale = image_xscale * 0.99;
     image_yscale = image_yscale * 0.99;
 }
-

@@ -4,7 +4,7 @@
 * Rotational collision code is needed to prevent that case
 */
 
-if(collidable) {
+if (collidable && other.collidable) {
     /*
     * Find reaction vector for own ship
     *

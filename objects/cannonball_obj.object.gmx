@@ -84,7 +84,7 @@
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="4" ename="fort_cannonball_obj">
+    <event eventtype="4" ename="fort_obj">
       <action>
         <libid>1</libid>
         <id>601</id>
@@ -101,7 +101,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>cannonball_collide_destroy</script>
+            <script>cannonball_collide_enemy_destroy</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -126,7 +126,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="fort_obj">
+    <event eventtype="4" ename="fort_cannonball_obj">
       <action>
         <libid>1</libid>
         <id>601</id>
@@ -143,7 +143,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>cannonball_collide_enemy_destroy</script>
+            <script>cannonball_collide_destroy</script>
           </argument>
           <argument>
             <kind>0</kind>

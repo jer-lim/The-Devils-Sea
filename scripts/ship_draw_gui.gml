@@ -48,4 +48,3 @@ if(ins.object_index == ship1_obj) {
     draw_text(room_width - 240, room_height - 15, ulti_display);
 }
 */
-

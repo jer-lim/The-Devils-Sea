@@ -21,22 +21,27 @@ if (global.player_ships_index[ship_owner] <= MAX_SHIPS) {
             player_ships_index[ship_owner]++]);
     }
     
-    // rotate player 2's ship correctly
+    // update global array
+    global.ships[ship_owner] = ship;
+    
+    // update "other_ship" variables
     if (ship_owner == PLAYER_TWO) {
+        // rotate player 2's ship correctly
         ship.image_angle = 180;
-        if (instance_exists(global.ships[PLAYER_ONE]))
+        if (instance_exists(global.ships[PLAYER_ONE])) {
             ship.other_ship = global.ships[PLAYER_ONE].id;
+            ship.other_ship.other_ship = global.ships[PLAYER_TWO].id;
+        }
     }
     else {
-        if (instance_exists(global.ships[PLAYER_TWO]))
+        if (instance_exists(global.ships[PLAYER_TWO])) {
             ship.other_ship = global.ships[PLAYER_TWO].id;
+            ship.other_ship.other_ship = global.ships[PLAYER_ONE].id;
+        }
     }
         
     // assign ship owner
     ship.owner = ship_owner;
-    
-    // update global array
-    global.ships[ship_owner] = ship;
 }
 // player has run out of ships
 else {

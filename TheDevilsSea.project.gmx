@@ -33,6 +33,7 @@
     <sprite>sprites\btn_blue</sprite>
     <sprite>sprites\btn_red</sprite>
     <sprite>sprites\cannonball_sprite</sprite>
+    <sprite>sprites\water_texture_sprite</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -121,6 +122,7 @@
     <object>objects\ship1_obj</object>
     <object>objects\ship2_obj</object>
     <object>objects\wall_obj</object>
+    <object>objects\water_texture_obj</object>
     <object>objects\cannonball_obj</object>
     <object>objects\fort_cannonball_obj</object>
     <object>objects\alarmer_obj</object>

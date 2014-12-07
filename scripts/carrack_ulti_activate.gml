@@ -1,6 +1,8 @@
 // Carrack's ulti abilitiy: fire 5 cannonballs in a cone,
 // towards the opposing ship direction
 
+// if (!instance_exists(self.other_ship)) exit;
+
 // get angle (in degrees) towards other ship
 var angle = point_direction(self.x, self.y, self.other_ship.x, self.other_ship.y);
 

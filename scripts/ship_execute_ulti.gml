@@ -1,5 +1,7 @@
+if (!self.collidable) exit;
+
 // if ulti is not on cooldown
-if (ulti_countdown <= 0) {    
+if (ulti_countdown <= 0) { 
     // Xebec's ulti activation
     if (ship_type == SHIP_XEBEC) {
         ulti_timer = room_speed * 3;
