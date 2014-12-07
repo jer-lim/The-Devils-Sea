@@ -6,6 +6,7 @@ for(var i = 0; i < instance_number(fort_obj); i++) {
     if (fort_inst.owner == self.owner) {
         fort_inst.arc.image_xscale = 2;
         fort_inst.arc.image_yscale = 2;
+        fort_inst.arc.ulti = true;
         
         // activation graphics
         if (self.owner == PLAYER_ONE)

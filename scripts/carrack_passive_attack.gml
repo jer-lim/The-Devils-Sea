@@ -12,8 +12,10 @@ cannonball.owner = self.owner;
 cannonball.hspeed = dirX * CARRACK_PASSIVE_SPEED;
 cannonball.vspeed = dirY * CARRACK_PASSIVE_SPEED;
 
-// cannonball travels a limited distance
-alarm[0] = room_speed * CARRACK_PASSIVE_LENGTH;
+with (cannonball) {
+    // cannonball travels a limited distance
+    alarm[0] = room_speed * CARRACK_PASSIVE_LENGTH;
+}
 
 // reactivate timer for next attack
 alarm[1] = room_speed * CARRACK_PASSIVE_RELOAD;

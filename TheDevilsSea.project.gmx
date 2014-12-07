@@ -90,6 +90,11 @@
         <script>scripts\fort_start_capturing.gml</script>
         <script>scripts\draw_fort_bar.gml</script>
       </scripts>
+      <scripts name="Cannonball">
+        <script>scripts\cannonball_collide_enemy_destroy.gml</script>
+        <script>scripts\cannonball_collide_destroy.gml</script>
+        <script>scripts\cannonball_collide_ship.gml</script>
+      </scripts>
       <script>scripts\draw_gui.gml</script>
     </scripts>
     <scripts name="Pregame">
@@ -109,6 +114,7 @@
     <object>objects\ship2_obj</object>
     <object>objects\wall_obj</object>
     <object>objects\cannonball_obj</object>
+    <object>objects\fort_cannonball_obj</object>
     <object>objects\alarmer_obj</object>
     <object>objects\red_bar_obj</object>
     <object>objects\green_bar_obj</object>
@@ -160,9 +166,16 @@
     <room>rooms\pre_game</room>
     <room>rooms\game</room>
   </rooms>
-  <constants number="25">
+  <constants number="28">
+    <constant name="CARRACK_PASSIVE_LENGTH">1</constant>
+    <constant name="CARRACK_PASSIVE_RELOAD">1.5</constant>
+    <constant name="CARRACK_PASSIVE_SPEED">10</constant>
     <constant name="CHEST_SPAWN_MAX">10</constant>
     <constant name="CHEST_SPAWN_MIN">5</constant>
+    <constant name="FORT_ATTACK_LENGTH">0.5</constant>
+    <constant name="FORT_ATTACK_RELOAD">1</constant>
+    <constant name="FORT_ATTACK_SPEED">5</constant>
+    <constant name="MAX_SHIPS">2</constant>
     <constant name="PLAYER_ONE">1</constant>
     <constant name="PLAYER_TWO">2</constant>
     <constant name="RAM_DAMAGE_MULTIPLIER">20</constant>
@@ -182,10 +195,6 @@
     <constant name="TRAP_RELOAD_TIME">10</constant>
     <constant name="TRAP_SCALE_SIZE">1.8</constant>
     <constant name="TRAP_START_NUM">3</constant>
-    <constant name="MAX_SHIPS">2</constant>
-    <constant name="CARRACK_PASSIVE_RELOAD">1.5</constant>
-    <constant name="CARRACK_PASSIVE_SPEED">10</constant>
-    <constant name="CARRACK_PASSIVE_LENGTH">1</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

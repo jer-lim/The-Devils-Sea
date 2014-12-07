@@ -1,5 +1,5 @@
 // if fort is not owned by ship in range, begin capturing
-if (other.owner != self.fort.owner) {
+if (other.owner != self.fort.owner && other.collidable) {
     if (other.owner == PLAYER_ONE)
         effect_create_below(ef_ring, x, y, 2, make_color_rgb(22, 190, 254));
     else if (other.owner == PLAYER_TWO)

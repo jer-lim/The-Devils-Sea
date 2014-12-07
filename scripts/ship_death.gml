@@ -6,7 +6,7 @@ with(greenbar){
 instance_destroy();
 
 // recreate next ship
-if (global.player_ships_selection[ship_owner] <= MAX_SHIPS) {
+if (global.player_ships_index[ship_owner] <= MAX_SHIPS) {
     var ship;
     
     // spawn ship in appropriate location
@@ -24,10 +24,13 @@ if (global.player_ships_selection[ship_owner] <= MAX_SHIPS) {
     // rotate player 2's ship correctly
     if (ship_owner == PLAYER_TWO) {
         ship.image_angle = 180;
-        ship.other_ship = global.ships[PLAYER_ONE].id;
+        if (instance_exists(global.ships[PLAYER_ONE]))
+            ship.other_ship = global.ships[PLAYER_ONE].id;
     }
-    else
-        ship.other_ship = global.ships[PLAYER_TWO].id;
+    else {
+        if (instance_exists(global.ships[PLAYER_TWO]))
+            ship.other_ship = global.ships[PLAYER_TWO].id;
+    }
         
     // assign ship owner
     ship.owner = ship_owner;
