@@ -70,3 +70,19 @@ fort_set_owner(fort11, PLAYER_ONE);
 fort_set_owner(fort12, PLAYER_ONE);
 fort_set_owner(fort21, PLAYER_TWO);
 fort_set_owner(fort22, PLAYER_TWO);
+
+// create random currents
+for (var i = 0; i < random_range(5, 20); i++) {
+    // random position
+    spawnX = random_range(0, room_width);
+    spawnY = random_range(0, room_height);
+    var current = instance_create(spawnX, spawnY, current_obj);
+    
+    // random direction
+    current.direction =  random_range(0, 360);
+    current.image_angle = current.direction;
+    
+    // random size
+    current.image_xscale *= random_range(1, 2);
+    current.image_yscale *= random_range(1, 2);
+}

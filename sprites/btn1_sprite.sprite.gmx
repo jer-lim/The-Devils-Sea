@@ -21,5 +21,7 @@
   <height>98</height>
   <frames>
     <frame index="0">images\btn1_sprite_0.png</frame>
+    <frame index="1">images\btn1_sprite_1.png</frame>
+    <frame index="2">images\btn1_sprite_2.png</frame>
   </frames>
 </sprite>
