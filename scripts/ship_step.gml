@@ -36,7 +36,7 @@ if(ship_type == SHIP_XEBEC) {
             xebec_passive = false;
         }
         
-        show_debug_message(string(owner) + string(max_speed));
+        // show_debug_message(string(owner) + ": " +string(max_speed));
     }
 }
 

@@ -70,6 +70,9 @@
     <scripts name="Game">
       <script>scripts\load_stats.gml</script>
       <script>scripts\game_start.gml</script>
+      <script>scripts\game_pause_init.gml</script>
+      <script>scripts\game_pause.gml</script>
+      <script>scripts\game_pause_draw.gml</script>
       <scripts name="Chests">
         <script>scripts\chest_spawn.gml</script>
         <script>scripts\chest_spawn_effect_at.gml</script>
@@ -116,6 +119,7 @@
     <object>objects\cannonball_obj</object>
     <object>objects\fort_cannonball_obj</object>
     <object>objects\alarmer_obj</object>
+    <object>objects\pause_obj</object>
     <object>objects\red_bar_obj</object>
     <object>objects\green_bar_obj</object>
     <object>objects\blue_bar_obj</object>
