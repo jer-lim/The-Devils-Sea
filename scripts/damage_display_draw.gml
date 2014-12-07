@@ -8,4 +8,4 @@ draw_set_font(damage_font);
 
 draw_text(x, y, string(damage));
 y -= 20 / room_speed;
-show_debug_message("drew");
+// show_debug_message("drew");

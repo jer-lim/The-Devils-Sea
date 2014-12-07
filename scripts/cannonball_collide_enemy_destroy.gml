@@ -1,5 +1,3 @@
-if (!other.collidable) exit;
-
 // get size of cannonball (0 - small, 1 - medium)
 var size = argument0;
 

@@ -10,7 +10,8 @@
   <persistent>0</persistent>
   <colour>16769217</colour>
   <showcolour>0</showcolour>
-  <code></code>
+  <code>// custom mouse cursor
+cursor_sprite = custom_cursor_sprite;</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

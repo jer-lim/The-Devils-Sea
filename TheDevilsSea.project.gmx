@@ -34,6 +34,8 @@
     <sprite>sprites\btn_red</sprite>
     <sprite>sprites\cannonball_sprite</sprite>
     <sprite>sprites\water_texture_sprite</sprite>
+    <sprite>sprites\current_sprite</sprite>
+    <sprite>sprites\custom_cursor_sprite</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -127,6 +129,7 @@
     <object>objects\fort_cannonball_obj</object>
     <object>objects\alarmer_obj</object>
     <object>objects\pause_obj</object>
+    <object>objects\cursor_obj</object>
     <object>objects\damage_float_obj</object>
     <object>objects\red_bar_obj</object>
     <object>objects\green_bar_obj</object>

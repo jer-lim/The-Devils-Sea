@@ -61,7 +61,7 @@ else {
                 var dirY = -sin(degtorad(self.image_angle));
                 var cannonball;
                 if (self.ulti) {
-                    cannonball = instance_create(self.x + dirX * 40, self.y + dirY * 40, cannonball_obj);
+                    cannonball = instance_create(self.x + dirX * 50, self.y + dirY * 50, cannonball_obj);
                 }
                 else {
                     cannonball = instance_create(self.x + dirX * 40, self.y + dirY * 40, fort_cannonball_obj);

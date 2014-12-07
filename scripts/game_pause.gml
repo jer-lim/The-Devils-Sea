@@ -1,6 +1,9 @@
 if (!paused) {
     paused = true;
     draw = true;
+    
+    // custom mouse cursor
+    cursor_sprite = custom_cursor_sprite;
 }
 else {
     paused = false;
@@ -14,4 +17,7 @@ else {
     
     // reactivate game elements
     instance_activate_all();
+    
+    // hide mouse cursor
+    cursor_sprite = -1;
 }

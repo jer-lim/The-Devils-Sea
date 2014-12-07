@@ -3,6 +3,9 @@
 * Spawn ships on extreme left and right side of map.
 */
 
+// hide mouse cursor
+cursor_sprite = -1;
+
 globalvar ships;                    // stores ships currently in game for accessibility
 globalvar player_ships_index;       // curent ship counter for each player
 
