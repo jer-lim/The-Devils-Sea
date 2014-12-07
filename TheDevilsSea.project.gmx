@@ -33,7 +33,6 @@
     <sprite>sprites\btn_blue</sprite>
     <sprite>sprites\btn_red</sprite>
     <sprite>sprites\cannonball_sprite</sprite>
-    <sprite>sprites\water_texture_sprite</sprite>
     <sprite>sprites\current_sprite</sprite>
     <sprite>sprites\custom_cursor_sprite</sprite>
   </sprites>
