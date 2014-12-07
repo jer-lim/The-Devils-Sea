@@ -52,6 +52,7 @@
       <script>scripts\ship_spawn_trap.gml</script>
       <script>scripts\ship_reload_trap.gml</script>
       <script>scripts\ship_reset_boost.gml</script>
+      <script>scripts\ship_draw_gui.gml</script>
       <scripts name="Ultis">
         <script>scripts\xebec_ulti_activate.gml</script>
         <script>scripts\xebec_ulti_deactivate.gml</script>
@@ -98,7 +99,6 @@
         <script>scripts\cannonball_collide_destroy.gml</script>
         <script>scripts\cannonball_collide_ship.gml</script>
       </scripts>
-      <script>scripts\draw_gui.gml</script>
     </scripts>
     <scripts name="Pregame">
       <script>scripts\pregame_create.gml</script>

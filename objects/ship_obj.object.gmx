@@ -366,7 +366,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>draw_gui</script>
+            <script>ship_draw_gui</script>
           </argument>
           <argument>
             <kind>0</kind>
