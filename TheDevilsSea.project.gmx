@@ -99,6 +99,10 @@
         <script>scripts\cannonball_collide_destroy.gml</script>
         <script>scripts\cannonball_collide_ship.gml</script>
       </scripts>
+      <scripts name="Damage Display">
+        <script>scripts\damage_display_create.gml</script>
+        <script>scripts\damage_display_draw.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Pregame">
       <script>scripts\pregame_create.gml</script>
@@ -109,6 +113,7 @@
   <fonts name="fonts">
     <font>fonts\ship_font</font>
     <font>fonts\ship_font2</font>
+    <font>fonts\damage_font</font>
     <font>fonts\menu_font</font>
   </fonts>
   <objects name="objects">
@@ -120,6 +125,7 @@
     <object>objects\fort_cannonball_obj</object>
     <object>objects\alarmer_obj</object>
     <object>objects\pause_obj</object>
+    <object>objects\damage_float_obj</object>
     <object>objects\red_bar_obj</object>
     <object>objects\green_bar_obj</object>
     <object>objects\blue_bar_obj</object>
