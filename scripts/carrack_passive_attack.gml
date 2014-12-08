@@ -7,6 +7,8 @@ var dirY = -sin(degtorad(self.image_angle));
 var cannonball = instance_create(
     self.x + dirX * 40, self.y + dirY * 40, cannonball_obj);
 cannonball.owner = self.owner;
+cannonball.image_xscale = 0.75;
+cannonball.image_yscale = 0.75;
 
 // move cannonball in direction
 cannonball.hspeed = dirX * CARRACK_PASSIVE_SPEED;
