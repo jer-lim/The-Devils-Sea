@@ -29,12 +29,13 @@
     <sprite>sprites\ship_galleass_hitbox_sprite</sprite>
     <sprite>sprites\fort_scan_arc_sprite</sprite>
     <sprite>sprites\fort_scan_arc_sprite2</sprite>
-    <sprite>sprites\text_sprite</sprite>
     <sprite>sprites\btn_blue</sprite>
     <sprite>sprites\btn_red</sprite>
     <sprite>sprites\cannonball_sprite</sprite>
     <sprite>sprites\current_sprite</sprite>
     <sprite>sprites\custom_cursor_sprite</sprite>
+    <sprite>sprites\control1_sprite</sprite>
+    <sprite>sprites\control2_sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\water_bg</background>
@@ -178,10 +179,18 @@
       <object>objects\trap_obj</object>
       <object>objects\explosion_radius_obj</object>
     </objects>
+    <objects name="Controls">
+      <object>objects\control1_obj</object>
+      <object>objects\control2_obj</object>
+      <object>objects\controls_text_obj</object>
+      <object>objects\controls1_text_obj</object>
+      <object>objects\controls2_text_obj</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\splash</room>
     <room>rooms\menu</room>
+    <room>rooms\controls</room>
     <room>rooms\pre_game</room>
     <room>rooms\game</room>
   </rooms>
