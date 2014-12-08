@@ -72,6 +72,23 @@ if (ulti_timer == 0) {
         galleass_ulti_deactivate();
 }
 
+// movement animation
+var player_color = make_color_rgb(22, 190, 254);
+if (owner == PLAYER_TWO) player_color = make_color_rgb(255, 128, 128);
+
+if (rum_boost_time > 0) {
+    effect_create_below(ef_firework,
+        x - cos(degtorad(image_angle)) * sprite_width * 0.2,
+        y + sin(degtorad(image_angle)) * sprite_width * 0.2,
+        0, player_color);
+}
+else if (speed > 0) {
+    effect_create_below(ef_flare,
+        x - cos(degtorad(image_angle)) * sprite_width * 0.2,
+        y + sin(degtorad(image_angle)) * sprite_width * 0.2,
+        0, player_color);
+}
+
 // death animation
 if(hp <= 0) {
     speed = 0;

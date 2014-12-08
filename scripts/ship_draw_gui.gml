@@ -47,4 +47,8 @@ for(var i = 0; i < 5; ++i){
     if(i < traps) hud_traps[i].visible = true;
     else hud_traps[i].visible = false;
 }
+<<<<<<< HEAD
 
+=======
+*/
+>>>>>>> 7741bad34727d62f1b8424b389670c654d2820b9
