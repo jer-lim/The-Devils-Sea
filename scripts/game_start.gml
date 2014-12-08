@@ -25,17 +25,15 @@ global.ships_lost[PLAYER_TWO] = 0;
 
 // create player 1's ship
 var ship1 = instance_create(50, room_height*0.5, ship1_obj);
-with(ship1) {
-    ship_create(global.player_ships_selection[PLAYER_ONE,
-        player_ships_index[PLAYER_ONE]++]);
+with (ship1) {
+    ship_create(global.player_ships_selection[PLAYER_ONE, player_ships_index[PLAYER_ONE]++]);
 }
 ship1.owner = PLAYER_ONE;
 
 // create player 2's ship
 var ship2 = instance_create(room_width - 50, room_height*0.5, ship2_obj);
-with(ship2) {
-    ship_create(global.player_ships_selection[PLAYER_TWO,
-        player_ships_index[PLAYER_TWO]++]);
+with (ship2) {
+    ship_create(global.player_ships_selection[PLAYER_TWO, player_ships_index[PLAYER_TWO]++]);
 }
 ship2.image_angle = 180;
 ship2.owner = PLAYER_TWO;
@@ -97,3 +95,5 @@ for (var i = 0; i < random_range(5, 20); i++) {
     current.image_xscale *= random_range(1, 2);
     current.image_yscale *= random_range(1, 2);
 }
+
+show_player_ship_bars();

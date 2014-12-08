@@ -7,8 +7,6 @@ ship_type = argument0;
 // if ship type is invalid, assign a random value
 if (ship_type < 0 || ship_type > 3)
     ship_type = floor(random_range(0, 4));
-    
-// ship_type = SHIP_XEBEC;
 
 // load ship attribute data
 ship_load(ship_type);

@@ -84,7 +84,7 @@
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="4" ename="fort_obj">
+    <event eventtype="4" ename="fort_cannonball_obj">
       <action>
         <libid>1</libid>
         <id>601</id>
@@ -126,7 +126,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="fort_cannonball_obj">
+    <event eventtype="4" ename="fort_obj">
       <action>
         <libid>1</libid>
         <id>601</id>

@@ -74,7 +74,7 @@ instance_deactivate_object(self);
           </argument>
           <argument>
             <kind>0</kind>
-            <string></string>
+            <string>true</string>
           </argument>
           <argument>
             <kind>0</kind>

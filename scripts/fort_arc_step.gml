@@ -27,7 +27,7 @@ if(!fort.targetAcquired) {
 }
 else {
     // ensure target is still alive
-    if (instance_exists(fort.target) && fort.target.collidable) {
+    if (instance_exists(fort.target) && fort.target.hp > 0) {
         // get the angle from fort arc to the target
         fort.targetAngle = point_direction(x, y, fort.target.x, fort.target.y);
         

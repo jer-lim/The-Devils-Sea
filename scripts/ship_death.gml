@@ -76,10 +76,13 @@ if (global.player_ships_index[ship_owner] <= MAX_SHIPS) {
         
     // assign ship owner
     ship.owner = ship_owner;
+    show_player_ship_bars();
 }
 
 // player has run out of ships
 else {
+    show_player_ship_bars();
+    
     with(alarmer_obj){
         //set alarm to check if a player won or draw
         alarm[1] = 1 * room_speed;

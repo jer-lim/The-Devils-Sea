@@ -15,6 +15,10 @@
       <sprite>sprites\ship_carrack_hitbox_sprite</sprite>
       <sprite>sprites\ship_galleass_hitbox_sprite</sprite>
       <sprite>sprites\ship_corvette_hitbox_sprite</sprite>
+      <sprite>sprites\bar_hud1</sprite>
+      <sprite>sprites\bar_hud2</sprite>
+      <sprite>sprites\rad_hud1</sprite>
+      <sprite>sprites\rad_hud2</sprite>
     </sprites>
     <sprites name="Bars">
       <sprite>sprites\red_bar_sprite</sprite>
@@ -106,6 +110,7 @@
       <script>scripts\game_pause_draw.gml</script>
       <script>scripts\current_push.gml</script>
       <script>scripts\game_determine_winner.gml</script>
+      <script>scripts\show_player_ship_bars.gml</script>
       <scripts name="Chests">
         <script>scripts\chest_spawn.gml</script>
         <script>scripts\chest_spawn_effect_at.gml</script>
@@ -175,6 +180,11 @@
       <object>objects\yellow_bar_obj</object>
       <object>objects\grey_bar_obj</object>
       <object>objects\red_bar_obj</object>
+      <object>objects\hudbar1_obj</object>
+      <object>objects\hudbar2_obj</object>
+      <object>objects\radhud1_obj</object>
+      <object>objects\radhub2_obj</object>
+      <object>objects\ship_display_obj</object>
     </objects>
     <objects name="Menu">
       <object>objects\menu_obj</object>
@@ -266,9 +276,9 @@
     <constant name="SHIP_ACCEL_MULTIPLIER">0.4</constant>
     <constant name="SHIP_BASE_TURN_SPEED">35</constant>
     <constant name="SHIP_CARRACK">1</constant>
-    <constant name="SHIP_CORVETTE">2</constant>
+    <constant name="SHIP_CORVETTE">3</constant>
     <constant name="SHIP_FRICTION">0.06</constant>
-    <constant name="SHIP_GALLEASS">3</constant>
+    <constant name="SHIP_GALLEASS">2</constant>
     <constant name="SHIP_MAX_SPEED">200</constant>
     <constant name="SHIP_SPEED_MULTIPLIER">0.04</constant>
     <constant name="SHIP_XEBEC">0</constant>

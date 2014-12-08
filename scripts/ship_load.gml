@@ -25,6 +25,7 @@ image_angle = 0;
 friction = SHIP_FRICTION;
 
 // indexes
+show_debug_message("Creating "+string(ship_type));
 sprite_index = ship_sprite[ship_type];
 mask_index = ship_mask[ship_type];
 

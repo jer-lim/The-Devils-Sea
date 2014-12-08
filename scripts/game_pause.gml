@@ -1,6 +1,8 @@
+pause_btns = argument0;
+
 if (!paused) {
-    paused = true;
     draw = true;
+    paused = true;
     visible = true;
     
     // custom mouse cursor
@@ -10,10 +12,13 @@ else {
     paused = false;
     visible = false;
     
+    // clear up memory
     if (instance_exists(pause_bg)) {
         with (pause_bg) instance_destroy();
     }
-    
+    if (instance_exists(pause_titlelogo)) {
+        with (pause_titlelogo) instance_destroy();
+    }
     if (sprite_exists(spr))
         sprite_delete(spr);
     
@@ -23,6 +28,9 @@ else {
     // deactivate pause menu
     instance_deactivate_object(btn_resume_obj);
     instance_deactivate_object(btn_quit_obj);
+    instance_deactivate_object(hudbar1_obj);
+    instance_deactivate_object(hudbar2_obj);
+    instance_deactivate_object(ship_display_obj);
     
     // hide mouse cursor
     cursor_sprite = -1;
