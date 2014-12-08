@@ -7,10 +7,16 @@ with(hp_greybar){
 with(hp_redbar){
     instance_destroy();
 }
+with(hp_heart){
+    instance_destroy();
+}
 with(ulti_yellowbar){
     instance_destroy();
 }
 with(ulti_greybar){
+    instance_destroy();
+}
+with(ulti_icon){
     instance_destroy();
 }
 for(var i = 0; i < 5; ++i){
