@@ -42,8 +42,9 @@
     <sprite>sprites\control_guide_sprite</sprite>
     <sprite>sprites\heart_sprite</sprite>
     <sprite>sprites\bolt_sprite</sprite>
-    <sprite>sprites\shield_sprite</sprite>
-  </sprites>
+<sprite>sprites\shield_sprite</sprite>
+<sprite>sprites\ulti_sprite</sprite>
+</sprites>
   <backgrounds name="background">
     <background>background\water_bg</background>
   </backgrounds>
@@ -147,6 +148,7 @@
     <object>objects\green_bar_obj</object>
     <object>objects\blue_bar_obj</object>
     <object>objects\yellow_bar_obj</object>
+    <object>objects\grey_bar_obj</object>
     <objects name="Menu">
       <object>objects\menu_obj</object>
       <object>objects\menubg_obj</object>
@@ -204,7 +206,8 @@
       <object>objects\controls_text_obj</object>
     </objects>
     <object>objects\hud_chest_obj</object>
-    <object>objects\grey_bar_obj</object>
+    <object>objects\hud_heart_obj</object>
+    <object>objects\hud_ulti_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\splash</room>
