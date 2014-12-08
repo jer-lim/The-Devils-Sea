@@ -6,44 +6,59 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\ship_carrack_sprite</sprite>
-    <sprite>sprites\ship_xebec_sprite</sprite>
-    <sprite>sprites\ship_corvette_sprite</sprite>
-    <sprite>sprites\ship_galleass_sprite</sprite>
-    <sprite>sprites\wall_sprite</sprite>
-    <sprite>sprites\red_bar_sprite</sprite>
-    <sprite>sprites\green_bar_sprite</sprite>
-    <sprite>sprites\blue_bar_sprite</sprite>
-    <sprite>sprites\yellow_bar_sprite</sprite>
-    <sprite>sprites\grey_bar_sprite</sprite>
-    <sprite>sprites\btn1_sprite</sprite>
-    <sprite>sprites\btn2_sprite</sprite>
-    <sprite>sprites\btn_smallwood_sprite</sprite>
-    <sprite>sprites\fort_sprite</sprite>
-    <sprite>sprites\chest_sprite</sprite>
-    <sprite>sprites\menu_sprite</sprite>
-    <sprite>sprites\menubg_sprite</sprite>
-    <sprite>sprites\titlelogo_sprite</sprite>
-    <sprite>sprites\titlelogosmall_sprite</sprite>
-    <sprite>sprites\titleship_sprite</sprite>
-    <sprite>sprites\titleship2_sprite</sprite>
-    <sprite>sprites\ship_carrack_hitbox_sprite</sprite>
-    <sprite>sprites\ship_xebec_hitbox_sprite</sprite>
-    <sprite>sprites\ship_corvette_hitbox_sprite</sprite>
-    <sprite>sprites\ship_galleass_hitbox_sprite</sprite>
-    <sprite>sprites\fort_scan_arc_sprite</sprite>
-    <sprite>sprites\fort_scan_arc_sprite2</sprite>
+    <sprites name="Ships">
+      <sprite>sprites\ship_xebec_sprite</sprite>
+      <sprite>sprites\ship_carrack_sprite</sprite>
+      <sprite>sprites\ship_galleass_sprite</sprite>
+      <sprite>sprites\ship_corvette_sprite</sprite>
+      <sprite>sprites\ship_xebec_hitbox_sprite</sprite>
+      <sprite>sprites\ship_carrack_hitbox_sprite</sprite>
+      <sprite>sprites\ship_galleass_hitbox_sprite</sprite>
+      <sprite>sprites\ship_corvette_hitbox_sprite</sprite>
+    </sprites>
+    <sprites name="Bars">
+      <sprite>sprites\red_bar_sprite</sprite>
+      <sprite>sprites\grey_bar_sprite</sprite>
+      <sprite>sprites\yellow_bar_sprite</sprite>
+      <sprite>sprites\blue_bar_sprite</sprite>
+      <sprite>sprites\green_bar_sprite</sprite>
+      <sprite>sprites\wall_sprite</sprite>
+    </sprites>
+    <sprites name="Buttons">
+      <sprite>sprites\btn1_sprite</sprite>
+      <sprite>sprites\btn2_sprite</sprite>
+      <sprite>sprites\btn_smallwood_sprite</sprite>
+    </sprites>
+    <sprites name="Title">
+      <sprite>sprites\titlelogo_sprite</sprite>
+      <sprite>sprites\titlelogosmall_sprite</sprite>
+      <sprite>sprites\titleship_sprite</sprite>
+      <sprite>sprites\titleship2_sprite</sprite>
+    </sprites>
+    <sprites name="Menu">
+      <sprite>sprites\menu_sprite</sprite>
+      <sprite>sprites\menubg_sprite</sprite>
+      <sprite>sprites\control1_sprite</sprite>
+      <sprite>sprites\control2_sprite</sprite>
+      <sprite>sprites\control_text_sprite</sprite>
+      <sprite>sprites\control_guide_sprite</sprite>
+      <sprite>sprites\pregame_desc_sprite</sprite>
+    </sprites>
+    <sprites name="Forts">
+      <sprite>sprites\fort_sprite</sprite>
+      <sprite>sprites\fort_scan_arc_sprite</sprite>
+      <sprite>sprites\fort_scan_arc_sprite2</sprite>
+    </sprites>
+    <sprites name="Chests">
+      <sprite>sprites\chest_sprite</sprite>
+      <sprite>sprites\heart_sprite</sprite>
+      <sprite>sprites\bolt_sprite</sprite>
+      <sprite>sprites\plus_trap_sprite</sprite>
+      <sprite>sprites\shield_sprite</sprite>
+    </sprites>
     <sprite>sprites\cannonball_sprite</sprite>
     <sprite>sprites\current_sprite</sprite>
     <sprite>sprites\custom_cursor_sprite</sprite>
-    <sprite>sprites\control1_sprite</sprite>
-    <sprite>sprites\control2_sprite</sprite>
-    <sprite>sprites\control_text_sprite</sprite>
-    <sprite>sprites\control_guide_sprite</sprite>
-    <sprite>sprites\heart_sprite</sprite>
-    <sprite>sprites\bolt_sprite</sprite>
-    <sprite>sprites\plus_trap_sprite</sprite>
-    <sprite>sprites\shield_sprite</sprite>
     <sprite>sprites\ulti_sprite</sprite>
   </sprites>
   <backgrounds name="background">
@@ -141,16 +156,17 @@
     <object>objects\water_texture_obj</object>
     <object>objects\current_obj</object>
     <object>objects\cannonball_obj</object>
-    <object>objects\fort_cannonball_obj</object>
     <object>objects\alarmer_obj</object>
     <object>objects\pause_obj</object>
     <object>objects\cursor_obj</object>
     <object>objects\damage_float_obj</object>
-    <object>objects\red_bar_obj</object>
-    <object>objects\green_bar_obj</object>
-    <object>objects\blue_bar_obj</object>
-    <object>objects\yellow_bar_obj</object>
-    <object>objects\grey_bar_obj</object>
+    <objects name="Bars">
+      <object>objects\blue_bar_obj</object>
+      <object>objects\green_bar_obj</object>
+      <object>objects\yellow_bar_obj</object>
+      <object>objects\grey_bar_obj</object>
+      <object>objects\red_bar_obj</object>
+    </objects>
     <objects name="Menu">
       <object>objects\menu_obj</object>
       <object>objects\menubg_obj</object>
@@ -173,6 +189,7 @@
       <object>objects\btn_start_obj</object>
       <object>objects\btn_back_obj</object>
       <object>objects\pregame_text_obj</object>
+      <object>objects\pregame_desc_obj</object>
       <object>objects\btn_pregame_obj</object>
       <object>objects\btn_1_xebec_obj</object>
       <object>objects\btn_1_carrack_obj</object>
@@ -187,6 +204,7 @@
       <object>objects\fort_obj</object>
       <object>objects\fort_scan_arc_obj</object>
       <object>objects\fort_radius_obj</object>
+      <object>objects\fort_cannonball_obj</object>
     </objects>
     <objects name="Chest">
       <object>objects\chest_controller_obj</object>
