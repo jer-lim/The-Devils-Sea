@@ -4,7 +4,7 @@ var selected_player = argument1;
 // if button was already selected, deselect it 
 if (selected) {
     selected = false;
-    image_alpha = 0;
+    image_blend = make_color_rgb(255, 255, 255);
     
     // find correct button to deselect
     var index = 0;
@@ -32,7 +32,12 @@ if (selected) {
 // if not already selected, select it
 else {
     selected = true;
-    image_alpha = 1;
+    if (selected_player == PLAYER_ONE) {
+        image_blend = make_color_rgb(0, 255, 255);
+    }
+    else {
+        image_blend = make_color_rgb(150, 0, 0);
+    }
     
     // check if any unselected slots (-1 flag) and slot in ship choice
     var slot_available = false;
@@ -51,7 +56,8 @@ else {
         global.pregame_btns[selected_player,
             global.player_ships_selection[selected_player, 1]].selected = false;
         global.pregame_btns[selected_player,
-            global.player_ships_selection[selected_player, 1]].image_alpha = 0;
+            global.player_ships_selection[selected_player, 1]].image_blend = 
+            make_color_rgb(255, 255, 255);
     
         for (var i = 1; i <= MAX_SHIPS; i++) {
             // if not last element in array, replace it with next ship in line

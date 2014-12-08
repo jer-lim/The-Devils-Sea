@@ -1,4 +1,4 @@
-if (!self.hp <= 0) exit;
+if (self.hp <= 0) exit;
 
 if(traps > 0) {
     var trap_inst = instance_create(x, y, trap_obj);
