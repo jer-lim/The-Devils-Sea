@@ -3,6 +3,18 @@ var ship_owner = owner;
 with(greenbar){
     instance_destroy();
 }
+
+// deactivate ultis
+// end ulti timer
+if (ulti_timer == 0) {
+    ulti_timer = -1;
+    if(ship_type == SHIP_XEBEC)
+        xebec_ulti_deactivate();
+    if(ship_type == SHIP_GALLEASS)
+        galleass_ulti_deactivate();
+}
+
+// destory ship
 instance_destroy();
 
 // recreate next ship

@@ -9,9 +9,9 @@ if (other.owner != self.fort.owner && other.collidable) {
     if (self.fort.capture_timer > 0) {
         self.fort.capture_timer -= 2;
         
-        // if ship type is galleass, capturing speed is 2.5x faster
+        // if ship type is galleass, capturing speed is faster
         if (other.ship_type == SHIP_GALLEASS) {
-            self.fort.capture_timer -= 1.5;
+            self.fort.capture_timer -= 0.5;
         }
     }
 }

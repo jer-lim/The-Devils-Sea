@@ -8,7 +8,7 @@ var ship = argument0;
 // 29% flotsam: repairs 40-80 hp
 if (boost_random < 29) {
     // add hp, limit to max hp
-    ship.hp += round(random_range(40, 80));
+    ship.hp += round(random_range(70, 100)) * HP_MULTIPLIER;
     if (ship.hp > ship.ship_hp[ship.ship_type])
         ship.hp = ship.ship_hp[ship.ship_type];
     // show_debug_message("Flotsam");
@@ -26,8 +26,8 @@ else if (boost_random < 58) {
         // current speed boost
         var cUVX = cos(degtorad(image_angle));
         var cUVY = -sin(degtorad(image_angle));
-        hspeed += 20 * cUVX;
-        vspeed += 20 * cUVY;
+        hspeed += 40 * cUVX;
+        vspeed += 40 * cUVY;
         
         // set rum boost time
         ship.rum_boost_time = room_speed * 3;

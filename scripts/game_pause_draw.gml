@@ -27,18 +27,13 @@ if (paused) {
         // create transparent background
         pause_bg = instance_create(0, 0, menu_obj);
         pause_bg.depth = -100;          // ensure bg is above everything else
-        pause_bg.image_alpha = 0.8;     // slight transparency
+        pause_bg.image_alpha = 0.7;     // slight transparency
+        
+        // turn on pause menu buttons
+        instance_activate_object(btn_resume_obj);
+        instance_activate_object(btn_quit_obj);
     }
     
     // draw sprite created of application surface
     draw_sprite(spr, 0, 0, 0);
-    
-    // draw pause message
-    draw_set_font(menu_font);
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_text(room_width / 2, room_height / 2, "- GAME PAUSED -#Press [Esc] to resume.");
-    
-    // TODO: draw pause menu
-    // other problems: pause message is hidden below bg depth.
 }

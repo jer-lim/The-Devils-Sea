@@ -7,7 +7,7 @@
 load_stats();
 
 // ship attributes
-hp = ship_hp[ship_type];
+hp = floor(ship_hp[ship_type] * HP_MULTIPLIER);
 max_speed = ship_max_speed[ship_type] * SHIP_SPEED_MULTIPLIER;
 acceleration = ship_acceleration[ship_type] * SHIP_SPEED_MULTIPLIER / room_speed;
 turn_speed = ship_turn_speed[ship_type] / room_speed;
@@ -19,6 +19,8 @@ other_ship = 0;
 ship_rammed_damage_multiplier = 1;
 
 traps = TRAP_START_NUM;
+if (ship_type == SHIP_CORVETTE) traps += 2;
+
 image_angle = 0;
 friction = SHIP_FRICTION;
 

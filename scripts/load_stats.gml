@@ -1,6 +1,6 @@
 ship_hp[SHIP_XEBEC] = 350;
-ship_acceleration[SHIP_XEBEC] = 50;
-ship_max_speed[SHIP_XEBEC] = 95;
+ship_acceleration[SHIP_XEBEC] = 60;
+ship_max_speed[SHIP_XEBEC] = 100;
 ship_turn_speed[SHIP_XEBEC] = 90;
 ship_mass[SHIP_XEBEC] = 300;
 ship_sprite[SHIP_XEBEC] = ship_xebec_sprite;

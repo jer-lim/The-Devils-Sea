@@ -36,6 +36,8 @@
     <sprite>sprites\custom_cursor_sprite</sprite>
     <sprite>sprites\control1_sprite</sprite>
     <sprite>sprites\control2_sprite</sprite>
+    <sprite>sprites\control_text_sprite</sprite>
+    <sprite>sprites\control_guide_sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\water_bg</background>
@@ -148,6 +150,8 @@
       <object>objects\btn_play_obj</object>
       <object>objects\btn_guide_obj</object>
       <object>objects\btn_credits_obj</object>
+      <object>objects\btn_resume_obj</object>
+      <object>objects\btn_quit_obj</object>
     </objects>
     <objects name="Pregame">
       <object>objects\xebec_obj</object>
@@ -182,9 +186,11 @@
     <objects name="Controls">
       <object>objects\control1_obj</object>
       <object>objects\control2_obj</object>
-      <object>objects\controls_text_obj</object>
+      <object>objects\controls_title_obj</object>
       <object>objects\controls1_text_obj</object>
       <object>objects\controls2_text_obj</object>
+      <object>objects\controls_guide_obj</object>
+      <object>objects\controls_text_obj</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -194,36 +200,38 @@
     <room>rooms\pre_game</room>
     <room>rooms\game</room>
   </rooms>
-  <constants number="29">
+  <constants number="31">
     <constant name="CARRACK_PASSIVE_LENGTH">1</constant>
     <constant name="CARRACK_PASSIVE_RELOAD">1.5</constant>
+    <constant name="CARRACK_PASSIVE_RELOAD">3</constant>
     <constant name="CARRACK_PASSIVE_SPEED">10</constant>
     <constant name="CHEST_SPAWN_MAX">10</constant>
     <constant name="CHEST_SPAWN_MIN">5</constant>
-    <constant name="CURRENT_STRENGTH_MULTIPLIER">1</constant>
+    <constant name="CURRENT_STRENGTH_MULTIPLIER">1.1</constant>
     <constant name="FORT_ATTACK_LENGTH">0.5</constant>
     <constant name="FORT_ATTACK_RELOAD">1</constant>
     <constant name="FORT_ATTACK_SPEED">5</constant>
+    <constant name="HP_MULTIPLIER">1.5</constant>
     <constant name="MAX_SHIPS">2</constant>
     <constant name="PLAYER_ONE">1</constant>
     <constant name="PLAYER_TWO">2</constant>
     <constant name="RAM_DAMAGE_MULTIPLIER">20</constant>
-    <constant name="SHIP_ACCEL_MULTIPLIER">0.2</constant>
-    <constant name="SHIP_BASE_TURN_SPEED">30</constant>
+    <constant name="SHIP_ACCEL_MULTIPLIER">0.4</constant>
+    <constant name="SHIP_BASE_TURN_SPEED">35</constant>
     <constant name="SHIP_CARRACK">1</constant>
     <constant name="SHIP_CORVETTE">2</constant>
-    <constant name="SHIP_FRICTION">0.045</constant>
+    <constant name="SHIP_FRICTION">0.06</constant>
     <constant name="SHIP_GALLEASS">3</constant>
     <constant name="SHIP_MAX_SPEED">200</constant>
-    <constant name="SHIP_SPEED_MULTIPLIER">0.03</constant>
+    <constant name="SHIP_SPEED_MULTIPLIER">0.04</constant>
     <constant name="SHIP_XEBEC">0</constant>
-    <constant name="TRAP_EXPLOSION_FORCE">700</constant>
+    <constant name="TRAP_EXPLOSION_FORCE">800</constant>
     <constant name="TRAP_MAX_DAMAGE">150</constant>
     <constant name="TRAP_MAX_NUM">5</constant>
     <constant name="TRAP_MIN_DAMAGE">75</constant>
-    <constant name="TRAP_RELOAD_TIME">10</constant>
-    <constant name="TRAP_SCALE_SIZE">1.8</constant>
-    <constant name="TRAP_START_NUM">3</constant>
+    <constant name="TRAP_RELOAD_TIME">15</constant>
+    <constant name="TRAP_SCALE_SIZE">2</constant>
+    <constant name="TRAP_START_NUM">1</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
