@@ -5,9 +5,9 @@ if(owner == PLAYER_ONE){
 }
 draw_set_halign(fa_middle);
 draw_set_font(damage_font);
-draw_set_alpha(image_alpha);
-
+draw_set_alpha(text_alpha);
 draw_text(x, y, string(damage));
+draw_set_alpha(1);
 y -= 20 / room_speed;
-image_alpha -= 0.03;
+text_alpha -= 0.03;
 // show_debug_message("drew");
