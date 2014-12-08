@@ -35,6 +35,10 @@ hp_greybar = instance_create(x, y, grey_bar_obj);
 hp_greybar.image_xscale = 1.4;
 hp_greybar.image_yscale = 0.3;
 
+hp_heart = instance_create(x, y, hud_heart_obj);
+hp_heart.image_xscale = 0.25;
+hp_heart.image_yscale = 0.25;
+
 //create traps counter
 for(var i = 0; i < 5; ++i){
     hud_traps[i] = instance_create(x, y, hud_chest_obj);

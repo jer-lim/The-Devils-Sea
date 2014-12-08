@@ -146,6 +146,7 @@
     <object>objects\green_bar_obj</object>
     <object>objects\blue_bar_obj</object>
     <object>objects\yellow_bar_obj</object>
+    <object>objects\grey_bar_obj</object>
     <objects name="Menu">
       <object>objects\menu_obj</object>
       <object>objects\menubg_obj</object>
@@ -201,7 +202,7 @@
       <object>objects\controls_text_obj</object>
     </objects>
     <object>objects\hud_chest_obj</object>
-    <object>objects\grey_bar_obj</object>
+    <object>objects\hud_heart_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\splash</room>

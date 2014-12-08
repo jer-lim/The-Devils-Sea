@@ -27,6 +27,8 @@ hp_greybar.y = y + yoffset + 0;
 hp_redbar.x = x - 44;
 hp_redbar.y = y + yoffset + 0;
 hp_redbar.image_xscale = (hp / (ship_hp[ship_type] * HP_MULTIPLIER)) * 1.4;
+hp_heart.x = x - 51;
+hp_heart.y = y + yoffset + 0;
 //draw_text(x, y + yoffset + 0, "HP");
 
 //move ulti bar
