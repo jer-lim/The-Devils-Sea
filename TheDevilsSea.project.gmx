@@ -185,6 +185,7 @@
       <object>objects\chest_obj</object>
       <object>objects\trap_obj</object>
       <object>objects\explosion_radius_obj</object>
+      <object>objects\boost_parent_obj</object>
       <object>objects\bolt_obj</object>
       <object>objects\heart_obj</object>
     </objects>
