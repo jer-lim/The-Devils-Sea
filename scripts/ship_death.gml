@@ -1,7 +1,22 @@
 var ship_owner = owner;
 
-with(greenbar){
+// destroy children
+with(hp_greybar){
     instance_destroy();
+}
+with(hp_redbar){
+    instance_destroy();
+}
+with(ulti_yellowbar){
+    instance_destroy();
+}
+with(ulti_greybar){
+    instance_destroy();
+}
+for(var i = 0; i < 5; ++i){
+    with(hud_traps[i]){
+        instance_destroy();
+    }
 }
 
 // deactivate ultis

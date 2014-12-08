@@ -26,7 +26,27 @@ if (ship_type == SHIP_CARRACK) {
     alarm[1] = room_speed * CARRACK_PASSIVE_RELOAD;
 }
 
+//create health bar
+hp_redbar = instance_create(x, y, red_bar_obj);
+hp_redbar.image_xscale = 1.4;
+hp_redbar.image_yscale = 0.3;
+
+hp_greybar = instance_create(x, y, grey_bar_obj);
+hp_greybar.image_xscale = 1.4;
+hp_greybar.image_yscale = 0.3;
+
+//create traps counter
+for(var i = 0; i < 5; ++i){
+    hud_traps[i] = instance_create(x, y, hud_chest_obj);
+    hud_traps[i].image_xscale = 0.6;
+    hud_traps[i].image_yscale = 0.6;
+}
+
 // create ulti recharge bar
-greenbar = instance_create(x, y + 60, green_bar_obj);
-greenbar.image_xscale = 1.2;
-greenbar.image_yscale = 0.6;
+ulti_yellowbar = instance_create(x, y, yellow_bar_obj);
+ulti_yellowbar.image_xscale = 1.4;
+ulti_yellowbar.image_yscale = 0.3;
+
+ulti_greybar = instance_create(x, y, grey_bar_obj);
+ulti_greybar.image_xscale = 1.4;
+ulti_greybar.image_yscale = 0.3;
