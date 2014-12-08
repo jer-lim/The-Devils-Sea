@@ -105,6 +105,7 @@
       <script>scripts\game_pause.gml</script>
       <script>scripts\game_pause_draw.gml</script>
       <script>scripts\current_push.gml</script>
+      <script>scripts\game_determine_winner.gml</script>
       <scripts name="Chests">
         <script>scripts\chest_spawn.gml</script>
         <script>scripts\chest_spawn_effect_at.gml</script>
@@ -141,12 +142,20 @@
       <script>scripts\pregame_handle_select.gml</script>
       <script>scripts\pregame_done.gml</script>
     </scripts>
+    <scripts name="Main Menu">
+      <script>scripts\menu_create.gml</script>
+    </scripts>
+    <scripts name="Postgame">
+      <script>scripts\postgame_create.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\ship_font</font>
     <font>fonts\ship_font2</font>
     <font>fonts\damage_font</font>
     <font>fonts\menu_font</font>
+    <font>fonts\game_winner_font</font>
+    <font>fonts\rounds_won_font</font>
   </fonts>
   <objects name="objects">
     <object>objects\ship_obj</object>
@@ -229,6 +238,7 @@
     <object>objects\hud_chest_obj</object>
     <object>objects\hud_heart_obj</object>
     <object>objects\hud_ulti_obj</object>
+    <object>objects\generic_text_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\splash</room>
@@ -236,6 +246,7 @@
     <room>rooms\controls</room>
     <room>rooms\pre_game</room>
     <room>rooms\game</room>
+    <room>rooms\post_game</room>
   </rooms>
   <constants number="30">
     <constant name="CARRACK_PASSIVE_LENGTH">1</constant>

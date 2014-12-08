@@ -7,10 +7,16 @@ with(hp_greybar){
 with(hp_redbar){
     instance_destroy();
 }
+with(hp_heart){
+    instance_destroy();
+}
 with(ulti_yellowbar){
     instance_destroy();
 }
 with(ulti_greybar){
+    instance_destroy();
+}
+with(ulti_icon){
     instance_destroy();
 }
 for(var i = 0; i < 5; ++i){
@@ -29,8 +35,9 @@ if (ulti_timer >= 0) {
         galleass_ulti_deactivate();
 }
 
-// destory ship
+// destroy ship
 instance_destroy();
+global.ships_lost[ship_owner]++;
 
 // recreate next ship
 if (global.player_ships_index[ship_owner] <= MAX_SHIPS) {
@@ -70,7 +77,11 @@ if (global.player_ships_index[ship_owner] <= MAX_SHIPS) {
     // assign ship owner
     ship.owner = ship_owner;
 }
+
 // player has run out of ships
 else {
-
+    with(alarmer_obj){
+        //set alarm to check if a player won or draw
+        alarm[1] = 1 * room_speed;
+    }
 }

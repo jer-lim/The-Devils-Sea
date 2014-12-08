@@ -5,6 +5,9 @@
 // randomise the seed
 randomize();
 
+globalvar games_played;
+globalvar wins;
+
 // pause 2 seconds
 with(alarmer_obj)
 {

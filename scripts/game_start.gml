@@ -6,11 +6,22 @@
 // hide mouse cursor
 cursor_sprite = -1;
 
+//increase games played counter
+global.games_played++;
+
 globalvar ships;                    // stores ships currently in game for accessibility
 globalvar player_ships_index;       // curent ship counter for each player
+globalvar ships_lost;
+globalvar winnerFound;
+globalvar winner;
+
+winnerFound = false;
 
 global.player_ships_index[PLAYER_ONE] = 1;
 global.player_ships_index[PLAYER_TWO] = 1;
+
+global.ships_lost[PLAYER_ONE] = 0;
+global.ships_lost[PLAYER_TWO] = 0;
 
 // create player 1's ship
 var ship1 = instance_create(50, room_height*0.5, ship1_obj);
