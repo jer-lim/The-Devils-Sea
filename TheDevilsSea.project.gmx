@@ -18,11 +18,13 @@
     <sprite>sprites\grey_bar_sprite</sprite>
     <sprite>sprites\btn1_sprite</sprite>
     <sprite>sprites\btn2_sprite</sprite>
+    <sprite>sprites\btn_smallwood_sprite</sprite>
     <sprite>sprites\fort_sprite</sprite>
     <sprite>sprites\chest_sprite</sprite>
     <sprite>sprites\menu_sprite</sprite>
     <sprite>sprites\menubg_sprite</sprite>
     <sprite>sprites\titlelogo_sprite</sprite>
+    <sprite>sprites\titlelogosmall_sprite</sprite>
     <sprite>sprites\titleship_sprite</sprite>
     <sprite>sprites\titleship2_sprite</sprite>
     <sprite>sprites\ship_carrack_hitbox_sprite</sprite>
@@ -31,8 +33,6 @@
     <sprite>sprites\ship_galleass_hitbox_sprite</sprite>
     <sprite>sprites\fort_scan_arc_sprite</sprite>
     <sprite>sprites\fort_scan_arc_sprite2</sprite>
-    <sprite>sprites\btn_blue</sprite>
-    <sprite>sprites\btn_red</sprite>
     <sprite>sprites\cannonball_sprite</sprite>
     <sprite>sprites\current_sprite</sprite>
     <sprite>sprites\custom_cursor_sprite</sprite>
@@ -48,6 +48,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\water_bg</background>
+    <background>background\menu_bg</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -154,6 +155,7 @@
       <object>objects\menu_obj</object>
       <object>objects\menubg_obj</object>
       <object>objects\titlelogo_obj</object>
+      <object>objects\titlelogosmall_obj</object>
       <object>objects\titleship_obj</object>
       <object>objects\titleship2_obj</object>
       <object>objects\btn1_parent_obj</object>
@@ -171,12 +173,11 @@
       <object>objects\btn_start_obj</object>
       <object>objects\btn_back_obj</object>
       <object>objects\pregame_text_obj</object>
-      <object>objects\btn_blue_obj</object>
+      <object>objects\btn_pregame_obj</object>
       <object>objects\btn_1_xebec_obj</object>
       <object>objects\btn_1_carrack_obj</object>
       <object>objects\btn_1_galleass_obj</object>
       <object>objects\btn_1_corvette_obj</object>
-      <object>objects\btn_red_obj</object>
       <object>objects\btn_2_xebec_obj</object>
       <object>objects\btn_2_carrack_obj</object>
       <object>objects\btn_2_galleass_obj</object>

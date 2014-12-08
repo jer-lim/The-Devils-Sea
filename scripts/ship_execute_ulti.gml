@@ -1,4 +1,4 @@
-if (!self.hp <= 0) exit;
+if (self.hp <= 0) exit;
 
 // if ulti is not on cooldown
 if (ulti_countdown <= 0) { 

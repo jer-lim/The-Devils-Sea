@@ -1,9 +1,10 @@
-// array to store selected ship values
+// init array to store selected ship values
 globalvar player_ships_selection;
-global.player_ships_selection[PLAYER_ONE, 1] = -1;
-global.player_ships_selection[PLAYER_ONE, 2] = -1;
-global.player_ships_selection[PLAYER_TWO, 1] = -1;
-global.player_ships_selection[PLAYER_TWO, 2] = -1;
+for (var p = 1; p <= 2; p++) {
+    for (var s = 1; s <= MAX_SHIPS; s++) {
+        global.player_ships_selection[p, s] = -1;
+    }
+}
 
 // array to store all ship button objects
 globalvar pregame_btns;
