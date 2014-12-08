@@ -1,6 +1,8 @@
 // Carrack's passive ability: fires a small cannonball in the
 // direction it is facing, every 3 seconds
 
+if (hp <= 0) exit;
+
 // create cannonball slightly ahead of ship's direction
 var dirX = cos(degtorad(self.image_angle));
 var dirY = -sin(degtorad(self.image_angle));

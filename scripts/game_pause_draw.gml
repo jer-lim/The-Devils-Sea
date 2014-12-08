@@ -38,11 +38,10 @@ if (paused) {
         }
         
         // display player ship boards
-        var board1 = instance_create(room_width - 32, room_height - 230, hudbar1_obj);
-        var board2 = instance_create(room_width - 32, room_height - 30, hudbar2_obj);
+        board1 = instance_create(room_width - 32, room_height - 230, hudbar1_obj);
+        board2 = instance_create(room_width - 32, room_height - 30, hudbar2_obj);
         
-        // global.player_ships_selection[player nubmer, ship number];
-        var ship_display;
+        // var ship_display, radial_display;
         var x_from_edge = 32 + (board1.sprite_width*0.25);
         var y_from_edge = 30 + (board1.sprite_height*0.3);
         
@@ -55,6 +54,22 @@ if (paused) {
             room_height - y_from_edge - 200, ship_display_obj);
         ship_display[1].sprite_index = global.player_ships_selection[PLAYER_ONE, 2];
         
+        // display radial effect over ship that is being used
+        if (global.ships_lost[PLAYER_ONE] == 0) {
+            radial_display[0] = instance_create(ship_display[0].x, ship_display[0].y, radhud1_obj);
+        }
+        else if (global.ships_lost[PLAYER_ONE] == 1) {
+            radial_display[0] = instance_create(ship_display[1].x, ship_display[1].y, radhud1_obj);
+            
+            // display X over first ship that is dead
+            cross_display[0] = instance_create(ship_display[0].x, ship_display[0].y, cross_obj);
+        }
+        else if (global.ships_lost[PLAYER_ONE] >= 2) {
+            // display X over both ships
+            cross_display[0] = instance_create(ship_display[0].x, ship_display[0].y, cross_obj);
+            cross_display[1] = instance_create(ship_display[1].x, ship_display[1].y, cross_obj);
+        }
+        
         // player 2 ships and radial effects
         ship_display[2] = instance_create(room_width - x_from_edge - board1.sprite_width*0.5,
             room_height - y_from_edge, ship_display_obj);
@@ -63,7 +78,22 @@ if (paused) {
         ship_display[3] = instance_create(room_width - x_from_edge,
             room_height - y_from_edge, ship_display_obj);
         ship_display[3].sprite_index = global.player_ships_selection[PLAYER_TWO, 2];
-
+        
+        // display radial effect over ship that is being used
+        if (global.ships_lost[PLAYER_TWO] == 0) {
+            radial_display[1] = instance_create(ship_display[2].x, ship_display[2].y, radhud2_obj);
+        }
+        else if (global.ships_lost[PLAYER_TWO] == 1) {
+            radial_display[1] = instance_create(ship_display[3].x, ship_display[3].y, radhud2_obj);
+            
+            // display X over first ship that is dead
+            ross_display[2] = instance_create(ship_display[2].x, ship_display[2].y, cross_obj);
+        }
+        else if (global.ships_lost[PLAYER_TWO] >= 2) {
+            // display X over both ships
+            cross_display[2] = instance_create(ship_display[2].x, ship_display[2].y, cross_obj);
+            cross_display[3] = instance_create(ship_display[3].x, ship_display[3].y, cross_obj);
+        }
     }
     
     // draw sprite created of application surface

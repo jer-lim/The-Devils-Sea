@@ -19,6 +19,7 @@
       <sprite>sprites\bar_hud2</sprite>
       <sprite>sprites\rad_hud1</sprite>
       <sprite>sprites\rad_hud2</sprite>
+      <sprite>sprites\cross_sprite</sprite>
     </sprites>
     <sprites name="Bars">
       <sprite>sprites\red_bar_sprite</sprite>
@@ -108,9 +109,9 @@
       <script>scripts\game_pause_init.gml</script>
       <script>scripts\game_pause.gml</script>
       <script>scripts\game_pause_draw.gml</script>
-      <script>scripts\current_push.gml</script>
       <script>scripts\game_determine_winner.gml</script>
       <script>scripts\show_player_ship_bars.gml</script>
+      <script>scripts\current_push.gml</script>
       <scripts name="Chests">
         <script>scripts\chest_spawn.gml</script>
         <script>scripts\chest_spawn_effect_at.gml</script>
@@ -174,7 +175,7 @@
     <object>objects\pause_obj</object>
     <object>objects\cursor_obj</object>
     <object>objects\damage_float_obj</object>
-    <objects name="Bars">
+    <objects name="HUD">
       <object>objects\blue_bar_obj</object>
       <object>objects\green_bar_obj</object>
       <object>objects\yellow_bar_obj</object>
@@ -183,8 +184,9 @@
       <object>objects\hudbar1_obj</object>
       <object>objects\hudbar2_obj</object>
       <object>objects\radhud1_obj</object>
-      <object>objects\radhub2_obj</object>
+      <object>objects\radhud2_obj</object>
       <object>objects\ship_display_obj</object>
+      <object>objects\cross_obj</object>
     </objects>
     <objects name="Menu">
       <object>objects\menu_obj</object>

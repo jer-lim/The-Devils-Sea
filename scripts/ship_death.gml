@@ -50,7 +50,7 @@ if (global.player_ships_index[ship_owner] <= MAX_SHIPS) {
         ship = instance_create(room_width - 50, room_height*0.5, ship2_obj);
     
     // run ship creation code
-    with(ship) {
+    with (ship) {
         ship_create(global.player_ships_selection[ship_owner,
             player_ships_index[ship_owner]++]);
     }
