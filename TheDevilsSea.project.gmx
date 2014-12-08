@@ -42,6 +42,7 @@
     <sprite>sprites\control_guide_sprite</sprite>
     <sprite>sprites\heart_sprite</sprite>
     <sprite>sprites\bolt_sprite</sprite>
+    <sprite>sprites\ulti_sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\water_bg</background>
@@ -204,6 +205,7 @@
     </objects>
     <object>objects\hud_chest_obj</object>
     <object>objects\hud_heart_obj</object>
+    <object>objects\hud_ulti_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\splash</room>

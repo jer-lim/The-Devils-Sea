@@ -54,3 +54,7 @@ ulti_yellowbar.image_yscale = 0.3;
 ulti_greybar = instance_create(x, y, grey_bar_obj);
 ulti_greybar.image_xscale = 1.4;
 ulti_greybar.image_yscale = 0.3;
+
+ulti_icon = instance_create(x, y, hud_ulti_obj);
+ulti_icon.image_xscale = 0.25;
+ulti_icon.image_yscale = 0.25;

@@ -39,6 +39,8 @@ ulti_yellowbar.y = y + yoffset + 10;
 ulti_yellowbar.image_xscale = (1 - ulti_countdown / (ship_ulti_cooldown[ship_type] * room_speed)) * 1.4;
 if(ulti_countdown == 0) ulti_yellowbar.sprite_index = green_bar_sprite;
 else ulti_yellowbar.sprite_index = yellow_bar_sprite;
+ulti_icon.x = x - 51;
+ulti_icon.y = y + yoffset + 10;
 //draw_text(x, y + yoffset + 40, "Ability");
 
 //move trap counter
@@ -49,4 +51,3 @@ for(var i = 0; i < 5; ++i){
     if(i < traps) hud_traps[i].visible = true;
     else hud_traps[i].visible = false;
 }
-
