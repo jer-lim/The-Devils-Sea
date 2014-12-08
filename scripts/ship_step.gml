@@ -77,8 +77,8 @@ if (ulti_timer == 0) {
     ulti_timer = -1;
     if(ship_type == SHIP_XEBEC)
         xebec_ulti_deactivate();
-    if(ship_type == SHIP_GALLEASS)
-        galleass_ulti_deactivate();
+//     if(ship_type == SHIP_GALLEASS)
+//         galleass_ulti_deactivate();
 }
 
 // movement animation

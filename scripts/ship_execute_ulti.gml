@@ -1,4 +1,4 @@
-if (!self.collidable) exit;
+if (!self.hp <= 0) exit;
 
 // if ulti is not on cooldown
 if (ulti_countdown <= 0) { 
@@ -9,7 +9,7 @@ if (ulti_countdown <= 0) {
     }
     // Galleass's ulti activation
     else if (ship_type == SHIP_GALLEASS) {
-        ulti_timer = room_speed * 3;
+        // ulti_timer = room_speed * 3;
         galleass_ulti_activate();
     }
     // Corvette's ulti activation

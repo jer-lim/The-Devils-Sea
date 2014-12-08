@@ -2,7 +2,7 @@
 instance_destroy();
 
 var boost_random = random_range(0, 100);
-boost_random = 95;
+// boost_random = 60;
 var ship = argument0;
 
 // 29% flotsam: repairs hp
@@ -56,7 +56,13 @@ else if (boost_random < 87) {
     if(ship.traps < TRAP_MAX_NUM){
         ship.traps++;
     }
-    // show_debug_message("Gunpowder");
+    
+    // show trap graphic
+    var trap_inst = instance_create(x, y - 5, plus_trap_obj);
+    with (trap_inst) {
+        // set alarm timer for destroying trap image
+        alarm[0] = room_speed * 0.5;
+    }
 }
 
 // 10% divine intervention: damage immunity

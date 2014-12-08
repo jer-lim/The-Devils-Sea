@@ -15,7 +15,10 @@ for(var i = 0; i < instance_number(fort_obj); i++) {
         else if (self.owner == PLAYER_TWO)
             effect_create_below(ef_ring, fort_inst.x, fort_inst.y, 2,
                 make_color_rgb(255, 128, 128));
+            
+        // deactivation
+        with (fort_inst) {
+            alarm[0] = room_speed * 3;
+        }
     }
-    
-    // knockback enemy ships in range?
 }

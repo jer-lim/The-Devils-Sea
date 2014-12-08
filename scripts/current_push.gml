@@ -21,8 +21,8 @@ other.vspeed += vspeed_mod;
 // (to allow going against the current)
 // these values have been extensively tested, and should be just right
 if (other.speed < old_speed) {
-    other.hspeed -= hspeed_mod * 0.5;
-    other.vspeed -= vspeed_mod * 0.5;
+    other.hspeed -= hspeed_mod * 0.7;
+    other.vspeed -= vspeed_mod * 0.7;
 }
 // ship is not going against current, increase current strength
 else {
