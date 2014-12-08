@@ -14,6 +14,8 @@
     <sprite>sprites\red_bar_sprite</sprite>
     <sprite>sprites\green_bar_sprite</sprite>
     <sprite>sprites\blue_bar_sprite</sprite>
+    <sprite>sprites\yellow_bar_sprite</sprite>
+    <sprite>sprites\grey_bar_sprite</sprite>
     <sprite>sprites\btn1_sprite</sprite>
     <sprite>sprites\btn2_sprite</sprite>
     <sprite>sprites\fort_sprite</sprite>
@@ -140,6 +142,7 @@
     <object>objects\red_bar_obj</object>
     <object>objects\green_bar_obj</object>
     <object>objects\blue_bar_obj</object>
+    <object>objects\yellow_bar_obj</object>
     <objects name="Menu">
       <object>objects\menu_obj</object>
       <object>objects\menubg_obj</object>
@@ -192,6 +195,8 @@
       <object>objects\controls_guide_obj</object>
       <object>objects\controls_text_obj</object>
     </objects>
+    <object>objects\hud_chest_obj</object>
+    <object>objects\grey_bar_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\splash</room>
