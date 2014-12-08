@@ -46,6 +46,10 @@ if (rum_boost_time > 0) {
 }
 if (divine_boost_time > 0) {
     divine_boost_time--;
+    
+    // move shield graphic
+    divine_boost_shield.x = self.x;
+    divine_boost_shield.y = self.y;
 }
     
 // if boost time reaches 0, set it to -1 flag
@@ -55,6 +59,11 @@ if (rum_boost_time == 0) {
 }
 if (divine_boost_time == 0) {
     divine_boost_time = -1;
+    
+    // destroy divine boost shield
+    with (divine_boost_shield) {
+        instance_destroy();
+    }
 }
 
 // ulti time update

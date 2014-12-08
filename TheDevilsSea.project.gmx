@@ -42,6 +42,7 @@
     <sprite>sprites\control_guide_sprite</sprite>
     <sprite>sprites\heart_sprite</sprite>
     <sprite>sprites\bolt_sprite</sprite>
+    <sprite>sprites\shield_sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\water_bg</background>
@@ -191,6 +192,7 @@
       <object>objects\boost_parent_obj</object>
       <object>objects\bolt_obj</object>
       <object>objects\heart_obj</object>
+      <object>objects\shield_obj</object>
     </objects>
     <objects name="Controls">
       <object>objects\control1_obj</object>
@@ -211,13 +213,12 @@
     <room>rooms\pre_game</room>
     <room>rooms\game</room>
   </rooms>
-  <constants number="31">
+  <constants number="30">
     <constant name="CARRACK_PASSIVE_LENGTH">1</constant>
-    <constant name="CARRACK_PASSIVE_RELOAD">1.5</constant>
     <constant name="CARRACK_PASSIVE_RELOAD">3</constant>
     <constant name="CARRACK_PASSIVE_SPEED">10</constant>
-    <constant name="CHEST_SPAWN_MAX">1</constant>
-    <constant name="CHEST_SPAWN_MIN">1</constant>
+    <constant name="CHEST_SPAWN_MAX">2</constant>
+    <constant name="CHEST_SPAWN_MIN">2</constant>
     <constant name="CURRENT_STRENGTH_MULTIPLIER">1.1</constant>
     <constant name="FORT_ATTACK_LENGTH">0.5</constant>
     <constant name="FORT_ATTACK_RELOAD">1</constant>

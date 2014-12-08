@@ -2,7 +2,7 @@
 instance_destroy();
 
 var boost_random = random_range(0, 100);
-boost_random = 55;
+boost_random = 95;
 var ship = argument0;
 
 // 29% flotsam: repairs hp
@@ -43,7 +43,7 @@ else if (boost_random < 58) {
         ship.rum_boost_time += room_speed * 3;
     }
     
-    // show heart graphic
+    // show bolt graphic
     var bolt_inst = instance_create(x, y - 5, bolt_obj);
     with (bolt_inst) {
         // set alarm timer for destroying bolt image
@@ -59,19 +59,26 @@ else if (boost_random < 87) {
     // show_debug_message("Gunpowder");
 }
 
-// 10% divine intervention: damage immunity for 10s
+// 10% divine intervention: damage immunity
 else if (boost_random < 97) {
     // -1 boost time flag means boost is not active
     if (ship.divine_boost_time == -1) {
-        // set divine boost time
-        ship.divine_boost_time = room_speed * 5;
+        // draw shield graphic
+        with (ship) {
+            // set divine boost time
+            divine_boost_time = room_speed * 5;
+        
+            divine_boost_shield = instance_create(x, y, shield_obj);
+            divine_boost_shield.image_alpha = 0.7;
+            divine_boost_shield.image_speed = 0.75;
+        }
     }
     else {
-        // extend active divine boost time
-        ship.divine_boost_time += room_speed * 5;
+        with (ship) {
+            // extend active divine boost time
+            divine_boost_time += room_speed * 5;
+        }
     }
-    
-    // show_debug_message("Divine Intervention");
 }
 
 // 3% god's wrath: MONSTER KRAKEN
