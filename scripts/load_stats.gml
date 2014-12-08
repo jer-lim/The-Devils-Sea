@@ -6,6 +6,7 @@ ship_mass[SHIP_XEBEC] = 300;
 ship_sprite[SHIP_XEBEC] = ship_xebec_sprite;
 ship_mask[SHIP_XEBEC] = ship_xebec_hitbox_sprite;
 ship_ulti_cooldown[SHIP_XEBEC] = 15;
+ship_ulti_icon[SHIP_XEBEC] = ulti_xebec_sprite;
 
 ship_hp[SHIP_CARRACK] = 400;
 ship_acceleration[SHIP_CARRACK] = 40;
@@ -15,6 +16,7 @@ ship_mass[SHIP_CARRACK] = 250;
 ship_sprite[SHIP_CARRACK] = ship_carrack_sprite;
 ship_mask[SHIP_CARRACK] = ship_carrack_hitbox_sprite;
 ship_ulti_cooldown[SHIP_CARRACK] = 15;
+ship_ulti_icon[SHIP_CARRACK] = ulti_carrack_sprite;
 
 ship_hp[SHIP_GALLEASS] = 375;
 ship_acceleration[SHIP_GALLEASS] = 30;
@@ -24,6 +26,7 @@ ship_mass[SHIP_GALLEASS] = 325;
 ship_sprite[SHIP_GALLEASS] = ship_galleass_sprite;
 ship_mask[SHIP_GALLEASS] = ship_galleass_hitbox_sprite;
 ship_ulti_cooldown[SHIP_GALLEASS] = 15;
+ship_ulti_icon[SHIP_GALLEASS] = ulti_galleass_sprite;
 
 ship_hp[SHIP_CORVETTE] = 300;
 ship_acceleration[SHIP_CORVETTE] = 50;
@@ -33,3 +36,4 @@ ship_mass[SHIP_CORVETTE] = 200;
 ship_sprite[SHIP_CORVETTE] = ship_corvette_sprite;
 ship_mask[SHIP_CORVETTE] = ship_corvette_hitbox_sprite;
 ship_ulti_cooldown[SHIP_CORVETTE] = 15;
+ship_ulti_icon[SHIP_CORVETTE] = ulti_corvette_sprite;

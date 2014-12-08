@@ -21,13 +21,17 @@
       <sprite>sprites\rad_hud2</sprite>
       <sprite>sprites\cross_sprite</sprite>
     </sprites>
-    <sprites name="Bars">
+    <sprites name="HUD">
       <sprite>sprites\red_bar_sprite</sprite>
       <sprite>sprites\grey_bar_sprite</sprite>
       <sprite>sprites\yellow_bar_sprite</sprite>
       <sprite>sprites\blue_bar_sprite</sprite>
       <sprite>sprites\green_bar_sprite</sprite>
       <sprite>sprites\wall_sprite</sprite>
+      <sprite>sprites\ulti_xebec_sprite</sprite>
+      <sprite>sprites\ulti_carrack_sprite</sprite>
+      <sprite>sprites\ulti_galleass_sprite</sprite>
+      <sprite>sprites\ulti_corvette_sprite</sprite>
     </sprites>
     <sprites name="Buttons">
       <sprite>sprites\btn1_sprite</sprite>
@@ -64,7 +68,6 @@
     <sprite>sprites\cannonball_sprite</sprite>
     <sprite>sprites\current_sprite</sprite>
     <sprite>sprites\custom_cursor_sprite</sprite>
-    <sprite>sprites\ulti_sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\water_bg</background>

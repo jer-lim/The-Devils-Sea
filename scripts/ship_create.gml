@@ -54,5 +54,6 @@ ulti_greybar.image_xscale = 1.4;
 ulti_greybar.image_yscale = 0.3;
 
 ulti_icon = instance_create(x, y, hud_ulti_obj);
+ulti_icon.sprite_index = ship_ulti_icon[ship_type];
 ulti_icon.image_xscale = 0.25;
 ulti_icon.image_yscale = 0.25;
