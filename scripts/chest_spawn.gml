@@ -23,7 +23,6 @@ do {
             randX+chest.sprite_width*0.5, randY+chest.sprite_height*0.5,
             fort_inst, false, true))
         {
-        show_debug_message("!!!");
             position_valid = false;
             break;
         }
