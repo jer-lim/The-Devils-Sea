@@ -3,8 +3,16 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="1" name="datafiles"/>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\collision1_sound</sound>
+    <sound>sound\collision2_sound</sound>
+    <sound>sound\collision3_sound</sound>
+    <sound>sound\cannon1_sound</sound>
+    <sound>sound\cannon2_sound</sound>
+    <sound>sound\sinking_sound</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Ships">
       <sprite>sprites\ship_xebec_sprite</sprite>

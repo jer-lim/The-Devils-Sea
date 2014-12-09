@@ -154,4 +154,6 @@ if (collidable && other.collidable) {
     alarm[0] = room_speed / 2;
     other.collidable = false;
     other.alarm[0] = room_speed / 2;
+    
+    
 }

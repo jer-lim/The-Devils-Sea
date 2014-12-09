@@ -22,3 +22,6 @@ for (var i = 0; i < 5; i++) {
     cannonballs[i].hspeed = dirX * CARRACK_PASSIVE_SPEED;
     cannonballs[i].vspeed = dirY * CARRACK_PASSIVE_SPEED;
 }
+
+//play sound
+audio_play_sound(cannon2_sound, 40, 0);

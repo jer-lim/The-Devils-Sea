@@ -80,6 +80,9 @@ else {
                 with (cannonball) {
                     alarm[0] = room_speed * FORT_ATTACK_LENGTH * dist_modifier;
                 }
+                
+                //play sound
+                audio_play_sound(cannon1_sound, 30, 0);
             }
         }
     }

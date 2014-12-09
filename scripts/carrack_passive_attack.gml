@@ -21,5 +21,8 @@ with (cannonball) {
     alarm[0] = room_speed * CARRACK_PASSIVE_LENGTH;
 }
 
+//play sound
+audio_play_sound(cannon1_sound, 30, 0);
+
 // reactivate timer for next attack
 alarm[1] = room_speed * CARRACK_PASSIVE_RELOAD;
