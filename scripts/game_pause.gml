@@ -5,6 +5,15 @@ if (!paused) {
     paused = true;
     visible = true;
     
+    // pause shield sound
+    for (var i = 1; i <= 2; i++) {
+        with (global.ships[i]) {
+            if (audio_is_playing(divine_boost_sound)) {
+                audio_pause_sound(divine_boost_sound);   
+            }
+        }
+    }
+    
     if (pause_btns) {
         // custom mouse cursor
         cursor_sprite = custom_cursor_sprite;
@@ -51,4 +60,13 @@ else {
     
     // hide mouse cursor
     cursor_sprite = -1;
+    
+    // resume shield sound
+    for (var i = 1; i <= 2; i++) {
+        with (global.ships[i]) {
+            if (audio_is_paused(divine_boost_sound)) {
+                audio_resume_sound(divine_boost_sound);   
+            }
+        }
+    }
 }

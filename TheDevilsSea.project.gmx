@@ -110,6 +110,7 @@
       <script>scripts\ship_reload_trap.gml</script>
       <script>scripts\ship_reset_boost.gml</script>
       <script>scripts\ship_draw_gui.gml</script>
+      <script>scripts\stop_shield_sound.gml</script>
       <scripts name="Ultis">
         <script>scripts\xebec_ulti_activate.gml</script>
         <script>scripts\xebec_ulti_deactivate.gml</script>
@@ -174,6 +175,9 @@
     </scripts>
     <scripts name="Main Menu">
       <script>scripts\menu_create.gml</script>
+    </scripts>
+    <scripts name="Controls">
+      <script>scripts\controls_create.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -285,8 +289,8 @@
     <constant name="CARRACK_PASSIVE_LENGTH">1</constant>
     <constant name="CARRACK_PASSIVE_RELOAD">3</constant>
     <constant name="CARRACK_PASSIVE_SPEED">10</constant>
-    <constant name="CHEST_SPAWN_MAX">2</constant>
-    <constant name="CHEST_SPAWN_MIN">2</constant>
+    <constant name="CHEST_SPAWN_MAX">10</constant>
+    <constant name="CHEST_SPAWN_MIN">5</constant>
     <constant name="CURRENT_STRENGTH_MULTIPLIER">1.1</constant>
     <constant name="FORT_ATTACK_LENGTH">0.5</constant>
     <constant name="FORT_ATTACK_RELOAD">1</constant>

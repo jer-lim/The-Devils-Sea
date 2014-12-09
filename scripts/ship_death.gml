@@ -35,6 +35,8 @@ if (ulti_timer >= 0) {
         galleass_ulti_deactivate();
 }
 
+stop_shield_sound();
+
 // destroy ship
 instance_destroy();
 global.ships_lost[ship_owner]++;

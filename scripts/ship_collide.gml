@@ -80,7 +80,7 @@ if (collidable && other.collidable) {
     * ship_rammed_damage_multiplier: ship ram "resistance" - for xebec's ulti
     * RAM_DAMAGE_MULTIPLIER: multiply the ratio to get the actual damage
     */
-    var damage = massRatio * abs(cUVdotvDiff) * damage_multiplier * ship_rammed_damage_multiplier * RAM_DAMAGE_MULTIPLIER;
+    var damage = abs(massRatio * cUVdotvDiff * damage_multiplier * ship_rammed_damage_multiplier * RAM_DAMAGE_MULTIPLIER);
     ship_damage(damage, damage);
     
     /*
@@ -133,7 +133,7 @@ if (collidable && other.collidable) {
     }else{
         var damage_multiplier2 = 1;
     }
-    var damage2 = massRatio2 * cUVdotvDiff2 * other.ship_rammed_damage_multiplier * damage_multiplier2 * RAM_DAMAGE_MULTIPLIER;
+    var damage2 = abs(massRatio2 * cUVdotvDiff2 * other.ship_rammed_damage_multiplier * damage_multiplier2 * RAM_DAMAGE_MULTIPLIER);
     with(other){
         ship_damage(damage2, damage2);
     }

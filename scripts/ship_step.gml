@@ -65,10 +65,7 @@ if (divine_boost_time == 0) {
         instance_destroy();
     }
     
-    // stop shield sound
-    if (audio_is_playing(divine_boost_sound)) {
-        audio_stop_sound(divine_boost_sound);   
-    }
+    stop_shield_sound();
 }
 
 // ulti time update

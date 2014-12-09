@@ -12,8 +12,8 @@ if (boost_random < 29) {
     
     // add hp, limit to max hp
     ship.hp += round(random_range(70, 100)) * HP_MULTIPLIER;
-    if (ship.hp > ship.ship_hp[ship.ship_type])
-        ship.hp = ship.ship_hp[ship.ship_type];
+    if (ship.hp > ship.ship_hp[ship.ship_type] * HP_MULTIPLIER)
+        ship.hp = ship.ship_hp[ship.ship_type] * HP_MULTIPLIER;
                 
     // show heart graphic
     var heart_inst = instance_create(x, y - 5, heart_obj);
