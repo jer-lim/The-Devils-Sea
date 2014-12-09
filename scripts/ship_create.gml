@@ -1,3 +1,5 @@
+///ship_create(ship_type)
+
 /*
 * Load ship stats for selected ship.
 */

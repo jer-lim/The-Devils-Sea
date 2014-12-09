@@ -165,6 +165,9 @@
     <scripts name="Main Menu">
       <script>scripts\menu_create.gml</script>
     </scripts>
+    <scripts name="Controls">
+      <script>scripts\controls_create.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\ship_font</font>
