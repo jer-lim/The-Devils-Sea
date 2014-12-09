@@ -27,7 +27,8 @@ if (paused) {
         // create transparent background and logo
         pause_bg = instance_create(0, 0, menubg_obj);
         pause_bg.depth = -100;          // ensure bg is above everything else
-        pause_bg.image_alpha = 0.7;     // slight transparency
+        // pause_bg.image_alpha = 0.7;     // slight transparency
+        pause_bg.image_alpha = 0;
         pause_titlelogo = instance_create(64, 30, titlelogosmall_obj);
         pause_titlelogo.depth = -101; 
         
@@ -94,8 +95,19 @@ if (paused) {
             cross_display[2] = instance_create(ship_display[2].x, ship_display[2].y, cross_obj);
             cross_display[3] = instance_create(ship_display[3].x, ship_display[3].y, cross_obj);
         }
+        
+        // show current scores
+        create_postgame_score();
     }
     
     // draw sprite created of application surface
     draw_sprite(spr, 0, 0, 0);
+    
+    // animated fade in
+    if (pause_bg.image_alpha < 0.8) {
+        pause_bg.image_alpha += 0.05;
+    }
+}
+// game is not paused
+else {
 }

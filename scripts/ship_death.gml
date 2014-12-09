@@ -76,7 +76,7 @@ if (global.player_ships_index[ship_owner] <= MAX_SHIPS) {
         
     // assign ship owner
     ship.owner = ship_owner;
-    show_player_ship_bars(3);
+    // show_player_ship_bars(3);
 }
 
 // player has run out of ships

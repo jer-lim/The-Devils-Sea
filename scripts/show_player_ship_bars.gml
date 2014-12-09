@@ -7,7 +7,7 @@ with (pause_obj) {
         
         // end game
         if (seconds_to_display <= 0) {
-            end_game = true;
+            end_game = global.winner;
             game_pause(true);
         }
 

@@ -21,23 +21,18 @@ else {
     if (instance_exists(pause_titlelogo)) {
         with (pause_titlelogo) instance_destroy();
     }
-    /*
-    if (instance_exists(ship_display)) {
-        with (ship_display) instance_destroy();
+    if (instance_exists(rounds_won_text)) {
+        with (rounds_won_text) instance_destroy();
     }
-    if (instance_exists(radial_display)) {
-        with (radial_display) instance_destroy();
+    if (instance_exists(p1_won_text)) {
+        with (p1_won_text) instance_destroy();
     }
-    if (instance_exists(board1)) {
-        with (board1) instance_destroy();
+    if (instance_exists(p2_won_text)) {
+        with (p2_won_text) instance_destroy();
     }
-    if (instance_exists(board2)) {
-        with (board2) instance_destroy();
+    if (instance_exists(fleet_text)) {
+        with (fleet_text) instance_destroy();
     }
-    if (instance_exists(cross_display)) {
-        with (cross_display) instance_destroy();
-    }
-    */
     if (sprite_exists(spr))
         sprite_delete(spr);
     

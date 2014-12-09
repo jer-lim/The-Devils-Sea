@@ -96,4 +96,4 @@ for (var i = 0; i < random_range(5, 20); i++) {
     current.image_yscale *= random_range(1, 2);
 }
 
-show_player_ship_bars(3);
+// show_player_ship_bars(3);

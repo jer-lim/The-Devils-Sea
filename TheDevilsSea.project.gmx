@@ -116,6 +116,7 @@
       <script>scripts\game_pause_draw.gml</script>
       <script>scripts\game_determine_winner.gml</script>
       <script>scripts\show_player_ship_bars.gml</script>
+      <script>scripts\create_postgame_score.gml</script>
       <script>scripts\current_push.gml</script>
       <scripts name="Chests">
         <script>scripts\chest_spawn.gml</script>
@@ -155,9 +156,6 @@
     </scripts>
     <scripts name="Main Menu">
       <script>scripts\menu_create.gml</script>
-    </scripts>
-    <scripts name="Postgame">
-      <script>scripts\postgame_create.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -263,7 +261,6 @@
     <room>rooms\controls</room>
     <room>rooms\pre_game</room>
     <room>rooms\game</room>
-    <room>rooms\post_game</room>
   </rooms>
   <constants number="30">
     <constant name="CARRACK_PASSIVE_LENGTH">1</constant>

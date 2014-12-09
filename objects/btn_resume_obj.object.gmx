@@ -97,7 +97,9 @@ if (pauser.end_game &gt;= 0) {
     room_goto(pre_game);
 }
 else {
-    game_pause(true);
+    with (pauser) {
+        game_pause(true);
+    }
 }
 </string>
           </argument>
