@@ -28,6 +28,10 @@
       <sprite>sprites\rad_hud1</sprite>
       <sprite>sprites\rad_hud2</sprite>
       <sprite>sprites\cross_sprite</sprite>
+      <sprite>sprites\desc_xebec_sprite</sprite>
+      <sprite>sprites\desc_carrack_sprite</sprite>
+      <sprite>sprites\desc_galleass_sprite</sprite>
+      <sprite>sprites\desc_corvette_sprite</sprite>
     </sprites>
     <sprites name="HUD">
       <sprite>sprites\red_bar_sprite</sprite>
@@ -161,6 +165,7 @@
       <script>scripts\pregame_create.gml</script>
       <script>scripts\pregame_handle_select.gml</script>
       <script>scripts\pregame_done.gml</script>
+      <script>scripts\draw_pregame_description.gml</script>
     </scripts>
     <scripts name="Main Menu">
       <script>scripts\menu_create.gml</script>
@@ -188,6 +193,7 @@
     <object>objects\alarmer_obj</object>
     <object>objects\pause_obj</object>
     <object>objects\cursor_obj</object>
+    <object>objects\generic_text_obj</object>
     <object>objects\damage_float_obj</object>
     <objects name="HUD">
       <object>objects\blue_bar_obj</object>
@@ -228,6 +234,7 @@
       <object>objects\btn_back_obj</object>
       <object>objects\pregame_text_obj</object>
       <object>objects\pregame_desc_obj</object>
+      <object>objects\desc_text_obj</object>
       <object>objects\btn_pregame_obj</object>
       <object>objects\btn_1_xebec_obj</object>
       <object>objects\btn_1_carrack_obj</object>
@@ -264,7 +271,6 @@
       <object>objects\controls_guide_obj</object>
       <object>objects\controls_text_obj</object>
     </objects>
-    <object>objects\generic_text_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\splash</room>
