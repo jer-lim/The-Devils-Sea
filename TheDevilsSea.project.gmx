@@ -12,6 +12,11 @@
     <sound>sound\cannon1_sound</sound>
     <sound>sound\cannon2_sound</sound>
     <sound>sound\sinking_sound</sound>
+    <sound>sound\explosion_sound</sound>
+    <sound>sound\reload_sound</sound>
+    <sound>sound\health_sound</sound>
+    <sound>sound\speedup_sound</sound>
+    <sound>sound\shield_sound</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Ships">
@@ -280,8 +285,8 @@
     <constant name="CARRACK_PASSIVE_LENGTH">1</constant>
     <constant name="CARRACK_PASSIVE_RELOAD">3</constant>
     <constant name="CARRACK_PASSIVE_SPEED">10</constant>
-    <constant name="CHEST_SPAWN_MAX">10</constant>
-    <constant name="CHEST_SPAWN_MIN">5</constant>
+    <constant name="CHEST_SPAWN_MAX">2</constant>
+    <constant name="CHEST_SPAWN_MIN">2</constant>
     <constant name="CURRENT_STRENGTH_MULTIPLIER">1.1</constant>
     <constant name="FORT_ATTACK_LENGTH">0.5</constant>
     <constant name="FORT_ATTACK_RELOAD">1</constant>

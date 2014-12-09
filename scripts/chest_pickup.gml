@@ -2,16 +2,19 @@
 instance_destroy();
 
 var boost_random = random_range(0, 100);
-// boost_random = 90;
+// boost_random = 95;
 var ship = argument0;
 
 // 29% flotsam: repairs hp
 if (boost_random < 29) {
+    // play health sound
+    audio_play_sound(health_sound, 40, 0);
+    
     // add hp, limit to max hp
     ship.hp += round(random_range(70, 100)) * HP_MULTIPLIER;
     if (ship.hp > ship.ship_hp[ship.ship_type])
         ship.hp = ship.ship_hp[ship.ship_type];
-        
+                
     // show heart graphic
     var heart_inst = instance_create(x, y - 5, heart_obj);
     with (heart_inst) {
@@ -22,6 +25,9 @@ if (boost_random < 29) {
 
 // 29% rum: +speed for 3s
 else if (boost_random < 58) {
+    // play speedup sound
+    audio_play_sound(speedup_sound, 40, 0);
+    
     // -1 rum boost time flag means rum boost is not active
     if (ship.rum_boost_time == -1) {
         // % boosts to max_speed, acceleration, and turn_speed
@@ -53,6 +59,9 @@ else if (boost_random < 58) {
 
 // 29% gunpowder: trap +1
 else if (boost_random < 87) {
+    // play reload sound
+    audio_play_sound(reload_sound, 40, 0);
+    
     if(ship.traps < TRAP_MAX_NUM){
         ship.traps++;
     }
@@ -67,6 +76,13 @@ else if (boost_random < 87) {
 
 // 10% divine intervention: damage immunity
 else if (boost_random < 97) {
+    with (ship) {
+        if (!audio_is_playing(divine_boost_sound)) {
+            // play shield sound
+            divine_boost_sound = audio_play_sound(shield_sound, 40, true);
+        }
+    }
+
     // -1 boost time flag means boost is not active
     if (ship.divine_boost_time == -1) {
         // draw shield graphic

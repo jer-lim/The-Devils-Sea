@@ -36,6 +36,7 @@ ulti_countdown = 0;
 rum_boost_time = -1;
 divine_boost_time = -1;
 divine_boost_shield = -1;
+divine_boost_sound = -1;
 
 // xebec passive ability
 xebec_passive = false;

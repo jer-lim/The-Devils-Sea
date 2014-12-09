@@ -3,6 +3,9 @@ var effect_scaling = 1;
 if (extra_scaling > 1)
     effect_scaling = 2;
 
+// sound effect
+audio_play_sound(explosion_sound, 40, 0);
+    
 // create explosion radius
 var explosion_radius = instance_create(self.x, self.y, explosion_radius_obj);
 explosion_radius.image_xscale *= (TRAP_SCALE_SIZE * extra_scaling);
