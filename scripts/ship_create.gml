@@ -34,8 +34,8 @@ hp_greybar.image_xscale = 1.4;
 hp_greybar.image_yscale = 0.3;
 
 hp_heart = instance_create(x, y, hud_heart_obj);
-hp_heart.image_xscale = 0.25;
-hp_heart.image_yscale = 0.25;
+// hp_heart.image_xscale = 0.25;
+// hp_heart.image_yscale = 0.25;
 
 //create traps counter
 for(var i = 0; i < 5; ++i){
@@ -55,5 +55,5 @@ ulti_greybar.image_yscale = 0.3;
 
 ulti_icon = instance_create(x, y, hud_ulti_obj);
 ulti_icon.sprite_index = ship_ulti_icon[ship_type];
-ulti_icon.image_xscale = 0.25;
-ulti_icon.image_yscale = 0.25;
+// ulti_icon.image_xscale = 0.25;
+// ulti_icon.image_yscale = 0.25;

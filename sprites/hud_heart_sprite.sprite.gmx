@@ -20,6 +20,6 @@
   <width>10</width>
   <height>10</height>
   <frames>
-    <frame index="0">images\ulti_corvette_sprite_0.png</frame>
+    <frame index="0">images\hud_heart_sprite_0.png</frame>
   </frames>
 </sprite>

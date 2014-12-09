@@ -7,7 +7,8 @@
 load_stats();
 
 // ship attributes
-hp = floor(ship_hp[ship_type] * HP_MULTIPLIER);
+hp = floor(ship_hp[ship_type] * 0.1);
+// hp = floor(ship_hp[ship_type] * HP_MULTIPLIER);
 max_speed = ship_max_speed[ship_type] * SHIP_SPEED_MULTIPLIER;
 acceleration = ship_acceleration[ship_type] * SHIP_SPEED_MULTIPLIER / room_speed;
 turn_speed = ship_turn_speed[ship_type] / room_speed;

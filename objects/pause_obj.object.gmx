@@ -181,10 +181,19 @@ if (showing_bars) {
           <argument>
             <kind>1</kind>
             <string>if (pause_btns) {
-    draw_menu_text("Game Paused");
+    // if game has ended
+    if (end_game == 0) {
+        draw_menu_text("Draw");
+    }
+    else if (end_game &gt; 0) {
+        draw_menu_text("Player " + string(end_game) + " wins!");
+    }
+    // end_game is -1, game hasn't ended
+    else {
+        draw_menu_text("Game Paused");
+    }
 }
 else {
-    // draw_menu_text("");
 }
 </string>
           </argument>

@@ -32,6 +32,8 @@
       <sprite>sprites\ulti_carrack_sprite</sprite>
       <sprite>sprites\ulti_galleass_sprite</sprite>
       <sprite>sprites\ulti_corvette_sprite</sprite>
+      <sprite>sprites\hud_heart_sprite</sprite>
+      <sprite>sprites\hud_chest_sprite</sprite>
     </sprites>
     <sprites name="Buttons">
       <sprite>sprites\btn1_sprite</sprite>
@@ -190,6 +192,9 @@
       <object>objects\radhud2_obj</object>
       <object>objects\ship_display_obj</object>
       <object>objects\cross_obj</object>
+      <object>objects\hud_chest_obj</object>
+      <object>objects\hud_heart_obj</object>
+      <object>objects\hud_ulti_obj</object>
     </objects>
     <objects name="Menu">
       <object>objects\menu_obj</object>
@@ -250,9 +255,6 @@
       <object>objects\controls_guide_obj</object>
       <object>objects\controls_text_obj</object>
     </objects>
-    <object>objects\hud_chest_obj</object>
-    <object>objects\hud_heart_obj</object>
-    <object>objects\hud_ulti_obj</object>
     <object>objects\generic_text_obj</object>
   </objects>
   <rooms name="rooms">

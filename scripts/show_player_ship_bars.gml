@@ -1,10 +1,20 @@
+var seconds_to_display = argument0;
+
 with (pause_obj) {
     // if already showing HUD bars, don't do anything
     if (!showing_bars) {
         showing_bars = true;
-        game_pause(false);
         
+        // end game
+        if (seconds_to_display <= 0) {
+            end_game = true;
+            game_pause(true);
+        }
+
         // resume game after a few seconds
-        alarm[0] = room_speed * 3;
+        else if (seconds_to_display > 0) {
+            game_pause(false);
+            alarm[0] = room_speed * seconds_to_display;
+        }
     }
 }
