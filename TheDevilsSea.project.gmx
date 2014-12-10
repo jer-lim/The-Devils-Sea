@@ -282,8 +282,8 @@
   <rooms name="rooms">
     <room>rooms\splash</room>
     <room>rooms\menu</room>
+    <room>rooms\controls_archive</room>
     <room>rooms\controls</room>
-    <room>rooms\controls_new</room>
     <room>rooms\pre_game</room>
     <room>rooms\game</room>
   </rooms>
