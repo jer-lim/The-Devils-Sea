@@ -103,6 +103,7 @@
       <script>scripts\ship_decelerate.gml</script>
       <script>scripts\ship_rotate_left.gml</script>
       <script>scripts\ship_rotate_right.gml</script>
+      <script>scripts\ship_rotate_check.gml</script>
       <script>scripts\ship_collide.gml</script>
       <script>scripts\ship_execute_ulti.gml</script>
       <script>scripts\ship_damage.gml</script>
@@ -282,8 +283,8 @@
   <rooms name="rooms">
     <room>rooms\splash</room>
     <room>rooms\menu</room>
+    <room>rooms\controls_archive</room>
     <room>rooms\controls</room>
-    <room>rooms\controls_new</room>
     <room>rooms\pre_game</room>
     <room>rooms\game</room>
   </rooms>

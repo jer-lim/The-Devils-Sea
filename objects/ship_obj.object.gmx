@@ -385,7 +385,6 @@
           <argument>
             <kind>1</kind>
             <string>action_bounce(true, wall_obj);
-// speed *= 0.5;
 </string>
           </argument>
         </arguments>
