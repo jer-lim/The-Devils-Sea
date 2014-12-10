@@ -15,14 +15,12 @@ if(speed > SHIP_MAX_SPEED * SHIP_SPEED_MULTIPLIER)
 if (speed > max_speed){
     speed -= 100 * SHIP_SPEED_MULTIPLIER / room_speed;
 }
-
 /*
 if (owner == 2)
  {
   if (speed > 0)
     show_debug_message(string(string(speed)));
-    }
-    */
+    }*/
    
 // Xebec passive ability: more speed when heading towards other ship
 if(ship_type == SHIP_XEBEC) {

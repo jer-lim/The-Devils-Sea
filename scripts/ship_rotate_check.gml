@@ -5,10 +5,14 @@ var rotating_left = argument0;  // true: left; false: right
 // checks for a collision with another object, and then moves it back
 if (place_meeting(self.x, self.y, wall_obj)
     || place_meeting(self.x, self.y, fort_obj)) {
-    if (rotating_left)
+    // rotate ship back to original angle if
+    // the rotation makes it collide with a wall or fort
+    if (rotating_left) {
         image_angle -= turn_speed * (speed / max_speed)
             + (SHIP_BASE_TURN_SPEED / room_speed);
-    else
+    }
+    else {
         image_angle += turn_speed * (speed / max_speed)
             + (SHIP_BASE_TURN_SPEED / room_speed);
+    }
 }
