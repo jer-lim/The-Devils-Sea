@@ -2,6 +2,12 @@
 /*
 * Set owner of the fort. Changes the owner variable and the sprite of the arc.
 */
+
+// Games Programming Assignment 1
+// Add game feature:   Fort spawning
+// Student Number:     S10122326F
+// Student Name:       Jeremy Lim
+
 var fort_instance = argument0;
 var player_number = argument1;
 

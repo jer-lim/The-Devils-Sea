@@ -1,5 +1,10 @@
 ///ship_create(ship_type)
 
+// Games Programming Assignment 1
+// Add game feature:   Spawn ship
+// Student Number:     S10122326F
+// Student Name:       Jeremy Lim
+
 /*
 * Load ship stats for selected ship.
 */

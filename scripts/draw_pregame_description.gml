@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Ship selection
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 // if draw description is on
 if (draw_desc) {
     var ship_sprite = -1;

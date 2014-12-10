@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Ship spawning, fort spawning
+// Student Number:     S10122326F
+// Student Name:       Jeremy Lim
+
 /*
 * Determine which ship to use based on ship type.
 * Spawn ships on extreme left and right side of map.
@@ -59,18 +64,7 @@ spawnX2 = random_range(room_width / 8, room_width / 8 * 3);
 spawnY2 = random_range(room_height / 8 * 5, room_height / 8 * 7);
 // spawnX2 = spawnX;
 // spawnY2 = spawnY;
-/*
-* Ensure forts do not clip, and have at least half a fort's radius space between them
-*/
-/*
-while( (spawnX2 > spawnX - sprite_get_width(fort_sprite)
-     && spawnX2 < spawnX + sprite_get_width(fort_sprite))
-    || (spawnY2 > spawnY - sprite_get_height(fort_sprite)
-     && spawnY2 < spawnY + sprite_get_height(fort_sprite)) ) {
-    spawnX2 = random_range(room_width / 8, room_width / 8 * 3);
-    spawnY2 = random_range(room_height / 8, room_height / 8 * 3);
-}
-*/
+
 var fort11 = instance_create(spawnX, spawnY, fort_obj);
 var fort12 = instance_create(spawnX2, spawnY2, fort_obj);
 var fort21 = instance_create(room_width - spawnX, room_height - spawnY, fort_obj);

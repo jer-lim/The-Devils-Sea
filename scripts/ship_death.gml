@@ -1,3 +1,12 @@
+// Games Programming Assignment 1
+// Add game feature:   Ship Death
+// Student Number:     S10122326F
+// Student Name:       Jeremy Lim
+
+// Add game feature:   Ship Spawning
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 var ship_owner = owner;
 
 // destroy children

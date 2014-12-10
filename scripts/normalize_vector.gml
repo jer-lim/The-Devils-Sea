@@ -1,4 +1,10 @@
 ///normalize_vector(x1,y1,x2,y2)
+// unused function
+
+// Games Programming Assignment 1
+// Add game feature:   -
+// Student Number:     S10122326F
+// Student Name:       Jeremy Lim
 
 var x1 = argument0;
 var y1 = argument1;

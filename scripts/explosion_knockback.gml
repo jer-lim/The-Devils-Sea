@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Trap explosion
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 // argument0: explosion radius
 var explosion = argument0;
 // argument1: object to knockback

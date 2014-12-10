@@ -1,9 +1,7 @@
-if(!ulti_countdown == 0){
-    var ulti_display = string(floor(ulti_countdown / room_speed)) + "s";
-} else{
-    var ulti_display = "Ready!";
-}
-
+// Games Programming Assignment 1
+// Add game feature:   HUD
+// Student Number:     S10122326F
+// Student Name:       Jeremy Lim
 
 /*
 * Draw players' HUD

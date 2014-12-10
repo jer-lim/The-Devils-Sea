@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Xebec ability
+// Student Number:     S10122326F
+// Student Name:       Jeremy Lim
+
 var cUVX = cos(degtorad(image_angle));
 var cUVY = -sin(degtorad(image_angle));
 hspeed += 60 * cUVX * SHIP_SPEED_MULTIPLIER;

@@ -1,5 +1,9 @@
+// Games Programming Assignment 1
+// Add game feature:   Ship Movement
+// Student Number:     S10122326F
+// Student Name:       Jeremy Lim
+
 // move ship based on current angle
-//-= because gamemaker is bad and 90 degrees is left instead of right
 hspeed += (acceleration + friction) * cos(degtorad(image_angle));
 vspeed -= (acceleration + friction) * sin(degtorad(image_angle));
 

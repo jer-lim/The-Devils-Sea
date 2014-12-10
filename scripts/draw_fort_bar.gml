@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Fort capturing
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 // get current fort health percentage (%)
 var fort_health = self.capture_timer / (room_speed * 5) * 100;
 

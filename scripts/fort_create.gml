@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Fort spawning
+// Student Number:     S10122326F
+// Student Name:       Jeremy Lim
+
 /*
 * Create an arc object and link it to the fort.
 * The arc shall have no variables, opting instead to use

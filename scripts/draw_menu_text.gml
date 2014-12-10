@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Main menu
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 draw_set_font(menu_font);
 draw_set_color(make_color_rgb(0, 0, 112));
 draw_set_halign(fa_center);

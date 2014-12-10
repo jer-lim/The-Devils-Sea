@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Treasure effects
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 // remove chest and grant boots
 instance_destroy();
 

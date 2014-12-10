@@ -1,8 +1,12 @@
-// ship_load(ship_type)
+/// ship_load(ship_type)
+
+// Games Programming Assignment 1
+// Add game feature:   Spawn ship
+// Student Number:     S10122326F
+// Student Name:       Jeremy Lim
 
 /*
-* Load stats here because gamemaker is bad
-* and room creation code is called AFTER object creation code
+* Load stats into arrays
 */
 load_stats();
 

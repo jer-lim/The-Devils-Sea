@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Trap explosion
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 var extra_scaling = argument0;
 var effect_scaling = 1;
 if (extra_scaling > 1)

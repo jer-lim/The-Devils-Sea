@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Carrack ability
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 // Carrack's ulti abilitiy: fire 5 cannonballs in a cone,
 // towards the opposing ship direction
 

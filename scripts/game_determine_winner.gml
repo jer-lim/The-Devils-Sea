@@ -1,5 +1,10 @@
 ///game_determine_winner
 
+// Games Programming Assignment 1
+// Add game feature:   Game end
+// Student Number:     S10122326F
+// Student Name:       Jeremy Lim
+
 //prevent game from trying to find a winner after winner commits suicide
 if(!global.winnerFound){
     var winner;

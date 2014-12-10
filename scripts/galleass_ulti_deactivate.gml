@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Galleass Ability
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 // code activated with fort alarm
 // WITH THE FORT
 self.arc.image_xscale = 1;

@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Pause menu
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 pause_btns = argument0;
 
 if (!paused) {

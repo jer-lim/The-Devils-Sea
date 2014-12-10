@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Ship Collision effects
+// Student Number:     S10122326F
+// Student Name:       Jeremy Lim
+
 /*
 * Giving ships a timeout after collisions prevents them from getting stuck to each other if they do
 * Currently ships can get stuck by rotating into the ship model at standstill

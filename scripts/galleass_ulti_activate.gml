@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Galleass Ability
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 // loop through each fort instance
 for(var i = 0; i < instance_number(fort_obj); i++) {
     var fort_inst = instance_find(fort_obj, i);

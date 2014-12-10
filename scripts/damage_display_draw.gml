@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   HUD (Damage display)
+// Student Number:     S10122326F
+// Student Name:       Jeremy Lim
+
 if(owner == PLAYER_ONE){
     draw_set_color(c_blue);
 }else{

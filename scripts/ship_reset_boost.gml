@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Treasure effects
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 // reset ship attributes
 max_speed = ship_max_speed[ship_type] * SHIP_SPEED_MULTIPLIER;
 acceleration = ship_acceleration[ship_type] * SHIP_SPEED_MULTIPLIER / room_speed;

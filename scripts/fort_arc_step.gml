@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Fort capturing and shooting
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 // successfully captured
 if (fort.capture_timer <= 0) {
     // change fort owner

@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Pause menu
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 // if the game is paused
 if (paused) {
     // if surface should be drawn (occurs only once)

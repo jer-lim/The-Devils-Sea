@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Game score
+// Student Number:     S10122326F, S10131808A
+// Student Name:       Jeremy Lim, Elliot Tan
+
 // Player 1 Score
 p1_won_text = instance_create(
     board1.x - board1.sprite_width - 80,

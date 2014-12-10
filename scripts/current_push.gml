@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Current / wind
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 /* current pushes ship in direction slightly
  * push is affected by:
     * current direction: direction

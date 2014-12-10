@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Fort capturing
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 // if fort is not owned by ship in range, begin capturing
 if (other.owner != self.fort.owner && other.hp > 0) {
     if (other.owner == PLAYER_ONE)

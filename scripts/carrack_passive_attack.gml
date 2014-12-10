@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Carrack ability
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 // Carrack's passive ability: fires a small cannonball in the
 // direction it is facing, every 3 seconds
 

@@ -1,3 +1,12 @@
+// Games Programming Assignment 1
+// Add game feature:   Ship movement, ship death animation
+// Student Number:     S10122326F
+// Student Name:       Jeremy Lim
+
+// Add game feature:   Ship abilities
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 // keep object below global max speed
 if(speed > SHIP_MAX_SPEED * SHIP_SPEED_MULTIPLIER)
     speed = SHIP_MAX_SPEED * SHIP_SPEED_MULTIPLIER;

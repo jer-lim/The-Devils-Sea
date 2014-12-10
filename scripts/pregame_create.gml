@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Ship selection
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 // init array to store selected ship values
 globalvar player_ships_selection;
 for (var p = 1; p <= 2; p++) {

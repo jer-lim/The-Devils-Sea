@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Ship abilities
+// Student Number:     S10122326F, S10131808A
+// Student Name:       Jeremy Lim, Elliot Tan
+
 if (self.hp <= 0) exit;
 
 // if ulti is not on cooldown

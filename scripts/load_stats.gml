@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Ship spawning (stats management)
+// Student Number:     S10122326F
+// Student Name:       Jeremy Lim
+
 ship_hp[SHIP_XEBEC] = 350;
 ship_acceleration[SHIP_XEBEC] = 60;
 ship_max_speed[SHIP_XEBEC] = 100;

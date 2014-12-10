@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Corvette ability
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 // get number of traps to loop through
 var trap_count = instance_number(trap_obj);
 

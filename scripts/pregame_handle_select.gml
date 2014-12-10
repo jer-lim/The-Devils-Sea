@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Ship selection
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 var selected_ship = argument0;
 var selected_player = argument1;
 

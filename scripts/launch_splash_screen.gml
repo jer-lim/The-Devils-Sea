@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Splash screen
+// Student Number:     S10122326F
+// Student Name:       Jeremy Lim
+
 // change window size to force display to render correctly
 // window_set_size(1, 1);
 // window_set_size((display_get_height() * 0.7)/9*16, (display_get_height() * 0.7));

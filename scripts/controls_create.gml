@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Tutorial
+// Student Number:     S10122326F
+// Student Name:       Jeremy Lim
+
 // create player 1's ship
 var ship1 = instance_create(room_width / 4, room_height*0.5, ship1_obj);
 with (ship1) {

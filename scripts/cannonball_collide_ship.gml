@@ -1,3 +1,8 @@
+// Games Programming Assignment 1
+// Add game feature:   Cannons
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 if (!other.collidable) exit;
 
 // get size of cannonball (0 - small, 1 - medium)
