@@ -91,6 +91,7 @@
   <backgrounds name="background">
     <background>background\water_bg</background>
     <background>background\menu_bg</background>
+    <background>background\controls_bg</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -282,6 +283,7 @@
     <room>rooms\splash</room>
     <room>rooms\menu</room>
     <room>rooms\controls</room>
+    <room>rooms\controls_new</room>
     <room>rooms\pre_game</room>
     <room>rooms\game</room>
   </rooms>
