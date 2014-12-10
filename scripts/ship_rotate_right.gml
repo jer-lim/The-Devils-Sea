@@ -7,13 +7,5 @@ if (image_angle < 0) {
     image_angle += 360;
 }
 
-/* direction -= turn_speed;
-if (direction < 0) {
-    direction -= 360;
-}
-*/
-
-/*
-vspeed = current_speed * cos(degtorad(image_angle));
-hspeed = current_speed * sin(degtorad(image_angle));
-*/
+// ensures ship does not rotate into collisions or forts
+ship_rotate_check(false);
