@@ -4,7 +4,13 @@
 if (!instance_exists(self.other_ship)) exit;
 
 // get angle (in degrees) towards other ship
-var angle = point_direction(self.x, self.y, self.other_ship.x, self.other_ship.y);
+var shipAngle = point_direction(self.x, self.y, self.other_ship.x, self.other_ship.y);
+
+if(angle_difference(image_angle, shipAngle) > 0){
+    var angle = image_angle - 90;
+}else{
+    var angle = image_angle + 90;
+}
 
 // launch 5 cannonballs
 var cannonballs;
