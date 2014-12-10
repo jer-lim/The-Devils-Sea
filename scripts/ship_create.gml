@@ -20,7 +20,7 @@ ship_load(ship_type);
 
 // Get trap reloading up and running
 if (ship_type == SHIP_CORVETTE) {
-    alarm[3] = TRAP_RELOAD_TIME / 2 * room_speed;
+    alarm[3] = TRAP_RELOAD_TIME / 3 * room_speed;
 } else {
     alarm[3] = TRAP_RELOAD_TIME * room_speed;
 }
