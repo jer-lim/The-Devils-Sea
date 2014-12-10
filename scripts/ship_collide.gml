@@ -16,7 +16,7 @@ if (collidable && other.collidable) {
     * Get unit vector (direction of other ship)
     * cos(a) gets the x
     * sin(a) gets the y, negative because y is on top
-    * See unit circle on wikipedia
+    * See unit circle
     */
     var cUVX = cos(degtorad(other.direction));
     var cUVY = -sin(degtorad(other.direction));

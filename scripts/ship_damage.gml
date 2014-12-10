@@ -30,7 +30,7 @@ if (divine_boost_time <= 0) {
     else if(rand < 3) audio_play_sound(collision3_sound, 50, 0);
     
     // if ship is dead
-    if (hp < 0)
+    if (hp <= 0)
     {
         hp = 0;
         // ship death alarm to remove ship from game

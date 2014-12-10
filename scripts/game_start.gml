@@ -3,6 +3,10 @@
 // Student Number:     S10122326F
 // Student Name:       Jeremy Lim
 
+// Add game feature:   Currents
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 /*
 * Determine which ship to use based on ship type.
 * Spawn ships on extreme left and right side of map.

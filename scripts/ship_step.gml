@@ -1,5 +1,5 @@
 // Games Programming Assignment 1
-// Add game feature:   Ship movement, ship death animation
+// Add game feature:   Ship movement, ship death animation, Xebec passive ability
 // Student Number:     S10122326F
 // Student Name:       Jeremy Lim
 
@@ -25,6 +25,7 @@ if (owner == 2)
 // Xebec passive ability: more speed when heading towards other ship
 if(ship_type == SHIP_XEBEC) {
     if (instance_exists(other_ship)) {
+        /*
         var shipFrontDirMin = image_angle - 45;
         var shipFrontDirMax = image_angle + 45;
         if(shipFrontDirMin < 0) shipFrontDirMin += 360;
@@ -42,6 +43,9 @@ if(ship_type == SHIP_XEBEC) {
                 isFacingOther = true;
             }
         }
+        */
+        if(angle_difference(image_angle, point_direction(x, y, other_ship.x, other_ship.y)) > -45 || angle_difference(image_angle, point_direction(x, y, other_ship.x, other_ship.y)) < 45) var isFacingOther = true;
+        else var isFacingOther = false;
         
         if(isFacingOther && !xebec_passive){
             max_speed += 10 * SHIP_SPEED_MULTIPLIER;
