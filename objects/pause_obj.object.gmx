@@ -87,7 +87,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// if game is currently forcing showing or HUD bars, end it
+            <string>// if game is currently forcing showing of HUD bars, end it automatically
 if (showing_bars) {
     showing_bars = false;
     game_pause(true);

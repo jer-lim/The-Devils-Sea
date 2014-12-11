@@ -19,5 +19,5 @@ board1 = -1;
 board2 = -1;
 
 visible = false;
-// showing_bars = false; // whether the game is forcing the showing of HUD bars
+showing_bars = false; // whether the game is forcing the showing of HUD bars
 pause_btns = false; // to show pause btns or not

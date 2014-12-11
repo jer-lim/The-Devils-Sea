@@ -3,7 +3,8 @@
 // Student Number:     S10131808A
 // Student Name:       Elliot Tan
 
-/* current pushes ship in direction slightly
+/*
+ * current pushes ship in direction slightly
  * push is affected by:
     * current direction: direction
     * ship mass: heavier ships are harder to push
