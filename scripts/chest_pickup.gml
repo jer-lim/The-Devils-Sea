@@ -1,12 +1,13 @@
 // Games Programming Assignment 1
-// Add game feature:   Treasure effects
+// Add game feature:   Treasure chest effects (boosts)
 // Student Number:     S10131808A
 // Student Name:       Elliot Tan
 
 // remove chest and grant boots
 instance_destroy();
 
-var boost_random = random_range(0, 100);
+// var boost_random = random_range(0, 100);
+var boost_random = random_range(0, 97);
 // boost_random = 95;
 var ship = argument0;
 
@@ -40,7 +41,7 @@ else if (boost_random < 58) {
         ship.acceleration *= 1.5;
         ship.turn_speed *= 1.5;
         
-        // current speed boost
+        // speed boost
         var cUVX = cos(degtorad(image_angle));
         var cUVY = -sin(degtorad(image_angle));
         hspeed += 50 * cUVX;

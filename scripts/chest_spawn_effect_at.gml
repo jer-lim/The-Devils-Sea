@@ -1,5 +1,5 @@
 // Games Programming Assignment 1
-// Add game feature:   Chest spawning
+// Add game feature:   Chest spawning effect
 // Student Number:     S10131808A
 // Student Name:       Elliot Tan
 

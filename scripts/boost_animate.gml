@@ -1,5 +1,5 @@
 // Games Programming Assignment 1
-// Add game feature:   Treasure effects
+// Add game feature:   Treasure effects (animation of boost pickup icons)
 // Student Number:     S10131808A
 // Student Name:       Elliot Tan
 

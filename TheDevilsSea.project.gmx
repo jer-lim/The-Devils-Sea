@@ -135,9 +135,9 @@
       <script>scripts\game_pause_init.gml</script>
       <script>scripts\game_pause.gml</script>
       <script>scripts\game_pause_draw.gml</script>
+      <script>scripts\create_postgame_score.gml</script>
       <script>scripts\game_determine_winner.gml</script>
       <script>scripts\show_player_ship_bars.gml</script>
-      <script>scripts\create_postgame_score.gml</script>
       <script>scripts\current_push.gml</script>
       <scripts name="Chests">
         <script>scripts\chest_spawn.gml</script>

@@ -1,5 +1,5 @@
 // Games Programming Assignment 1
-// Add game feature:   Ship selection
+// Add game feature:   Ship selection (player clicked Begin)
 // Student Number:     S10131808A
 // Student Name:       Elliot Tan
 
@@ -33,7 +33,7 @@ for (var p = 1; p <= 2; p++) {
     }
 }
 
-
+// debug
 show_debug_message(string(global.player_ships_selection[1,1])+","
     +string(global.player_ships_selection[1,2]));
 show_debug_message(string(global.player_ships_selection[2,1])+","

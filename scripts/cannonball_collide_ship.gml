@@ -1,5 +1,6 @@
 // Games Programming Assignment 1
-// Add game feature:   Cannons
+// Add game feature:   Cannons (destroy cannonball,
+//                     cause damage, only on unfriendly ships)
 // Student Number:     S10131808A
 // Student Name:       Elliot Tan
 

@@ -1,3 +1,9 @@
+// Games Programming Assignment 1
+// Add game feature:   Ship Movement (rotating ship collision checking)
+//                     (this function has been replaced with ship_collide_check())
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
+
 // ensures ship does not rotate into collisions or forts
 var rotating_left = argument0;  // true: left; false: right
 

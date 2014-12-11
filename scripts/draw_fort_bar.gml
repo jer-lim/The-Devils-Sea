@@ -1,11 +1,12 @@
 // Games Programming Assignment 1
-// Add game feature:   Fort capturing
+// Add game feature:   Fort capturing (GUI)
 // Student Number:     S10131808A
 // Student Name:       Elliot Tan
 
 // get current fort health percentage (%)
 var fort_health = self.capture_timer / (room_speed * 5) * 100;
 
+// display fort "health" if it is not full
 if (fort_health < 100) {
     // reverse fort health calculations for player 2
     if (self.owner == PLAYER_TWO)

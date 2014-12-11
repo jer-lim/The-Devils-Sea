@@ -1,5 +1,5 @@
 // Games Programming Assignment 1
-// Add game feature:   Galleass Ability
+// Add game feature:   Galleass activie ability (deactivation)
 // Student Number:     S10131808A
 // Student Name:       Elliot Tan
 

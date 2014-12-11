@@ -1,7 +1,7 @@
 /// ship_damage(min,max);
 
 // Games Programming Assignment 1
-// Add game feature:   Ship damage
+// Add game feature:   Ship taking damage
 // Student Number:     S10122326F
 // Student Name:       Jeremy Lim
 

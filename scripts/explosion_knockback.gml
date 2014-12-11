@@ -1,5 +1,5 @@
 // Games Programming Assignment 1
-// Add game feature:   Trap explosion
+// Add game feature:   Trap explosion (collision with explosion radius)
 // Student Number:     S10131808A
 // Student Name:       Elliot Tan
 

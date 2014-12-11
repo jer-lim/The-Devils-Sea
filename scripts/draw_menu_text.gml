@@ -1,7 +1,9 @@
 // Games Programming Assignment 1
-// Add game feature:   Main menu
+// Add game feature:   Menus (drawing of text at an object's position)
 // Student Number:     S10131808A
 // Student Name:       Elliot Tan
+
+// argument0 corresponds to the text to display
 
 draw_set_font(menu_font);
 draw_set_color(make_color_rgb(0, 0, 112));

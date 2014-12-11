@@ -1,5 +1,5 @@
 // Games Programming Assignment 1
-// Add game feature:   Game score
+// Add game feature:   Game score display (for pause menu)
 // Student Number:     S10122326F, S10131808A
 // Student Name:       Jeremy Lim, Elliot Tan
 

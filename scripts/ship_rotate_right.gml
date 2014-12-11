@@ -1,6 +1,5 @@
-
 // Games Programming Assignment 1
-// Add game feature:   Ship Movement
+// Add game feature:   Ship Movement (rotating ship)
 // Student Number:     S10122326F
 // Student Name:       Jeremy Lim
 

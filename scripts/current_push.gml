@@ -1,5 +1,5 @@
 // Games Programming Assignment 1
-// Add game feature:   Current / wind
+// Add game feature:   Current / wind effects
 // Student Number:     S10131808A
 // Student Name:       Elliot Tan
 
@@ -23,8 +23,7 @@ other.vspeed += vspeed_mod;
 
 // make current weaker if ship is going against it,
 // and stronger if the ship is going in line with it
-// (to allow going against the current)
-// these values have been extensively tested, and should be just right
+// (to allow going against the currentm when at a certain speed)
 if (other.speed < old_speed) {
     other.hspeed -= hspeed_mod * 0.7;
     other.vspeed -= vspeed_mod * 0.7;

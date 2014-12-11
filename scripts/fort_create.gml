@@ -1,7 +1,7 @@
 // Games Programming Assignment 1
-// Add game feature:   Fort spawning
-// Student Number:     S10122326F
-// Student Name:       Jeremy Lim
+// Add game feature:   Fort spawning (initalization/creation)
+// Student Number:     S10122326F, S10131808A
+// Student Name:       Jeremy Lim, Elliot Tan
 
 /*
 * Create an arc object and link it to the fort.
@@ -25,7 +25,7 @@ radius.image_xscale = fort_scan_arc_obj.sprite_width * 2 / radius.sprite_width;
 radius.image_yscale = fort_scan_arc_obj.sprite_width * 2 / radius.sprite_height;
 radius.fort = id;
 
-// initialize timer flag to 5 seconds
+// initialize capture timer flag to 5 seconds
 capture_timer = room_speed * 5;
 blue_bar = instance_create(x, y, blue_bar_obj);
 blue_bar.visible = false;

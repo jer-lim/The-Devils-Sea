@@ -1,10 +1,13 @@
 // Games Programming Assignment 1
-// Add game feature:   Trap explosion
+// Add game feature:   Trap collision (explosion)
 // Student Number:     S10131808A
 // Student Name:       Elliot Tan
 
+// how much to scale explosion by
 var extra_scaling = argument0;
 var effect_scaling = 1;
+
+// graphical effect is bigger if scaling is more than *1
 if (extra_scaling > 1)
     effect_scaling = 2;
 

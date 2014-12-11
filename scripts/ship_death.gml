@@ -3,7 +3,7 @@
 // Student Number:     S10122326F
 // Student Name:       Jeremy Lim
 
-// Add game feature:   Ship Spawning
+// Add game feature:   Ship re-spawning
 // Student Number:     S10131808A
 // Student Name:       Elliot Tan
 
@@ -40,8 +40,10 @@ if (ulti_timer >= 0) {
     ulti_timer = -1;
     if(ship_type == SHIP_XEBEC)
         xebec_ulti_deactivate();
+    /*
     if(ship_type == SHIP_GALLEASS)
         galleass_ulti_deactivate();
+    */
 }
 
 stop_shield_sound();

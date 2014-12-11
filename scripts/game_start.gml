@@ -3,7 +3,7 @@
 // Student Number:     S10122326F
 // Student Name:       Jeremy Lim
 
-// Add game feature:   Currents
+// Add game feature:   Wind/Currents
 // Student Number:     S10131808A
 // Student Name:       Elliot Tan
 
@@ -66,8 +66,6 @@ spawnX = random_range(room_width / 8, room_width / 8 * 3);
 spawnY = random_range(room_height / 8, room_height / 8 * 3);
 spawnX2 = random_range(room_width / 8, room_width / 8 * 3);
 spawnY2 = random_range(room_height / 8 * 5, room_height / 8 * 7);
-// spawnX2 = spawnX;
-// spawnY2 = spawnY;
 
 var fort11 = instance_create(spawnX, spawnY, fort_obj);
 var fort12 = instance_create(spawnX2, spawnY2, fort_obj);

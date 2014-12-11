@@ -1,5 +1,5 @@
 // Games Programming Assignment 1
-// Add game feature:   Pause menu
+// Add game feature:   Pause menu (intialize pause object)
 // Student Number:     S10131808A
 // Student Name:       Elliot Tan
 

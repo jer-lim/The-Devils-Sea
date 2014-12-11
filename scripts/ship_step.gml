@@ -15,13 +15,7 @@ if(speed > SHIP_MAX_SPEED * SHIP_SPEED_MULTIPLIER)
 if (speed > max_speed){
     speed -= 100 * SHIP_SPEED_MULTIPLIER / room_speed;
 }
-/*
-if (owner == 2)
- {
-  if (speed > 0)
-    show_debug_message(string(string(speed)));
-    }*/
-   
+
 // Xebec passive ability: more speed when heading towards other ship
 if(ship_type == SHIP_XEBEC) {
     if (instance_exists(other_ship)) {
@@ -44,7 +38,9 @@ if(ship_type == SHIP_XEBEC) {
             }
         }
         */
-        if(angle_difference(image_angle, point_direction(x, y, other_ship.x, other_ship.y)) > -45 || angle_difference(image_angle, point_direction(x, y, other_ship.x, other_ship.y)) < 45) var isFacingOther = true;
+        if(angle_difference(image_angle, point_direction(x, y, other_ship.x, other_ship.y)) > -45
+            || angle_difference(image_angle, point_direction(x, y, other_ship.x, other_ship.y)) < 45)
+            var isFacingOther = true;
         else var isFacingOther = false;
         
         if(isFacingOther && !xebec_passive){
@@ -58,6 +54,24 @@ if(ship_type == SHIP_XEBEC) {
         // show_debug_message(string(owner) + ": " +string(max_speed));
     }
 }
+
+// death animation
+if(hp <= 0) {
+    speed = 0;
+    max_speed = 1;
+    acceleration = 1;
+    turn_speed = 1;
+    mass = 1;
+    collidable = false;
+    traps = 0;
+    image_angle += 5;
+    image_xscale = image_xscale * 0.99;
+    image_yscale = image_yscale * 0.99;
+}
+
+// Add game feature:   Ship ability and powerup timers
+// Student Number:     S10131808A
+// Student Name:       Elliot Tan
 
 // boost time updates
 if (rum_boost_time > 0) {
@@ -117,18 +131,4 @@ else if (speed > 0) {
         x - cos(degtorad(image_angle)) * sprite_width * 0.2,
         y + sin(degtorad(image_angle)) * sprite_width * 0.2,
         0, player_color);
-}
-
-// death animation
-if(hp <= 0) {
-    speed = 0;
-    max_speed = 1;
-    acceleration = 1;
-    turn_speed = 1;
-    mass = 1;
-    collidable = false;
-    traps = 0;
-    image_angle += 5;
-    image_xscale = image_xscale * 0.99;
-    image_yscale = image_yscale * 0.99;
 }

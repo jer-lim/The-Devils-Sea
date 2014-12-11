@@ -1,8 +1,9 @@
 // Games Programming Assignment 1
-// Add game feature:   Pause menu
+// Add game feature:   Pause menu (pausing/un-pausing game)
 // Student Number:     S10131808A
 // Student Name:       Elliot Tan
 
+// flag to determine whether or not pause menu btns should be shown
 pause_btns = argument0;
 
 if (!paused) {
