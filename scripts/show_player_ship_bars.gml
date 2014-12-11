@@ -1,6 +1,5 @@
 // Games Programming Assignment 1
 // Add game feature:   Pause game without pause menu
-//                     (this function is no longer in use)
 // Student Number:     S10131808A
 // Student Name:       Elliot Tan
 

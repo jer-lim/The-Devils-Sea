@@ -126,19 +126,19 @@
     </scripts>
     <scripts name="Misc">
       <script>scripts\normalize_vector.gml</script>
-      <script>scripts\launch_splash_screen.gml</script>
       <script>scripts\draw_menu_text.gml</script>
+      <script>scripts\launch_splash_screen.gml</script>
+      <script>scripts\load_stats.gml</script>
     </scripts>
     <scripts name="Game">
-      <script>scripts\load_stats.gml</script>
-      <script>scripts\game_start.gml</script>
-      <script>scripts\game_pause_init.gml</script>
-      <script>scripts\game_pause.gml</script>
-      <script>scripts\game_pause_draw.gml</script>
-      <script>scripts\create_postgame_score.gml</script>
-      <script>scripts\game_determine_winner.gml</script>
-      <script>scripts\show_player_ship_bars.gml</script>
-      <script>scripts\current_push.gml</script>
+      <scripts name="Pausing/Ending">
+        <script>scripts\game_pause_init.gml</script>
+        <script>scripts\game_pause.gml</script>
+        <script>scripts\game_pause_draw.gml</script>
+        <script>scripts\create_postgame_score.gml</script>
+        <script>scripts\game_determine_winner.gml</script>
+        <script>scripts\show_player_ship_bars.gml</script>
+      </scripts>
       <scripts name="Chests">
         <script>scripts\chest_spawn.gml</script>
         <script>scripts\chest_spawn_effect_at.gml</script>
@@ -169,6 +169,10 @@
         <script>scripts\damage_display_draw.gml</script>
         <script>scripts\boost_animate.gml</script>
       </scripts>
+      <scripts name="Global Elements">
+        <script>scripts\current_push.gml</script>
+      </scripts>
+      <script>scripts\game_start.gml</script>
     </scripts>
     <scripts name="Pregame">
       <script>scripts\pregame_create.gml</script>

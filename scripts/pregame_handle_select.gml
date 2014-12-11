@@ -11,7 +11,7 @@ if (selected) {
     selected = false;
     image_blend = make_color_rgb(255, 255, 255);
     
-    // find correct button to deselect
+    // find correct ship to deselect
     var index = 0;
     for (index = 0; index <= MAX_SHIPS; index++) {
         if (global.player_ships_selection[selected_player, index] == selected_ship) {
@@ -38,10 +38,10 @@ if (selected) {
 else {
     selected = true;
     if (selected_player == PLAYER_ONE) {
-        image_blend = make_color_rgb(0, 255, 255);
+        image_blend = make_color_rgb(0, 0, 200);
     }
     else {
-        image_blend = make_color_rgb(150, 0, 0);
+        image_blend = make_color_rgb(200, 0, 0);
     }
     
     // check if any unselected slots (-1 flag) and slot in ship choice
