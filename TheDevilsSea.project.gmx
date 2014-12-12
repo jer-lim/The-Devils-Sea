@@ -293,7 +293,7 @@
     <room>rooms\pre_game</room>
     <room>rooms\game</room>
   </rooms>
-  <constants number="31">
+  <constants number="32">
     <constant name="CARRACK_PASSIVE_LENGTH">1</constant>
     <constant name="CARRACK_PASSIVE_RELOAD">3</constant>
     <constant name="CARRACK_PASSIVE_SPEED">10</constant>
@@ -303,6 +303,8 @@
     <constant name="FORT_ATTACK_LENGTH">0.5</constant>
     <constant name="FORT_ATTACK_RELOAD">1</constant>
     <constant name="FORT_ATTACK_SPEED">5</constant>
+    <constant name="FORT_CAPTURE_DURATION">5</constant>
+    <constant name="GALLEASS_ACTIVE_DURATION">3</constant>
     <constant name="HP_MULTIPLIER">1.5</constant>
     <constant name="MAX_SHIPS">2</constant>
     <constant name="PLAYER_ONE">1</constant>
@@ -324,7 +326,6 @@
     <constant name="TRAP_RELOAD_TIME">15</constant>
     <constant name="TRAP_SCALE_SIZE">2</constant>
     <constant name="TRAP_START_NUM">1</constant>
-    <constant name="FORT_CAPTURE_DURATION">5</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

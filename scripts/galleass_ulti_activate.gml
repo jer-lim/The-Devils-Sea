@@ -24,7 +24,7 @@ for(var i = 0; i < instance_number(fort_obj); i++) {
             
         // ability deactivation timer
         with (fort_inst) {
-            alarm[0] = room_speed * 3;
+            alarm[0] = room_speed * GALLEASS_ACTIVE_DURATION;
         }
     }
 }
