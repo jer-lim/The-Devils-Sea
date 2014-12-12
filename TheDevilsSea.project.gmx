@@ -293,7 +293,7 @@
     <room>rooms\pre_game</room>
     <room>rooms\game</room>
   </rooms>
-  <constants number="30">
+  <constants number="31">
     <constant name="CARRACK_PASSIVE_LENGTH">1</constant>
     <constant name="CARRACK_PASSIVE_RELOAD">3</constant>
     <constant name="CARRACK_PASSIVE_SPEED">10</constant>
@@ -324,6 +324,7 @@
     <constant name="TRAP_RELOAD_TIME">15</constant>
     <constant name="TRAP_SCALE_SIZE">2</constant>
     <constant name="TRAP_START_NUM">1</constant>
+    <constant name="FORT_CAPTURE_DURATION">5</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

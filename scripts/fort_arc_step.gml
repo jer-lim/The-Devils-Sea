@@ -12,15 +12,19 @@ if (fort.capture_timer <= 0) {
         fort_set_owner(self.fort, PLAYER_ONE);
 
     // reset timer flag
-    fort.capture_timer = room_speed * 5;
+    fort.capture_timer = room_speed * FORT_CAPTURE_DURATION;
     
     // disengage fort target
     fort_arc_unacquire_target();
 }
 // passive fort "healing"
 else {
-    if (fort.capture_timer < room_speed * 5)
+    if (fort.capture_timer < room_speed * FORT_CAPTURE_DURATION)
         fort.capture_timer++;
+        
+    // ensure fort "health" does not exceed maximum amount
+    if (fort.capture_timer > room_speed * FORT_CAPTURE_DURATION)
+        fort.capture_timer == room_speed * FORT_CAPTURE_DURATION;
 }
 
 /*

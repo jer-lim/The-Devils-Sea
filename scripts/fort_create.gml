@@ -26,7 +26,7 @@ radius.image_yscale = fort_scan_arc_obj.sprite_width * 2 / radius.sprite_height;
 radius.fort = id;
 
 // initialize capture timer flag to 5 seconds
-capture_timer = room_speed * 5;
+capture_timer = room_speed * FORT_CAPTURE_DURATION;
 blue_bar = instance_create(x, y, blue_bar_obj);
 blue_bar.visible = false;
 red_bar = instance_create(x, y, red_bar_obj);
