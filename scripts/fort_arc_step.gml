@@ -24,7 +24,7 @@ else {
         
     // ensure fort "health" does not exceed maximum amount
     if (fort.capture_timer > room_speed * FORT_CAPTURE_DURATION)
-        fort.capture_timer == room_speed * FORT_CAPTURE_DURATION;
+        fort.capture_timer = room_speed * FORT_CAPTURE_DURATION;
 }
 
 /*
