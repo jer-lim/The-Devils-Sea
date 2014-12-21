@@ -7,6 +7,22 @@
 // get the object the ship collided with
 var obj_collided = argument0;
 
+// play bounce sound if it is not already playing for this ship
+if (!audio_is_playing(bounce_sound)) {
+    bounce_sound = audio_play_sound(boink_sound, 40, 0);
+    
+    // determine sound volume based on ship speed
+    // var bounce_volume = self.speed / self.max_speed;
+    var bounce_volume = self.speed / (SHIP_MAX_SPEED * SHIP_SPEED_MULTIPLIER);
+    show_debug_message(bounce_volume);
+    
+    // minimum volume
+    if (bounce_volume < 0.2) bounce_volume = 0.2;
+    
+    // play bounce sound
+    audio_sound_gain(bounce_sound, bounce_volume, 0);
+}
+
 // check if the ship is still colliding with the object
 // (it may have already moved away because of bouncing)
 

@@ -22,6 +22,7 @@ collidable = true;
 owner = 0;
 other_ship = 0;
 ship_rammed_damage_multiplier = 1;
+bounce_sound = -1;
 
 traps = TRAP_START_NUM;
 if (ship_type == SHIP_CORVETTE) traps += 2;

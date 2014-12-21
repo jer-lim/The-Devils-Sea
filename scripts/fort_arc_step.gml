@@ -91,7 +91,8 @@ else {
                 }
                 
                 //play sound
-                audio_play_sound(cannon1_sound, 30, 0);
+                var fort_attack_sound = audio_play_sound(cannon1_sound, 30, 0);
+                audio_sound_gain(fort_attack_sound, 0.7, 0);
             }
         }
     }

@@ -17,6 +17,7 @@
     <sound>sound\health_sound</sound>
     <sound>sound\speedup_sound</sound>
     <sound>sound\shield_sound</sound>
+    <sound>sound\boink_sound</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Ships">

@@ -2,7 +2,7 @@
 <sound>
   <kind>0</kind>
   <extension>.wav</extension>
-  <origname>sound\audio\cannon1_sound.wav</origname>
+  <origname>sound\audio\boink_sound.wav</origname>
   <effects>0</effects>
   <volume>
     <volume>1</volume>
@@ -21,7 +21,7 @@
     <bitDepth>16</bitDepth>
   </bitDepths>
   <preload>-1</preload>
-  <data>cannon1_sound.wav</data>
+  <data>boink_sound.wav</data>
   <compressed>0</compressed>
   <streamed>0</streamed>
   <uncompressOnLoad>0</uncompressOnLoad>
