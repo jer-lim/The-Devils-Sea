@@ -18,6 +18,9 @@
     <sound>sound\speedup_sound</sound>
     <sound>sound\shield_sound</sound>
     <sound>sound\boink_sound</sound>
+    <sound>sound\capturing_sound</sound>
+    <sound>sound\captured_sound</sound>
+    <sound>sound\xebec_active_sound</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Ships">
@@ -158,6 +161,8 @@
         <script>scripts\fort_arc_acquire_target.gml</script>
         <script>scripts\fort_arc_unacquire_target.gml</script>
         <script>scripts\fort_start_capturing.gml</script>
+        <script>scripts\fort_radius_begin_step.gml</script>
+        <script>scripts\fort_radius_end_step.gml</script>
         <script>scripts\draw_fort_bar.gml</script>
       </scripts>
       <scripts name="Cannonball">

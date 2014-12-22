@@ -16,6 +16,9 @@ if (fort.capture_timer <= 0) {
     
     // disengage fort target
     fort_arc_unacquire_target();
+    
+    // play captured sound
+    audio_play_sound(captured_sound, 40, 0);
 }
 // passive fort "healing"
 else {

@@ -12,9 +12,7 @@ if (!audio_is_playing(bounce_sound)) {
     bounce_sound = audio_play_sound(boink_sound, 40, 0);
     
     // determine sound volume based on ship speed
-    // var bounce_volume = self.speed / self.max_speed;
     var bounce_volume = self.speed / (SHIP_MAX_SPEED * SHIP_SPEED_MULTIPLIER);
-    show_debug_message(bounce_volume);
     
     // minimum volume
     if (bounce_volume < 0.2) bounce_volume = 0.2;

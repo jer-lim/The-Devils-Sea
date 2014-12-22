@@ -27,6 +27,10 @@ radius.fort = id;
 
 // initialize capture timer flag to 5 seconds
 capture_timer = room_speed * FORT_CAPTURE_DURATION;
+capture_sound = -1;
+enemy_ship_in_range = false;
+friendly_ship_in_range = false;
+
 blue_bar = instance_create(x, y, blue_bar_obj);
 blue_bar.visible = false;
 red_bar = instance_create(x, y, red_bar_obj);
