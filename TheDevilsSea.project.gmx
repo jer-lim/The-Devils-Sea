@@ -21,6 +21,7 @@
     <sound>sound\capturing_sound</sound>
     <sound>sound\captured_sound</sound>
     <sound>sound\xebec_active_sound</sound>
+    <sound>sound\waves_sound</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Ships">

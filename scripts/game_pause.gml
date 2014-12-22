@@ -13,15 +13,7 @@ if (!paused) {
     
     // pause game sounds
     audio_pause_all();
-    /*
-    for (var i = 1; i <= 2; i++) {
-        with (global.ships[i]) {
-            if (audio_is_playing(divine_boost_sound)) {
-                audio_pause_sound(divine_boost_sound);   
-            }
-        }
-    }
-    */
+    audio_resume_sound(waves_sound);
     
     if (pause_btns) {
         // custom mouse cursor
@@ -72,13 +64,4 @@ else {
     
     // resume game sounds
     audio_resume_all();
-    /*
-    for (var i = 1; i <= 2; i++) {
-        with (global.ships[i]) {
-            if (audio_is_paused(divine_boost_sound)) {
-                audio_resume_sound(divine_boost_sound);   
-            }
-        }
-    }
-    */
 }

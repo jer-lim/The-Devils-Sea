@@ -92,4 +92,8 @@ for (var i = 0; i < random_range(5, 20); i++) {
     current.image_yscale *= random_range(1, 2);
 }
 
+// background sound
+if (audio_is_paused(waves_sound))
+    audio_resume_sound(waves_sound);
+    
 // show_player_ship_bars(3);

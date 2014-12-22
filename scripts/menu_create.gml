@@ -9,3 +9,10 @@ cursor_sprite = custom_cursor_sprite;
 global.games_played = 0;
 global.wins[PLAYER_ONE] = 0;
 global.wins[PLAYER_TWO] = 0;
+
+// create waves music
+if (!audio_is_playing(waves_sound)) {
+    audio_play_sound(waves_sound, 100, 1);
+    audio_sound_gain(waves_sound, 0.75, 0);
+}
+audio_pause_sound(waves_sound);

@@ -21,3 +21,6 @@ global.pregame_btns[PLAYER_TWO, SHIP_XEBEC] = btn_2_xebec_obj;
 global.pregame_btns[PLAYER_TWO, SHIP_CARRACK] = btn_2_carrack_obj;
 global.pregame_btns[PLAYER_TWO, SHIP_GALLEASS] = btn_2_galleass_obj;
 global.pregame_btns[PLAYER_TWO, SHIP_CORVETTE] = btn_2_corvette_obj;
+
+// pause wave sounds from game
+audio_pause_sound(waves_sound);

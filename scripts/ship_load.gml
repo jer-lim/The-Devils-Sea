@@ -22,7 +22,6 @@ collidable = true;
 owner = 0;
 other_ship = 0;
 ship_rammed_damage_multiplier = 1;
-bounce_sound = -1;
 
 traps = TRAP_START_NUM;
 if (ship_type == SHIP_CORVETTE) traps += 2;
@@ -46,3 +45,8 @@ divine_boost_sound = -1;
 
 // xebec passive ability
 xebec_passive = false;
+
+// sounds attached to ship
+bounce_sound = -1;
+// move_sound = audio_play_sound(waves_sound, 60, 0);
+// audio_pause_sound(move_sound)
