@@ -45,7 +45,7 @@ else {
     // resume game sounds
     audio_resume_all();
     
-    audio_sound_gain(background_sound, 0.3,
+    audio_sound_gain(background_sound, 0.35,
         audio_sound_get_track_position(background_sound));
         
     // reactivate game elements

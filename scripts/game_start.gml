@@ -98,7 +98,7 @@ if (audio_is_paused(waves_sound))
     
 if (!audio_is_playing(background_sound))
      audio_play_sound(background_sound, 90, 1);
-audio_sound_gain(background_sound, 0.3,
+audio_sound_gain(background_sound, 0.35,
     audio_sound_get_track_position(background_sound));
     
 // show_player_ship_bars(3);

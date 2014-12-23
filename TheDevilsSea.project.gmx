@@ -26,6 +26,8 @@
     <sound>sound\engine_sound</sound>
     <sound>sound\pregame_sound</sound>
     <sound>sound\menu_sound</sound>
+    <sound>sound\click_sound</sound>
+    <sound>sound\select_sound</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Ships">
