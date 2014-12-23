@@ -28,6 +28,7 @@ with (cannonball) {
 
 //play sound
 audio_play_sound(cannon1_sound, 30, 0);
+audio_sound_gain(cannon1_sound, 0.85, 0);
 
 // reactivate timer for next attack
 alarm[1] = room_speed * CARRACK_PASSIVE_RELOAD;

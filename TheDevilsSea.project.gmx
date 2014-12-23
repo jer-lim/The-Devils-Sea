@@ -22,6 +22,10 @@
     <sound>sound\captured_sound</sound>
     <sound>sound\xebec_active_sound</sound>
     <sound>sound\waves_sound</sound>
+    <sound>sound\background_sound</sound>
+    <sound>sound\engine_sound</sound>
+    <sound>sound\pregame_sound</sound>
+    <sound>sound\menu_sound</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Ships">

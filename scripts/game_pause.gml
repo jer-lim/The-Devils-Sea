@@ -11,10 +11,6 @@ if (!paused) {
     paused = true;
     visible = true;
     
-    // pause game sounds
-    audio_pause_all();
-    audio_resume_sound(waves_sound);
-    
     if (pause_btns) {
         // custom mouse cursor
         cursor_sprite = custom_cursor_sprite;
@@ -46,6 +42,12 @@ else {
     if (sprite_exists(spr))
         sprite_delete(spr);
     
+    // resume game sounds
+    audio_resume_all();
+    
+    audio_sound_gain(background_sound, 0.3,
+        audio_sound_get_track_position(background_sound));
+        
     // reactivate game elements
     instance_activate_all();
     
@@ -61,7 +63,4 @@ else {
     
     // hide mouse cursor
     cursor_sprite = -1;
-    
-    // resume game sounds
-    audio_resume_all();
 }

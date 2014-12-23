@@ -48,5 +48,5 @@ xebec_passive = false;
 
 // sounds attached to ship
 bounce_sound = -1;
-// move_sound = audio_play_sound(waves_sound, 60, 0);
-// audio_pause_sound(move_sound)
+move_sound = audio_play_sound(engine_sound, 60, 1);
+audio_pause_sound(move_sound);

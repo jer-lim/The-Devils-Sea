@@ -43,4 +43,5 @@ for (var i = 0; i < 5; i++) {
 }
 
 // play sound
+audio_play_sound(cannon1_sound, 40, 0);
 audio_play_sound(cannon2_sound, 40, 0);

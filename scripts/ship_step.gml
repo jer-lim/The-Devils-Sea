@@ -16,12 +16,14 @@ if (speed > max_speed){
     speed -= 100 * SHIP_SPEED_MULTIPLIER / room_speed;
 }
 
-/*
-if (speed > 0)
+if (speed > 0) {
     audio_resume_sound(self.move_sound);
+    audio_sound_gain(self.move_sound,
+        self.speed / (SHIP_MAX_SPEED * SHIP_SPEED_MULTIPLIER),
+        audio_sound_get_track_position(self.move_sound));
+}
 else
     audio_pause_sound(self.move_sound);
-*/
 
 // Xebec passive ability: more speed when heading towards other ship
 if(ship_type == SHIP_XEBEC) {

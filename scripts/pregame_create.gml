@@ -23,4 +23,13 @@ global.pregame_btns[PLAYER_TWO, SHIP_GALLEASS] = btn_2_galleass_obj;
 global.pregame_btns[PLAYER_TWO, SHIP_CORVETTE] = btn_2_corvette_obj;
 
 // pause wave sounds from game
-audio_pause_sound(waves_sound);
+if (audio_is_playing(waves_sound)) {
+    audio_pause_sound(waves_sound);
+}
+
+if (audio_is_playing(menu_sound))
+    audio_stop_sound(menu_sound);
+if (audio_is_playing(background_sound))
+    audio_stop_sound(background_sound);
+if (!audio_is_playing(pregame_sound))
+    audio_play_sound(pregame_sound, 90, 1);

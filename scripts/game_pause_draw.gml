@@ -28,6 +28,13 @@ if (paused) {
         // turn off drawing, deactivate game elements
         draw = false;
         instance_deactivate_all(true);
+
+        // handle game sounds
+        audio_pause_all();
+        audio_resume_sound(waves_sound);
+        audio_resume_sound(background_sound)
+        audio_sound_gain(background_sound, 1,
+            audio_sound_get_track_position(background_sound));
         
         // create transparent background and logo
         pause_bg = instance_create(0, 0, menubg_obj);

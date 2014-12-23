@@ -24,8 +24,8 @@ if (other.owner != self.fort.owner && other.hp > 0) {
         // play capture sound if it is not already playing for this fort
         if (!audio_is_playing(self.fort.capture_sound)) {
             self.fort.capture_sound = audio_play_sound(capturing_sound, 35, 0);
-            audio_sound_gain(self.fort.capture_sound, 1,
-                audio_sound_get_track_position(self.fort.capture_sound));
+            // audio_sound_gain(self.fort.capture_sound, 0.8,
+                // audio_sound_get_track_position(self.fort.capture_sound));
         }
     }
 }

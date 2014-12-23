@@ -18,3 +18,5 @@ with(alarmer_obj)
 {
     alarm[0] = 2 * room_speed; // set alarmer_obj's alarm 0 to run
 }
+
+audio_play_sound(menu_sound, 90, 1);
