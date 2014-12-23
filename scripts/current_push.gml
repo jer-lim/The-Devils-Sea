@@ -17,10 +17,12 @@ var dirY = -sin(degtorad(cur_direction));
 
 // modify ship's h and v speeds
 var old_speed = other.speed;
-var hspeed_mod = dirX * CURRENT_STRENGTH_MULTIPLIER / (other.mass * 0.1);
-var vspeed_mod = dirY * CURRENT_STRENGTH_MULTIPLIER / (other.mass * 0.1);
+var hspeed_mod = dirX * (CURRENT_STRENGTH_MULTIPLIER) / (other.mass * 0.1);
+var vspeed_mod = dirY * (CURRENT_STRENGTH_MULTIPLIER) / (other.mass * 0.1);
 other.hspeed += hspeed_mod;
 other.vspeed += vspeed_mod;
+
+// + ship friction
 
 // make current weaker if ship is going against it,
 // and stronger if the ship is going in line with it

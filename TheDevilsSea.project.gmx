@@ -28,6 +28,7 @@
     <sound>sound\menu_sound</sound>
     <sound>sound\click_sound</sound>
     <sound>sound\select_sound</sound>
+    <sound>sound\galleass_active_sound</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Ships">
