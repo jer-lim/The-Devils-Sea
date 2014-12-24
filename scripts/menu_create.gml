@@ -24,3 +24,5 @@ if (!audio_is_playing(waves_sound)) {
     audio_sound_gain(waves_sound, 0.75, 0);
 }
 audio_pause_sound(waves_sound);
+
+create_fog(false);

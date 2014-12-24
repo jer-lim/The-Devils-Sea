@@ -68,6 +68,7 @@
       <sprite>sprites\btn1_sprite</sprite>
       <sprite>sprites\btn2_sprite</sprite>
       <sprite>sprites\btn_smallwood_sprite</sprite>
+      <sprite>sprites\btn_smallwood_blue_sprite</sprite>
     </sprites>
     <sprites name="Title">
       <sprite>sprites\titlelogo_sprite</sprite>
@@ -83,6 +84,7 @@
       <sprite>sprites\control_text_sprite</sprite>
       <sprite>sprites\control_guide_sprite</sprite>
       <sprite>sprites\pregame_desc_sprite</sprite>
+      <sprite>sprites\fog_sprite</sprite>
     </sprites>
     <sprites name="Forts">
       <sprite>sprites\fort_sprite</sprite>
@@ -120,6 +122,7 @@
       <script>scripts\ship_collide.gml</script>
       <script>scripts\ship_execute_ulti.gml</script>
       <script>scripts\ship_damage.gml</script>
+      <script>scripts\ship_display_next_damage.gml</script>
       <script>scripts\ship_death.gml</script>
       <script>scripts\ship_spawn_trap.gml</script>
       <script>scripts\ship_reload_trap.gml</script>
@@ -180,7 +183,9 @@
       </scripts>
       <scripts name="Damage Display">
         <script>scripts\damage_display_create.gml</script>
+        <script>scripts\damage_display_init.gml</script>
         <script>scripts\damage_display_draw.gml</script>
+        <script>scripts\damage_display_destroy.gml</script>
         <script>scripts\boost_animate.gml</script>
       </scripts>
       <scripts name="Global Elements">
@@ -196,6 +201,8 @@
     </scripts>
     <scripts name="Main Menu">
       <script>scripts\menu_create.gml</script>
+      <script>scripts\fog_step_animate.gml</script>
+      <script>scripts\create_fog.gml</script>
     </scripts>
     <scripts name="Controls">
       <script>scripts\controls_create.gml</script>
@@ -245,6 +252,7 @@
       <object>objects\titlelogosmall_obj</object>
       <object>objects\titleship_obj</object>
       <object>objects\titleship2_obj</object>
+      <object>objects\fog_obj</object>
       <object>objects\btn1_parent_obj</object>
       <object>objects\btn_play_obj</object>
       <object>objects\btn_guide_obj</object>

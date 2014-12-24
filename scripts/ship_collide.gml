@@ -86,7 +86,7 @@ if (collidable && other.collidable) {
     * RAM_DAMAGE_MULTIPLIER: multiply the ratio to get the actual damage
     */
     var damage = abs(massRatio * cUVdotvDiff * damage_multiplier * ship_rammed_damage_multiplier * RAM_DAMAGE_MULTIPLIER);
-    ship_damage(damage, damage);
+    ship_damage(damage * 0.9, damage * 1.1);
     
     /*
     * Find reaction vector for other ship
@@ -140,7 +140,7 @@ if (collidable && other.collidable) {
     }
     var damage2 = abs(massRatio2 * cUVdotvDiff2 * other.ship_rammed_damage_multiplier * damage_multiplier2 * RAM_DAMAGE_MULTIPLIER);
     with(other){
-        ship_damage(damage2, damage2);
+        ship_damage(damage2 * 0.9, damage2 * 1.1);
     }
     
     /*

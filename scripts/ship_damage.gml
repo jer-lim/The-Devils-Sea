@@ -16,10 +16,11 @@ if (divine_boost_time <= 0) {
         hp -= damage;
     }
     
-    // display damage number
-    var damage_display = instance_create(x, y - 40, damage_float_obj);
-    damage_display.damage = damage;
-    damage_display.owner = owner;
+    // add to damage display queue
+    if (damage > 0) {
+        ship_damage_queue_size++;
+        ship_display_next_damage(damage);
+    }
     
     /*
     * Play shattering sound

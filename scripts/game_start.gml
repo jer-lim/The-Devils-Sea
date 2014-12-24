@@ -102,3 +102,4 @@ audio_sound_gain(background_sound, 0.35,
     audio_sound_get_track_position(background_sound));
     
 // show_player_ship_bars(3);
+create_fog(true);

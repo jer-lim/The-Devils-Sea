@@ -16,6 +16,7 @@ if (speed > max_speed){
     speed -= 100 * SHIP_SPEED_MULTIPLIER / room_speed;
 }
 
+// moving sound
 audio_pause_sound(engine_sound);
 if (speed > 0) {
     audio_resume_sound(self.move_sound);

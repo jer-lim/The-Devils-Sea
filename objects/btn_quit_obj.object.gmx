@@ -110,7 +110,7 @@ instance_deactivate_object(self);
           </argument>
           <argument>
             <kind>0</kind>
-            <string>"Quit"</string>
+            <string>"End Series"</string>
           </argument>
           <argument>
             <kind>0</kind>
