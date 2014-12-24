@@ -23,7 +23,8 @@ owner = 0;
 other_ship = 0;
 ship_rammed_damage_multiplier = 1;
 
-ship_damage_queue_size = 0;
+ship_damage_queue_index = -1;
+var ship_damage_list;           // array
 
 traps = TRAP_START_NUM;
 if (ship_type == SHIP_CORVETTE) traps += 2;

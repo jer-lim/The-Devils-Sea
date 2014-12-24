@@ -7,6 +7,7 @@ damage = 0;
 owner = 0;
 
 text_alpha = 1;
-text_scale = 1.5;
+text_scale = 1.4;
 
+queue_index = 0;
 init = false;

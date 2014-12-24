@@ -19,7 +19,8 @@ if (init) {
     draw_set_alpha(1);
     
     // animations
-    y -= 20 / room_speed;
+    y -= 10 / room_speed;
+    //y -= 20 / room_speed;
     text_alpha -= 0.01;
     text_scale -= 0.01;
 }

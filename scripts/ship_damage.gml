@@ -18,7 +18,7 @@ if (divine_boost_time <= 0) {
     
     // add to damage display queue
     if (damage > 0) {
-        ship_damage_queue_size++;
+        ship_damage_queue_index++;
         ship_display_next_damage(damage);
     }
     
