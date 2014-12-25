@@ -13,10 +13,14 @@ randomize();
 globalvar games_played;
 globalvar wins;
 
-// pause 2 seconds
-with(alarmer_obj)
-{
-    alarm[0] = 2 * room_speed; // set alarmer_obj's alarm 0 to run
+// create black background that fades out in 0.5 seconds
+black_bg_init_fade_in(false, ROOM_FADE_TIME);
+
+// pause 1 second
+with(alarmer_obj) {
+    room_to_fade = menu;
+    alarm[0] = 1.5 * room_speed; // set alarmer_obj's alarm 0 to run
 }
 
+// play menu background music
 audio_play_sound(menu_sound, 90, 1);

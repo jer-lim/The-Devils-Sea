@@ -28,6 +28,7 @@ if (paused) {
         // turn off drawing, deactivate game elements
         draw = false;
         instance_deactivate_all(true);
+        instance_activate_object(alarmer_obj);
 
         // handle game sounds
         audio_pause_all();

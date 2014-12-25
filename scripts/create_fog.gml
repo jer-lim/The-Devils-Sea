@@ -6,7 +6,7 @@ if (argument0) {
 }
 
 // init fog random positions
-var fog_x_pos, fog_y_pos, fog_y_offset = -75;
+var fog_x_pos, fog_y_pos, fog_y_offset = -90;
 
 // x positions
 for (var i = 0; i < no_of_fogs; i++)

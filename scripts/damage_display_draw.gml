@@ -21,6 +21,6 @@ if (init) {
     // animations
     y -= 10 / room_speed;
     //y -= 20 / room_speed;
-    text_alpha -= 0.01;
+    text_alpha -= 0.025;
     text_scale -= 0.01;
 }

@@ -3,6 +3,9 @@
 // Student Number:     S10122326F
 // Student Name:       Jeremy Lim
 
+// create black background that fades out in 0.5 seconds
+black_bg_init_fade_in(false, ROOM_FADE_TIME);
+
 // create player 1's ship
 var ship1 = instance_create(60, room_height*0.5 - 55, ship1_obj);
 with (ship1) {
@@ -17,3 +20,6 @@ with (ship2) {
 }
 ship2.image_angle = 180;
 ship2.owner = PLAYER_TWO;
+
+// alarm object to control transitions
+instance_create(0, 0, alarmer_obj);

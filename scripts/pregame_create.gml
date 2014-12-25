@@ -3,6 +3,9 @@
 // Student Number:     S10131808A
 // Student Name:       Elliot Tan
 
+// create black background that fades out in 0.5 seconds
+black_bg_init_fade_in(false, ROOM_FADE_TIME);
+
 // init array to store selected ship values
 globalvar player_ships_selection;
 for (var p = 1; p <= 2; p++) {
@@ -33,3 +36,6 @@ if (audio_is_playing(background_sound))
     audio_stop_sound(background_sound);
 if (!audio_is_playing(pregame_sound))
     audio_play_sound(pregame_sound, 90, 1);
+    
+// alarm object to control transitions
+instance_create(0, 0, alarmer_obj);

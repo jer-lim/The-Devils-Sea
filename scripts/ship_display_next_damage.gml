@@ -37,7 +37,7 @@ if (ship_damage_queue_index >= 0) {
     
     // set init timer    
     with (damage_display) {
-        if (other.ship_damage_queue_index == 0 || empty_slot_found)
+        if (other.ship_damage_queue_index == 0) // || empty_slot_found)
             damage_display_init();
         else {
             alarm[1] = room_speed * 0.05 * (other.ship_damage_queue_index);

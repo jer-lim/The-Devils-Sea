@@ -7,10 +7,8 @@
 // Student Number:     S10131808A
 // Student Name:       Elliot Tan
 
-/*
-* Determine which ship to use based on ship type.
-* Spawn ships on extreme left and right side of map.
-*/
+// create black background that fades out in 0.5 seconds
+black_bg_init_fade_in(false, ROOM_FADE_TIME);
 
 // hide mouse cursor
 cursor_sprite = -1;
@@ -31,6 +29,11 @@ global.player_ships_index[PLAYER_TWO] = 1;
 
 global.ships_lost[PLAYER_ONE] = 0;
 global.ships_lost[PLAYER_TWO] = 0;
+
+/*
+* Determine which ship to use based on ship type.
+* Spawn ships on extreme left and right side of map.
+*/
 
 // create player 1's ship
 var ship1 = instance_create(50, room_height*0.5, ship1_obj);

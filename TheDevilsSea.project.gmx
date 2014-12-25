@@ -85,6 +85,7 @@
       <sprite>sprites\control_guide_sprite</sprite>
       <sprite>sprites\pregame_desc_sprite</sprite>
       <sprite>sprites\fog_sprite</sprite>
+      <sprite>sprites\credits_sprite</sprite>
     </sprites>
     <sprites name="Forts">
       <sprite>sprites\fort_sprite</sprite>
@@ -101,6 +102,7 @@
     <sprite>sprites\cannonball_sprite</sprite>
     <sprite>sprites\current_sprite</sprite>
     <sprite>sprites\custom_cursor_sprite</sprite>
+    <sprite>sprites\black_bg_sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\water_bg</background>
@@ -139,11 +141,17 @@
         <script>scripts\carrack_ulti_activate.gml</script>
       </scripts>
     </scripts>
+    <scripts name="Splash Screen">
+      <script>scripts\launch_splash_screen.gml</script>
+      <script>scripts\black_bg_init_fade_in.gml</script>
+      <script>scripts\black_bg_step.gml</script>
+    </scripts>
     <scripts name="Misc">
       <script>scripts\normalize_vector.gml</script>
       <script>scripts\draw_menu_text.gml</script>
-      <script>scripts\launch_splash_screen.gml</script>
       <script>scripts\load_stats.gml</script>
+      <script>scripts\credits_create.gml</script>
+      <script>scripts\alarm_fade_to_room.gml</script>
     </scripts>
     <scripts name="Game">
       <scripts name="Pausing/Ending">
@@ -201,8 +209,9 @@
     </scripts>
     <scripts name="Main Menu">
       <script>scripts\menu_create.gml</script>
-      <script>scripts\fog_step_animate.gml</script>
       <script>scripts\create_fog.gml</script>
+      <script>scripts\fog_step_animate.gml</script>
+      <script>scripts\menu_button_click.gml</script>
     </scripts>
     <scripts name="Controls">
       <script>scripts\controls_create.gml</script>
@@ -224,6 +233,7 @@
     <object>objects\water_texture_obj</object>
     <object>objects\current_obj</object>
     <object>objects\cannonball_obj</object>
+    <object>objects\black_bg_obj</object>
     <object>objects\alarmer_obj</object>
     <object>objects\pause_obj</object>
     <object>objects\cursor_obj</object>
@@ -259,6 +269,7 @@
       <object>objects\btn_credits_obj</object>
       <object>objects\btn_resume_obj</object>
       <object>objects\btn_quit_obj</object>
+      <object>objects\credits_obj</object>
     </objects>
     <objects name="Pregame">
       <object>objects\xebec_obj</object>
@@ -311,13 +322,14 @@
     <room>rooms\splash</room>
     <room>rooms\menu</room>
     <room>rooms\controls_archive</room>
+    <room>rooms\credits</room>
     <room>rooms\controls</room>
     <room>rooms\pre_game</room>
     <room>rooms\game</room>
   </rooms>
-  <constants number="32">
+  <constants number="33">
     <constant name="CARRACK_PASSIVE_LENGTH">1</constant>
-    <constant name="CARRACK_PASSIVE_RELOAD">3</constant>
+    <constant name="CARRACK_PASSIVE_RELOAD">2</constant>
     <constant name="CARRACK_PASSIVE_SPEED">10</constant>
     <constant name="CHEST_SPAWN_MAX">10</constant>
     <constant name="CHEST_SPAWN_MIN">5</constant>
@@ -348,6 +360,7 @@
     <constant name="TRAP_RELOAD_TIME">15</constant>
     <constant name="TRAP_SCALE_SIZE">2</constant>
     <constant name="TRAP_START_NUM">1</constant>
+    <constant name="ROOM_FADE_TIME">0.25</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
