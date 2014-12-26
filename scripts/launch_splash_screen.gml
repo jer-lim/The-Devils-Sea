@@ -23,4 +23,5 @@ with(alarmer_obj) {
 }
 
 // play menu background music
+global.sound = true;
 audio_play_sound(menu_sound, 90, 1);

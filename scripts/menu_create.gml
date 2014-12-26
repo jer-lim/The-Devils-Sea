@@ -9,6 +9,9 @@ cursor_sprite = custom_cursor_sprite;
 // create black background that fades out in 0.5 seconds
 black_bg_init_fade_in(false, ROOM_FADE_TIME);
 
+// sound toggle button
+instance_create(room_width - 40, 40, sound_toggle_obj);
+
 global.games_played = 0;
 global.wins[PLAYER_ONE] = 0;
 global.wins[PLAYER_TWO] = 0;

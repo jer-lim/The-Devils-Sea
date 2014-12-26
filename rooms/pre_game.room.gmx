@@ -55,7 +55,7 @@
     <instance objName="controls1_text_obj" x="600" y="300" name="inst_1F154BBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="controls2_text_obj" x="600" y="450" name="inst_A465AC92" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="btn_start_obj" x="1024" y="630" name="inst_8DCE6C73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="btn_back_obj" x="544" y="630" name="inst_8C3C25A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="btn_med_back_obj" x="169" y="49" name="inst_8F43573E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="xebec_obj" x="768" y="300" name="inst_3B10B93C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="carrack_obj" x="896" y="300" name="inst_D33DD1EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="galleass_obj" x="1024" y="300" name="inst_3E1EA805" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -64,7 +64,7 @@
     <instance objName="carrack_obj" x="896" y="450" name="inst_8BDD4A92" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="corvette_obj" x="1152" y="450" name="inst_ED793D49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="galleass_obj" x="1024" y="450" name="inst_EEB464B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="pregame_text_obj" x="957" y="75" name="inst_769E3ABB" locked="0" code="" scaleX="10" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="pregame_text_obj" x="925" y="75" name="inst_769E3ABB" locked="0" code="" scaleX="10" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="btn_1_xebec_obj" x="768" y="300" name="inst_AB0C2282" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="btn_1_carrack_obj" x="896" y="300" name="inst_F80422D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="btn_1_galleass_obj" x="1024" y="300" name="inst_1D9C49FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -73,8 +73,8 @@
     <instance objName="btn_2_carrack_obj" x="896" y="450" name="inst_6CAE3017" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="btn_2_galleass_obj" x="1024" y="450" name="inst_3E71CBB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="btn_2_corvette_obj" x="1152" y="450" name="inst_6A4A3A7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="titlelogosmall_obj" x="64" y="30" name="inst_A996E2BE" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="pregame_desc_obj" x="957" y="165" name="inst_E21F720B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="titlelogosmall_obj" x="57" y="396" name="inst_A996E2BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="pregame_desc_obj" x="925" y="165" name="inst_E21F720B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

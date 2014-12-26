@@ -31,7 +31,7 @@ for (var i = 0; i < no_of_fogs; i++) {
 // make sure fog is above, init animation speed
 fog_index = 0;
 for (var i = 0; i < no_of_fogs; i++) {
-    var random_anim_speed = random_range(1, 3);
+    var random_anim_speed = random_range(1, 4);
     with (fogs[fog_index++]) {
         depth = -1;
         animation_speed = random_anim_speed;

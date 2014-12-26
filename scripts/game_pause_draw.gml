@@ -29,6 +29,7 @@ if (paused) {
         draw = false;
         instance_deactivate_all(true);
         instance_activate_object(alarmer_obj);
+        instance_activate_object(sound_toggle_obj);
 
         // handle game sounds
         audio_pause_all();

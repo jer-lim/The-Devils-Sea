@@ -66,6 +66,7 @@
     </sprites>
     <sprites name="Buttons">
       <sprite>sprites\btn1_sprite</sprite>
+      <sprite>sprites\btn_medium_sprite</sprite>
       <sprite>sprites\btn2_sprite</sprite>
       <sprite>sprites\btn_smallwood_sprite</sprite>
       <sprite>sprites\btn_smallwood_blue_sprite</sprite>
@@ -86,6 +87,8 @@
       <sprite>sprites\pregame_desc_sprite</sprite>
       <sprite>sprites\fog_sprite</sprite>
       <sprite>sprites\credits_sprite</sprite>
+      <sprite>sprites\full_controls_sprite</sprite>
+      <sprite>sprites\sound_toggle_sprite</sprite>
     </sprites>
     <sprites name="Forts">
       <sprite>sprites\fort_sprite</sprite>
@@ -150,8 +153,9 @@
       <script>scripts\normalize_vector.gml</script>
       <script>scripts\draw_menu_text.gml</script>
       <script>scripts\load_stats.gml</script>
-      <script>scripts\credits_create.gml</script>
       <script>scripts\alarm_fade_to_room.gml</script>
+      <script>scripts\sound_toggle_create.gml</script>
+      <script>scripts\sound_toggle.gml</script>
     </scripts>
     <scripts name="Game">
       <scripts name="Pausing/Ending">
@@ -212,9 +216,11 @@
       <script>scripts\create_fog.gml</script>
       <script>scripts\fog_step_animate.gml</script>
       <script>scripts\menu_button_click.gml</script>
+      <script>scripts\credits_create.gml</script>
     </scripts>
     <scripts name="Controls">
       <script>scripts\controls_create.gml</script>
+      <script>scripts\controls_tutorial_create.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -270,6 +276,7 @@
       <object>objects\btn_resume_obj</object>
       <object>objects\btn_quit_obj</object>
       <object>objects\credits_obj</object>
+      <object>objects\sound_toggle_obj</object>
     </objects>
     <objects name="Pregame">
       <object>objects\xebec_obj</object>
@@ -316,14 +323,20 @@
       <object>objects\controls2_text_obj</object>
       <object>objects\controls_guide_obj</object>
       <object>objects\controls_text_obj</object>
+      <object>objects\btn_try_obj</object>
+      <object>objects\btn_med_parent_obj</object>
+      <object>objects\btn_ctrls_play_obj</object>
+      <object>objects\btn_med_back_obj</object>
+      <object>objects\full_controls_obj</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\splash</room>
     <room>rooms\menu</room>
-    <room>rooms\controls_archive</room>
     <room>rooms\credits</room>
+    <room>rooms\controls_tutorial</room>
     <room>rooms\controls</room>
+    <room>rooms\controls_archive</room>
     <room>rooms\pre_game</room>
     <room>rooms\game</room>
   </rooms>

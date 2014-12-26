@@ -60,6 +60,7 @@ else {
     instance_deactivate_object(radhud1_obj);
     instance_deactivate_object(radhud2_obj);
     instance_deactivate_object(cross_obj);
+    instance_deactivate_object(sound_toggle_obj);
     
     // hide mouse cursor
     cursor_sprite = -1;

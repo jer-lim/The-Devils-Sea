@@ -6,6 +6,12 @@
 // create black background that fades out in 0.5 seconds
 black_bg_init_fade_in(false, ROOM_FADE_TIME);
 
+// sound toggle button
+instance_create(room_width - 40, 40, sound_toggle_obj);
+
+// animated moving fog
+create_fog(false);
+
 // init array to store selected ship values
 globalvar player_ships_selection;
 for (var p = 1; p <= 2; p++) {

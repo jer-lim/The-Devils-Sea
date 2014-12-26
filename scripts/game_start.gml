@@ -10,6 +10,10 @@
 // create black background that fades out in 0.5 seconds
 black_bg_init_fade_in(false, ROOM_FADE_TIME);
 
+// sound toggle button
+instance_create(room_width - 40, 40, sound_toggle_obj);
+instance_deactivate_object(sound_toggle_obj);
+
 // hide mouse cursor
 cursor_sprite = -1;
 
@@ -103,6 +107,5 @@ if (!audio_is_playing(background_sound))
      audio_play_sound(background_sound, 90, 1);
 audio_sound_gain(background_sound, 0.35,
     audio_sound_get_track_position(background_sound));
-    
-// show_player_ship_bars(3);
+
 create_fog(true);

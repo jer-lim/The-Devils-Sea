@@ -12,7 +12,7 @@ if (divine_boost_time <= 0) {
     var max_dmg = argument1;
     
     var damage = round(random_range(min_dmg, max_dmg));
-    if(room != controls){
+    if(room != controls_tutorial){
         hp -= damage;
     }
     
