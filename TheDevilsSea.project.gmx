@@ -104,6 +104,7 @@
     </sprites>
     <sprite>sprites\cannonball_sprite</sprite>
     <sprite>sprites\current_sprite</sprite>
+    <sprite>sprites\current_sprite_old</sprite>
     <sprite>sprites\custom_cursor_sprite</sprite>
     <sprite>sprites\black_bg_sprite</sprite>
   </sprites>
@@ -152,6 +153,7 @@
     <scripts name="Misc">
       <script>scripts\normalize_vector.gml</script>
       <script>scripts\draw_menu_text.gml</script>
+      <script>scripts\draw_menu_text_small.gml</script>
       <script>scripts\load_stats.gml</script>
       <script>scripts\alarm_fade_to_room.gml</script>
       <script>scripts\sound_toggle_create.gml</script>
@@ -228,6 +230,7 @@
     <font>fonts\ship_font2</font>
     <font>fonts\damage_font</font>
     <font>fonts\menu_font</font>
+    <font>fonts\menu_small_font</font>
     <font>fonts\game_winner_font</font>
     <font>fonts\rounds_won_font</font>
   </fonts>
@@ -346,7 +349,7 @@
     <constant name="CARRACK_PASSIVE_SPEED">10</constant>
     <constant name="CHEST_SPAWN_MAX">10</constant>
     <constant name="CHEST_SPAWN_MIN">5</constant>
-    <constant name="CURRENT_STRENGTH_MULTIPLIER">2.5</constant>
+    <constant name="CURRENT_STRENGTH_MULTIPLIER">2.2</constant>
     <constant name="FORT_ATTACK_LENGTH">0.5</constant>
     <constant name="FORT_ATTACK_RELOAD">1</constant>
     <constant name="FORT_ATTACK_SPEED">5</constant>

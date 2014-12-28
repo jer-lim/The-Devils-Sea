@@ -81,7 +81,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>draw_menu_text</script>
+            <script>draw_menu_text_small</script>
           </argument>
           <argument>
             <kind>0</kind>

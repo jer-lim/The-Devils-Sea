@@ -84,7 +84,7 @@ fort_set_owner(fort21, PLAYER_TWO);
 fort_set_owner(fort22, PLAYER_TWO);
 
 // create random currents
-for (var i = 0; i < random_range(5, 20); i++) {
+for (var i = 0; i < random_range(5, 15); i++) {
     // random position
     spawnX = random_range(0, room_width);
     spawnY = random_range(0, room_height);
@@ -95,8 +95,9 @@ for (var i = 0; i < random_range(5, 20); i++) {
     current.image_angle = current.direction;
     
     // random size
-    current.image_xscale *= random_range(1, 2);
-    current.image_yscale *= random_range(1, 2);
+    var rand_scale = random_range(0.3, 0.5);
+    current.image_xscale *= rand_scale;
+    current.image_yscale *= rand_scale;
 }
 
 // background sound
