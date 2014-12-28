@@ -22,8 +22,10 @@ var vspeed_mod = dirY * (CURRENT_STRENGTH_MULTIPLIER) / (other.mass * 0.1);
 other.hspeed += hspeed_mod;
 other.vspeed += vspeed_mod;
 
-// + ship friction
+other.speed += SHIP_FRICTION;
+// - ship friction
 
+/*
 // make current weaker if ship is going against it,
 // and stronger if the ship is going in line with it
 // (to allow going against the currentm when at a certain speed)
@@ -36,3 +38,4 @@ else {
     other.hspeed += hspeed_mod * 0.7;
     other.vspeed += vspeed_mod * 0.7;
 }
+*/
