@@ -4,9 +4,8 @@
 // Student Name:       Jeremy Lim
 
 /*
-* Giving ships a timeout after collisions prevents them from getting stuck to each other if they do
-* Currently ships can get stuck by rotating into the ship model at standstill
-* Rotational collision code is needed to prevent that case
+* Giving ships a timeout after collisions prevents
+* them from getting stuck to each other if they do
 */
 
 if (collidable && other.collidable) {

@@ -4,8 +4,7 @@
 // Student Name:       Jeremy Lim
 
 // change window size to force display to render correctly
-// window_set_size(1, 1);
-// window_set_size((display_get_height() * 0.7)/9*16, (display_get_height() * 0.7));
+display_set_gui_size(1280, 720);
 
 // randomise the seed
 randomize();

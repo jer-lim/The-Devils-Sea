@@ -4,7 +4,7 @@
 // Student Number:     S10131808A
 // Student Name:       Elliot Tan
 
-if (!other.collidable) exit;
+if (other.hp <= 0) exit;
 
 // get size of cannonball (0 - small, 1 - medium)
 var size = argument0;

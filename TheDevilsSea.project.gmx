@@ -211,6 +211,8 @@
       <script>scripts\pregame_create.gml</script>
       <script>scripts\pregame_handle_select.gml</script>
       <script>scripts\pregame_done.gml</script>
+      <script>scripts\activate_pregame_description.gml</script>
+      <script>scripts\deactivate_pregame_description.gml</script>
       <script>scripts\draw_pregame_description.gml</script>
     </scripts>
     <scripts name="Main Menu">

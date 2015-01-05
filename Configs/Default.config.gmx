@@ -117,7 +117,7 @@
     <option_in_app_purchase_sandbox_mode>0</option_in_app_purchase_sandbox_mode>
     <option_in_app_purchase_server_url></option_in_app_purchase_server_url>
     <option_information></option_information>
-    <option_interpolate>False</option_interpolate>
+    <option_interpolate>True</option_interpolate>
     <option_ios_adcolony_enable_V4VC>0</option_ios_adcolony_enable_V4VC>
     <option_ios_advertising_enable>0</option_ios_advertising_enable>
     <option_ios_advertising_key></option_ios_advertising_key>
@@ -250,12 +250,12 @@
     <option_scaleprogress>true</option_scaleprogress>
     <option_sci_UseSCI>0</option_sci_UseSCI>
     <option_sci_serverLocation></option_sci_serverLocation>
-    <option_screenkey>False</option_screenkey>
+    <option_screenkey>True</option_screenkey>
     <option_screenshotkey>true</option_screenshotkey>
     <option_shortcircuit>True</option_shortcircuit>
     <option_showcursor>False</option_showcursor>
     <option_showprogress>1</option_showprogress>
-    <option_sizeable>False</option_sizeable>
+    <option_sizeable>True</option_sizeable>
     <option_stayontop>false</option_stayontop>
     <option_sync_vertex>0</option_sync_vertex>
     <option_textureGroup0_border>2</option_textureGroup0_border>
