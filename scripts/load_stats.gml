@@ -5,7 +5,7 @@
 
 ship_hp[SHIP_XEBEC] = 350;
 ship_acceleration[SHIP_XEBEC] = 60;
-ship_max_speed[SHIP_XEBEC] = 100;
+ship_max_speed[SHIP_XEBEC] = 95;
 ship_turn_speed[SHIP_XEBEC] = 90;
 ship_mass[SHIP_XEBEC] = 300;
 ship_sprite[SHIP_XEBEC] = ship_xebec_sprite;
@@ -35,7 +35,7 @@ ship_ulti_icon[SHIP_GALLEASS] = ulti_galleass_sprite;
 
 ship_hp[SHIP_CORVETTE] = 300;
 ship_acceleration[SHIP_CORVETTE] = 50;
-ship_max_speed[SHIP_CORVETTE] = 105;
+ship_max_speed[SHIP_CORVETTE] = 100;
 ship_turn_speed[SHIP_CORVETTE] = 100;
 ship_mass[SHIP_CORVETTE] = 200;
 ship_sprite[SHIP_CORVETTE] = ship_corvette_sprite;

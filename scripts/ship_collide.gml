@@ -145,11 +145,11 @@ if (collidable && other.collidable) {
     /*
     * Apply vectors
     */
-    hspeed += massRatio * cUVdotvDiff * cUVX;
-    vspeed += massRatio * cUVdotvDiff * cUVY;
+    hspeed += massRatio * cUVdotvDiff * cUVX * 1.5;
+    vspeed += massRatio * cUVdotvDiff * cUVY * 1.5;
 
-    other.hspeed += massRatio2 * cUVdotvDiff2 * cUVX2;
-    other.vspeed += massRatio2 * cUVdotvDiff2 * cUVY2;
+    other.hspeed += massRatio2 * cUVdotvDiff2 * cUVX2 * 1.5;
+    other.vspeed += massRatio2 * cUVdotvDiff2 * cUVY2 * 1.5;
     
     /*
     * Time out collisions
