@@ -114,8 +114,9 @@ create_fog(true);
 // display random help text
 var rand_help_text = get_random_tip();
 if (global.is_new_player) {
-    help_text = instance_create(room_width * 0.5, room_height * 0.5, help_text_obj);
+    help_text = instance_create(room_width * 0.5, room_height * 0.4, help_text_obj);
     help_text.text = rand_help_text;
     help_text.animate_index = -1;
     help_text.alarm[0] = room_speed * 4;
+    help_text.image_xscale = 6.5;
 }

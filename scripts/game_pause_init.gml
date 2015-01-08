@@ -17,6 +17,7 @@ radial_display = -1;
 cross_display = -1;
 board1 = -1;
 board2 = -1;
+help_text = -1;
 
 visible = false;
 showing_bars = false; // whether the game is forcing the showing of HUD bars

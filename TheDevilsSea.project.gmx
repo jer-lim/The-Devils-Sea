@@ -116,6 +116,7 @@
     <sprite>sprites\current_sprite_old</sprite>
     <sprite>sprites\custom_cursor_sprite</sprite>
     <sprite>sprites\black_bg_sprite</sprite>
+    <sprite>sprites\message_bg_sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\water_bg</background>
@@ -165,6 +166,8 @@
       <script>scripts\draw_menu_text_small.gml</script>
       <script>scripts\draw_game_text.gml</script>
       <script>scripts\load_stats.gml</script>
+      <script>scripts\get_ship_sprite_index.gml</script>
+      <script>scripts\get_random_tip.gml</script>
       <script>scripts\alarm_fade_to_room.gml</script>
       <script>scripts\sound_toggle_create.gml</script>
       <script>scripts\sound_toggle.gml</script>
@@ -216,7 +219,6 @@
         <script>scripts\current_push.gml</script>
       </scripts>
       <script>scripts\game_start.gml</script>
-      <script>scripts\get_random_tip.gml</script>
     </scripts>
     <scripts name="Pregame">
       <script>scripts\pregame_create.gml</script>

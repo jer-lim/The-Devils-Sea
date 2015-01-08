@@ -11,6 +11,7 @@ if (other.owner != self.fort.owner && other.hp > 0) {
     if (global.is_new_player && !instance_exists(self.fort.help_text)) {
         self.fort.help_text = instance_create(x, y + 50, help_text_obj);
         self.fort.help_text.text = "CAPTURING ENEMY FORT";
+        self.fort.help_text.image_xscale = 2.5;
     }
     
     if (other.owner == PLAYER_ONE)

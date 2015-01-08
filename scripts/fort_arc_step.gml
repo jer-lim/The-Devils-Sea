@@ -14,6 +14,7 @@ if (fort.capture_timer <= 0) {
         self.fort.help_text = instance_create(x, y + 50, help_text_obj);
         self.fort.help_text.text = "FORT CAPTURED";
         self.fort.help_text.animate_index = -1;
+        self.fort.help_text.image_xscale = 2;
     }
 
     // change fort owner

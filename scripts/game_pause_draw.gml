@@ -63,11 +63,11 @@ if (paused) {
         // player 1 ships and radial effects
         ship_display[0] = instance_create(room_width - x_from_edge - board1.sprite_width*0.5,
             room_height - y_from_edge - 200, ship_display_obj);
-        ship_display[0].sprite_index = global.player_ships_selection[PLAYER_ONE, 1];
+        ship_display[0].sprite_index = get_ship_sprite_index(PLAYER_ONE, global.player_ships_selection[PLAYER_ONE, 1]);
         
         ship_display[1] = instance_create(room_width - x_from_edge,
             room_height - y_from_edge - 200, ship_display_obj);
-        ship_display[1].sprite_index = global.player_ships_selection[PLAYER_ONE, 2];
+        ship_display[1].sprite_index = get_ship_sprite_index(PLAYER_ONE, global.player_ships_selection[PLAYER_ONE, 2]);
         
         // display radial effect over ship that is being used
         if (global.ships_lost[PLAYER_ONE] == 0) {
@@ -88,11 +88,11 @@ if (paused) {
         // player 2 ships and radial effects
         ship_display[2] = instance_create(room_width - x_from_edge - board1.sprite_width*0.5,
             room_height - y_from_edge, ship_display_obj);
-        ship_display[2].sprite_index = global.player_ships_selection[PLAYER_TWO, 1];
+        ship_display[2].sprite_index = get_ship_sprite_index(PLAYER_TWO, global.player_ships_selection[PLAYER_TWO, 1]);
         
         ship_display[3] = instance_create(room_width - x_from_edge,
             room_height - y_from_edge, ship_display_obj);
-        ship_display[3].sprite_index = global.player_ships_selection[PLAYER_TWO, 2];
+        ship_display[3].sprite_index = get_ship_sprite_index(PLAYER_TWO, global.player_ships_selection[PLAYER_TWO, 2]);
         
         // display radial effect over ship that is being used
         if (global.ships_lost[PLAYER_TWO] == 0) {
@@ -112,6 +112,14 @@ if (paused) {
         
         // show current scores
         create_postgame_score();
+        
+        // display random help text
+        var rand_help_text = get_random_tip();
+        help_text = instance_create(room_width * 0.7, room_height * 0.2, help_text_obj);
+        help_text.text = rand_help_text;
+        help_text.animate_index = -1;
+        help_text.image_xscale = 6.5;
+        help_text.alarm[0] = 0;
     }
     
     // draw sprite created of application surface

@@ -38,11 +38,3 @@ for (var p = 1; p <= 2; p++) {
 
 if (audio_is_playing(pregame_sound))
     audio_stop_sound(pregame_sound);
-
-// debug
-/*
-show_debug_message(string(global.player_ships_selection[1,1])+","
-    +string(global.player_ships_selection[1,2]));
-show_debug_message(string(global.player_ships_selection[2,1])+","
-    +string(global.player_ships_selection[2,2]));
-*/

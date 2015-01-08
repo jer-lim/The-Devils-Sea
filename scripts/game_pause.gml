@@ -39,6 +39,9 @@ else {
     if (instance_exists(fleet_text)) {
         with (fleet_text) instance_destroy();
     }
+    if (instance_exists(help_text)) {
+        with (help_text) instance_destroy();
+    }
     if (sprite_exists(spr))
         sprite_delete(spr);
     
