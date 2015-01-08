@@ -32,10 +32,14 @@
   </sounds>
   <sprites name="sprites">
     <sprites name="Ships">
-      <sprite>sprites\ship_xebec_sprite</sprite>
-      <sprite>sprites\ship_carrack_sprite</sprite>
-      <sprite>sprites\ship_galleass_sprite</sprite>
-      <sprite>sprites\ship_corvette_sprite</sprite>
+      <sprite>sprites\ship_xebec_1_sprite</sprite>
+      <sprite>sprites\ship_xebec_2_sprite</sprite>
+      <sprite>sprites\ship_carrack_1_sprite</sprite>
+      <sprite>sprites\ship_carrack_2_sprite</sprite>
+      <sprite>sprites\ship_galleass_1_sprite</sprite>
+      <sprite>sprites\ship_galleass_2_sprite</sprite>
+      <sprite>sprites\ship_corvette_1_sprite</sprite>
+      <sprite>sprites\ship_corvette_2_sprite</sprite>
       <sprite>sprites\ship_xebec_hitbox_sprite</sprite>
       <sprite>sprites\ship_carrack_hitbox_sprite</sprite>
       <sprite>sprites\ship_galleass_hitbox_sprite</sprite>
@@ -49,6 +53,10 @@
       <sprite>sprites\desc_carrack_sprite</sprite>
       <sprite>sprites\desc_galleass_sprite</sprite>
       <sprite>sprites\desc_corvette_sprite</sprite>
+      <sprite>sprites\ship_xebec_sprite</sprite>
+      <sprite>sprites\ship_carrack_sprite</sprite>
+      <sprite>sprites\ship_corvette_sprite</sprite>
+      <sprite>sprites\ship_galleass_sprite</sprite>
     </sprites>
     <sprites name="HUD">
       <sprite>sprites\red_bar_sprite</sprite>

@@ -33,7 +33,8 @@ image_angle = 0;
 friction = SHIP_FRICTION;
 
 // indexes
-sprite_index = ship_sprite[ship_type];
+if(owner == PLAYER_ONE) sprite_index = ship_sprite_1[ship_type];
+else sprite_index = ship_sprite_2[ship_type];
 mask_index = ship_mask[ship_type];
 
 // ulti
