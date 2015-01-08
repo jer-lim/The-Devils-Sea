@@ -3,6 +3,9 @@
 // Student Number:     S10131808A
 // Student Name:       Elliot Tan
 
+// set global variable for new player/veteran mode
+global.is_new_player = argument0;
+
 for (var p = 1; p <= 2; p++) {
     for (var s = 1; s <= MAX_SHIPS; s++) {
         // if a ship was not selected

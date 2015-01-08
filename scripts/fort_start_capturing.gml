@@ -6,6 +6,12 @@
 // if fort is not owned by ship in range, begin capturing
 if (other.owner != self.fort.owner && other.hp > 0) {
     enemy_ship_in_range = true;
+
+    // display help text
+    if (global.is_new_player && !instance_exists(self.fort.help_text)) {
+        self.fort.help_text = instance_create(x, y + 50, help_text_obj);
+        self.fort.help_text.text = "CAPTURING ENEMY FORT";
+    }
     
     if (other.owner == PLAYER_ONE)
         effect_create_below(ef_ring, x, y, 2, make_color_rgb(22, 190, 254));

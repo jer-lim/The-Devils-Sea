@@ -30,25 +30,6 @@ else
 // Xebec passive ability: more speed when heading towards other ship
 if(ship_type == SHIP_XEBEC) {
     if (instance_exists(other_ship)) {
-        /*
-        var shipFrontDirMin = image_angle - 45;
-        var shipFrontDirMax = image_angle + 45;
-        if(shipFrontDirMin < 0) shipFrontDirMin += 360;
-        if(shipFrontDirMax > 360) shipFrontDirMax -= 360;
-        
-        var relativeDir = point_direction(x, y, other_ship.x, other_ship.y); 
-        var isFacingOther = false;
-        if(shipFrontDirMin < shipFrontDirMax){
-            if(relativeDir > shipFrontDirMin && relativeDir < shipFrontDirMax){
-                isFacingOther = true;
-            }
-        }else{
-            if((relativeDir > shipFrontDirMin && relativeDir <= 0)
-                || (relativeDir >= 0 && relativeDir < shipFrontDirMax)){
-                isFacingOther = true;
-            }
-        }
-        */
         if(angle_difference(image_angle, point_direction(x, y, other_ship.x, other_ship.y)) > -45
             || angle_difference(image_angle, point_direction(x, y, other_ship.x, other_ship.y)) < 45)
             var isFacingOther = true;
@@ -61,8 +42,6 @@ if(ship_type == SHIP_XEBEC) {
             max_speed -= 10 * SHIP_SPEED_MULTIPLIER;
             xebec_passive = false;
         }
-        
-        // show_debug_message(string(owner) + ": " +string(max_speed));
     }
 }
 
@@ -123,8 +102,6 @@ if (ulti_timer == 0) {
     ulti_timer = -1;
     if(ship_type == SHIP_XEBEC)
         xebec_ulti_deactivate();
-//     if(ship_type == SHIP_GALLEASS)
-//         galleass_ulti_deactivate();
 }
 
 // movement animation
@@ -142,4 +119,10 @@ else if (speed > 0) {
         x - cos(degtorad(image_angle)) * sprite_width * 0.2,
         y + sin(degtorad(image_angle)) * sprite_width * 0.2,
         0, player_color);
+}
+
+// help text
+if (global.is_new_player && instance_exists(help_text)) {
+    help_text.x = x;
+    help_text.y = y - 50;
 }

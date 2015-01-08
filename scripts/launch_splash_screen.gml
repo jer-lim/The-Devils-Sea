@@ -11,6 +11,7 @@ randomize();
 
 globalvar games_played;
 globalvar wins;
+global.is_new_player = true;
 
 // create black background that fades out in 0.5 seconds
 black_bg_init_fade_in(false, ROOM_FADE_TIME);

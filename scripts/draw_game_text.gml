@@ -3,7 +3,7 @@
 // Student Number:     S10131808A
 // Student Name:       Elliot Tan
 
-draw_set_font(menu_small_font);
+draw_set_font(game_message_font);
 draw_set_color(make_color_rgb(0, 0, 95));
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);

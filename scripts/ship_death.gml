@@ -54,17 +54,21 @@ global.ships_lost[ship_owner]++;
 
 // recreate next ship
 if (global.player_ships_index[ship_owner] <= MAX_SHIPS) {
-    var ship;
+    var ship, player_no;
     
     // spawn ship in appropriate location
-    if (ship_owner == PLAYER_ONE)
+    if (ship_owner == PLAYER_ONE) {
         ship = instance_create(50, room_height*0.5, ship1_obj);
-    else if (ship_owner == PLAYER_TWO)
+        player_no = PLAYER_ONE;
+    }
+    else if (ship_owner == PLAYER_TWO) {
         ship = instance_create(room_width - 50, room_height*0.5, ship2_obj);
+        player_no = PLAYER_TWO;
+    }
     
     // run ship creation code
     with (ship) {
-        ship_create(global.player_ships_selection[ship_owner,
+        ship_create(player_no, global.player_ships_selection[ship_owner,
             player_ships_index[ship_owner]++]);
     }
     
@@ -86,10 +90,6 @@ if (global.player_ships_index[ship_owner] <= MAX_SHIPS) {
             ship.other_ship.other_ship = global.ships[PLAYER_ONE].id;
         }
     }
-        
-    // assign ship owner
-    ship.owner = ship_owner;
-    // show_player_ship_bars(3);
 }
 
 // player has run out of ships

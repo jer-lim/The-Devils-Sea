@@ -9,7 +9,8 @@
 * Load ship stats for selected ship.
 */
 
-ship_type = argument0;
+owner = argument0;
+ship_type = argument1;
 
 // if ship type is invalid, assign a random value
 if (ship_type < 0 || ship_type > 3)
@@ -62,5 +63,9 @@ ulti_greybar.image_yscale = 0.3;
 
 ulti_icon = instance_create(x, y, hud_ulti_obj);
 ulti_icon.sprite_index = ship_ulti_icon[ship_type];
-// ulti_icon.image_xscale = 0.25;
-// ulti_icon.image_yscale = 0.25;
+
+// display help text
+help_text = instance_create(x, y - 50, help_text_obj);
+help_text.text = "PLAYER " + string(owner);
+help_text.animate_index = -1;
+help_text.alarm[0] = room_speed * 3;

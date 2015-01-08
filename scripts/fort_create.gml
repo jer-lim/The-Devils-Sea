@@ -10,6 +10,7 @@
 */
 arc = instance_create(x, y, fort_scan_arc_obj);
 arc.image_angle = random_range(0, 360);
+arc.clockwise = irandom(1);
 arc.fort = id;
 arc.ulti = false;
 
@@ -17,6 +18,7 @@ targetAcquired = false;
 targetAngle = 0;
 attack_timer = 0;
 owner = 0;
+help_text = noone;
 
 // create fort radius object for collision detection with ships
 // ships that collide are "in-range" for capturing a fort

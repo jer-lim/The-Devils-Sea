@@ -56,7 +56,7 @@
     <instance objName="btn_back_obj" x="544" y="630" name="inst_8C3C25A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="control2_obj" x="928" y="180" name="inst_1F8D9311" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="control1_obj" x="608" y="180" name="inst_E80D2749" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="controls_title_obj" x="911" y="62" name="inst_3713C056" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="help_text_obj" x="911" y="62" name="inst_3713C056" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="controls1_text_obj" x="750" y="509" name="inst_DA062479" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="controls2_text_obj" x="1073" y="510" name="inst_63598741" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="controls_guide_obj" x="15" y="390" name="inst_F26963AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

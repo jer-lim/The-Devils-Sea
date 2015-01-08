@@ -18,8 +18,8 @@ turn_speed = ship_turn_speed[ship_type] / room_speed;
 mass = ship_mass[ship_type];
 
 collidable = true;
+help_text = noone;
 
-owner = 0;
 other_ship = 0;
 ship_rammed_damage_multiplier = 1;
 

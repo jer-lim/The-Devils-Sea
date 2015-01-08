@@ -5,6 +5,17 @@
 
 // successfully captured
 if (fort.capture_timer <= 0) {
+    // display help text
+    if (global.is_new_player) {
+        if (instance_exists(self.fort.help_text))
+            with (self.fort.help_text)
+                instance_destroy();
+            
+        self.fort.help_text = instance_create(x, y + 50, help_text_obj);
+        self.fort.help_text.text = "FORT CAPTURED";
+        self.fort.help_text.animate_index = -1;
+    }
+
     // change fort owner
     if (fort.owner == PLAYER_ONE)
         fort_set_owner(self.fort, PLAYER_TWO);
@@ -35,7 +46,10 @@ else {
 * otherwise fix aim on target
 */
 if(!fort.targetAcquired) {
-    image_angle += 90 / room_speed;
+    if (clockwise == 0)
+        image_angle += 90 / room_speed;
+    else
+        image_angle -= 90 / room_speed;
 }
 else {
     // ensure target is still alive

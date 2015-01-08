@@ -43,7 +43,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>false</string>
+            <string>true</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -125,7 +125,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>"Begin (Veteran Mode)"</string>
+            <string>"Begin (Learner Mode)"</string>
           </argument>
           <argument>
             <kind>0</kind>

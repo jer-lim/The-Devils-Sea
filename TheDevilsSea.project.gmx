@@ -154,6 +154,7 @@
       <script>scripts\normalize_vector.gml</script>
       <script>scripts\draw_menu_text.gml</script>
       <script>scripts\draw_menu_text_small.gml</script>
+      <script>scripts\draw_game_text.gml</script>
       <script>scripts\load_stats.gml</script>
       <script>scripts\alarm_fade_to_room.gml</script>
       <script>scripts\sound_toggle_create.gml</script>
@@ -233,6 +234,7 @@
     <font>fonts\damage_font</font>
     <font>fonts\menu_font</font>
     <font>fonts\menu_small_font</font>
+    <font>fonts\game_message_font</font>
     <font>fonts\game_winner_font</font>
     <font>fonts\rounds_won_font</font>
   </fonts>
@@ -289,6 +291,7 @@
       <object>objects\galleass_obj</object>
       <object>objects\corvette_obj</object>
       <object>objects\btn_start_obj</object>
+      <object>objects\btn_start_beginner_obj</object>
       <object>objects\btn_back_obj</object>
       <object>objects\pregame_text_obj</object>
       <object>objects\pregame_desc_obj</object>
@@ -323,7 +326,6 @@
     <objects name="Controls">
       <object>objects\control1_obj</object>
       <object>objects\control2_obj</object>
-      <object>objects\controls_title_obj</object>
       <object>objects\controls1_text_obj</object>
       <object>objects\controls2_text_obj</object>
       <object>objects\controls_guide_obj</object>
@@ -333,6 +335,10 @@
       <object>objects\btn_ctrls_play_obj</object>
       <object>objects\btn_med_back_obj</object>
       <object>objects\full_controls_obj</object>
+    </objects>
+    <objects name="Game Text">
+      <object>objects\game_message_obj</object>
+      <object>objects\help_text_obj</object>
     </objects>
   </objects>
   <rooms name="rooms">
