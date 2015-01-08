@@ -122,7 +122,7 @@ else if (speed > 0) {
 }
 
 // help text
-if (global.is_new_player && instance_exists(help_text)) {
+if (instance_exists(help_text)) {
     help_text.x = x;
     help_text.y = y - 50;
 }

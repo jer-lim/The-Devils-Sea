@@ -85,6 +85,7 @@
       <sprite>sprites\control_text_sprite</sprite>
       <sprite>sprites\control_guide_sprite</sprite>
       <sprite>sprites\pregame_desc_sprite</sprite>
+      <sprite>sprites\pregame_extra_sprite</sprite>
       <sprite>sprites\fog_sprite</sprite>
       <sprite>sprites\credits_sprite</sprite>
       <sprite>sprites\full_controls_sprite</sprite>
@@ -295,6 +296,7 @@
       <object>objects\btn_back_obj</object>
       <object>objects\pregame_text_obj</object>
       <object>objects\pregame_desc_obj</object>
+      <object>objects\pregame_extra_text_obj</object>
       <object>objects\desc_text_obj</object>
       <object>objects\btn_pregame_obj</object>
       <object>objects\btn_1_xebec_obj</object>
@@ -369,7 +371,7 @@
     <constant name="PLAYER_TWO">2</constant>
     <constant name="RAM_DAMAGE_MULTIPLIER">17</constant>
     <constant name="ROOM_FADE_TIME">0.25</constant>
-    <constant name="SHIP_ACCEL_MULTIPLIER">0.75</constant>
+    <constant name="SHIP_ACCEL_MULTIPLIER">0.9</constant>
     <constant name="SHIP_BASE_TURN_SPEED">70</constant>
     <constant name="SHIP_CARRACK">1</constant>
     <constant name="SHIP_CORVETTE">3</constant>
