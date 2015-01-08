@@ -208,6 +208,7 @@
         <script>scripts\current_push.gml</script>
       </scripts>
       <script>scripts\game_start.gml</script>
+      <script>scripts\get_random_tip.gml</script>
     </scripts>
     <scripts name="Pregame">
       <script>scripts\pregame_create.gml</script>
